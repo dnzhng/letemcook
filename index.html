@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spanish Meal Prep - Grocery List & Recipe</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Georgia&display=swap" rel="stylesheet">
+  <title>Korean Gochujang Tofu Bowls - Grocery List & Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,17 +13,17 @@
     }
 
     body {
-      font-family: 'Georgia', serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       min-height: 100vh;
-      background: linear-gradient(135deg, #c94b4b 0%, #4b134f 100%);
-      padding: 32px 16px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 24px;
     }
 
     .container {
-      max-width: 700px;
+      max-width: 600px;
       margin: 0 auto;
       background: rgba(255, 255, 255, 0.95);
-      border-radius: 16px;
+      border-radius: 20px;
       padding: 32px;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     }
@@ -31,12 +31,11 @@
     /* Toggle Button */
     .toggle-container {
       display: flex;
-      justify-content: center;
+      gap: 12px;
       margin-bottom: 24px;
-      background: #f5f5f5;
+      background: #f1f5f9;
       border-radius: 12px;
       padding: 6px;
-      border: 2px solid #e0e0e0;
     }
 
     .toggle-btn {
@@ -44,23 +43,24 @@
       padding: 12px 20px;
       border: none;
       background: transparent;
-      color: #666;
-      font-size: 16px;
+      color: #64748b;
+      font-size: 15px;
       font-weight: 600;
       cursor: pointer;
       border-radius: 8px;
       transition: all 0.3s ease;
-      font-family: 'Georgia', serif;
+      font-family: 'Inter', sans-serif;
     }
 
     .toggle-btn.active {
-      background: linear-gradient(135deg, #c94b4b 0%, #8b1a1a 100%);
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
-      box-shadow: 0 4px 12px rgba(139, 26, 26, 0.3);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
     }
 
     .toggle-btn:hover:not(.active) {
-      background: rgba(139, 26, 26, 0.1);
+      background: #e2e8f0;
+      color: #475569;
     }
 
     /* Content Sections */
@@ -74,129 +74,192 @@
 
     /* Header */
     .header {
-      text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
 
     h1 {
-      font-size: 36px;
-      color: #8b1a1a;
-      margin: 0 0 8px 0;
-      font-family: 'Playfair Display', serif;
+      font-size: 28px;
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      color: #1a202c;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
     h2 {
-      font-size: 20px;
-      color: #555;
+      font-size: 16px;
+      color: #4a5568;
       margin: 0 0 4px 0;
-      font-weight: 400;
-      font-style: italic;
+      font-weight: 500;
     }
 
     .meta {
-      color: #888;
       font-size: 14px;
+      color: #718096;
       margin: 4px 0 0 0;
     }
 
     /* Progress Bar */
-    .progress-container {
-      background: #f5f5f5;
+    .progress-bar-bg {
+      background: #e2e8f0;
       border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 24px;
-      border: 2px solid #e0e0e0;
-    }
-
-    .progress-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 8px;
-    }
-
-    .progress-label {
-      font-size: 14px;
-      color: #666;
-      font-weight: 600;
-    }
-
-    .progress-count {
-      font-size: 14px;
-      color: #8b1a1a;
-      font-weight: 700;
-    }
-
-    .progress-bar-container {
-      background: #e0e0e0;
       height: 12px;
-      border-radius: 6px;
+      margin-bottom: 24px;
       overflow: hidden;
     }
 
     .progress-bar {
-      background: linear-gradient(90deg, #c94b4b 0%, #d4af37 100%);
       height: 100%;
-      width: 0%;
+      background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
       transition: width 0.3s ease;
-      border-radius: 6px;
+      border-radius: 12px;
+    }
+
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding: 12px 16px;
+      background: #ebf4ff;
+      border-radius: 12px;
+      border: 2px solid #4299e1;
+    }
+
+    .progress-info.complete {
+      background: #c6f6d5;
+      border-color: #48bb78;
+    }
+
+    .progress-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #2c5282;
+    }
+
+    .progress-info.complete .progress-label {
+      color: #22543d;
+    }
+
+    .progress-percent {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2c5282;
+    }
+
+    .progress-info.complete .progress-percent {
+      color: #22543d;
+    }
+
+    /* Info Boxes */
+    .info-box {
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 24px;
+      border: 2px solid;
+    }
+
+    .info-box.cost {
+      background: #fef5e7;
+      border-color: #f39c12;
+    }
+
+    .info-box.tips {
+      background: #e6f7ff;
+      border-color: #1890ff;
+    }
+
+    .info-box-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .info-box-header span.emoji {
+      font-size: 20px;
+    }
+
+    .info-box-header span.title {
+      font-weight: 700;
+      font-size: 16px;
+      color: #1a202c;
+    }
+
+    .info-box-content {
+      font-size: 14px;
+      color: #4a5568;
+      line-height: 1.6;
+    }
+
+    .info-box ul {
+      margin: 0;
+      padding-left: 20px;
+      line-height: 1.8;
     }
 
     /* Category */
     .category {
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     .category-title {
       font-size: 18px;
-      color: #8b1a1a;
+      font-weight: 700;
+      color: #2d3748;
       margin-bottom: 12px;
       padding-bottom: 8px;
-      border-bottom: 3px solid #d4af37;
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      border-bottom: 2px solid #e2e8f0;
     }
 
     .items-container {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
     }
 
     /* Grocery Item */
     .grocery-item {
       display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 14px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
       background: white;
-      border-radius: 8px;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
       cursor: pointer;
       transition: all 0.2s ease;
-      border: 2px solid #e0e0e0;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .grocery-item:hover {
+      background: #fafafa;
+      transform: translateX(4px);
     }
 
     .grocery-item.checked {
-      background: linear-gradient(135deg, #f0f8f0 0%, #e8f5e8 100%);
+      background: #f0fdf4;
+      border-color: #86efac;
       opacity: 0.7;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .grocery-item.highlight {
-      background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
-      border-color: #d4af37;
+    .grocery-item.checked:hover {
+      background: #f0fdf4;
+      transform: none;
+    }
+
+    .item-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
     }
 
     .checkbox {
-      min-width: 24px;
+      width: 24px;
       height: 24px;
       border-radius: 6px;
-      border: 2px solid #ccc;
+      border: 2px solid #d1d5db;
       background: white;
       display: flex;
       align-items: center;
@@ -206,8 +269,8 @@
     }
 
     .grocery-item.checked .checkbox {
-      background: #4caf50;
-      border-color: #4caf50;
+      background: #22c55e;
+      border-color: #22c55e;
     }
 
     .checkmark {
@@ -226,76 +289,45 @@
     }
 
     .item-name {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
-      color: #333;
-      margin-bottom: 0;
+      color: #1f2937;
+      margin-bottom: 2px;
     }
 
     .grocery-item.checked .item-name {
-      color: #888;
+      color: #6b7280;
       text-decoration: line-through;
     }
 
     .item-note {
-      color: rgba(0, 0, 0, 0.5);
-      font-size: 13px;
-      font-style: italic;
-      margin-top: 4px;
+      color: rgba(107, 114, 128, 0.8);
+      font-size: 12px;
+      margin-top: 2px;
     }
 
     .quantity-badge {
-      background: rgba(139, 26, 26, 0.1);
-      color: #8b1a1a;
-      padding: 6px 12px;
+      background: rgba(147, 51, 234, 0.15);
+      color: #7c3aed;
+      padding: 4px 10px;
       border-radius: 20px;
-      font-size: 13px;
-      font-weight: 700;
+      font-size: 12px;
+      font-weight: 600;
       white-space: nowrap;
       transition: all 0.2s ease;
       flex-shrink: 0;
     }
 
     .grocery-item.checked .quantity-badge {
-      background: rgba(76, 175, 80, 0.2);
-      color: #4caf50;
+      background: rgba(74, 222, 128, 0.2);
+      color: #16a34a;
     }
 
-    .grocery-item.highlight .quantity-badge {
-      background: rgba(212, 175, 55, 0.3);
-      color: #b8860b;
-    }
-
-    /* Footer Box */
-    .footer-box {
-      margin-top: 32px;
-      padding: 20px;
-      background: linear-gradient(135deg, #fef9e7 0%, #fadbd8 100%);
-      border-radius: 8px;
-      border: 2px solid #d4af37;
-    }
-
-    .footer-box h4 {
-      font-size: 16px;
-      color: #8b1a1a;
-      margin: 0 0 12px 0;
-      font-weight: 700;
-    }
-
-    .footer-box ul {
-      margin: 0;
-      padding-left: 20px;
-      color: #555;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .footer-text {
+    .footer-note {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 12px;
       text-align: center;
-      color: #999;
-      font-size: 13px;
       margin-top: 24px;
-      font-style: italic;
     }
 
     /* Recipe Styles */
@@ -305,44 +337,44 @@
     }
 
     .recipe-content h3 {
-      font-size: 24px;
-      color: #8b1a1a;
-      margin: 32px 0 16px 0;
+      font-size: 22px;
+      color: #1a202c;
+      margin: 28px 0 16px 0;
       padding-bottom: 8px;
-      border-bottom: 3px solid #d4af37;
-      font-family: 'Playfair Display', serif;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      border-bottom: 2px solid #e2e8f0;
+      font-weight: 700;
     }
 
     .recipe-content h4 {
-      font-size: 18px;
-      color: #8b1a1a;
-      margin: 24px 0 12px 0;
+      font-size: 17px;
+      color: #2d3748;
+      margin: 20px 0 12px 0;
       font-weight: 700;
     }
 
     .recipe-meta-info {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
       padding: 20px;
-      background: linear-gradient(135deg, #fef9e7 0%, #fadbd8 100%);
-      border-radius: 8px;
-      border: 2px solid #d4af37;
+      background: linear-gradient(135deg, #fef5e7 0%, #e6f7ff 100%);
+      border-radius: 12px;
+      border: 2px solid #667eea;
       margin-bottom: 24px;
-    }
-
-    .recipe-meta-item {
-      flex: 1;
-      min-width: 150px;
     }
 
     .recipe-meta-item strong {
       display: block;
-      color: #8b1a1a;
-      font-size: 14px;
+      color: #7c3aed;
+      font-size: 13px;
       margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .recipe-meta-item {
+      font-size: 15px;
+      color: #2d3748;
     }
 
     .recipe-content p {
@@ -359,47 +391,85 @@
     }
 
     .recipe-content strong {
-      color: #8b1a1a;
+      color: #7c3aed;
+      font-weight: 600;
     }
 
     .recipe-highlight {
-      background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
-      border: 2px solid #d4af37;
-      border-radius: 8px;
+      background: #f8f4ff;
+      border: 2px solid #a78bfa;
+      border-radius: 12px;
       padding: 16px;
       margin: 16px 0;
     }
 
     .recipe-section {
-      background: #f9f9f9;
-      border-radius: 8px;
+      background: #f9fafb;
+      border-radius: 12px;
       padding: 20px;
       margin: 16px 0;
-      border-left: 4px solid #d4af37;
+      border-left: 4px solid #667eea;
+    }
+
+    .overview-box {
+      background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+      border: 2px solid #8b5cf6;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .overview-box p {
+      margin: 8px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    table th {
+      background: #f1f5f9;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e2e8f0;
     }
 
     hr {
       border: none;
-      border-top: 2px solid #e0e0e0;
+      border-top: 2px solid #e2e8f0;
       margin: 24px 0;
     }
 
     @media (max-width: 600px) {
+      body {
+        padding: 16px;
+      }
+
       .container {
         padding: 20px;
       }
 
       h1 {
-        font-size: 28px;
-      }
-
-      h2 {
-        font-size: 18px;
+        font-size: 24px;
       }
 
       .toggle-btn {
-        font-size: 14px;
+        font-size: 13px;
         padding: 10px 12px;
+      }
+
+      .recipe-meta-info {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -419,53 +489,72 @@
     <!-- Grocery List Section -->
     <div id="grocery-section" class="content-section active">
       <div class="header">
-        <h1>🇪🇸 Spanish Market List</h1>
-        <h2>Smoky Paprika Tofu with Tomato Rice</h2>
-        <p class="meta">Week of January 19, 2026 • 10 servings</p>
+        <h1><span>🛒</span> Grocery List</h1>
+        <h2>Korean Gochujang Tofu Bowls</h2>
+        <p class="meta">Week of January 27, 2026 • 10 servings</p>
       </div>
 
       <!-- Progress Bar -->
-      <div class="progress-container">
-        <div class="progress-header">
-          <span class="progress-label">Shopping Progress</span>
-          <span class="progress-count"><span id="checked-count">0</span> / <span id="total-count">0</span> items</span>
+      <div class="progress-bar-bg">
+        <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+      </div>
+
+      <div class="progress-info" id="progress-info">
+        <span class="progress-label" id="progress-label">0 of 0 items</span>
+        <span class="progress-percent" id="progress-percent">0%</span>
+      </div>
+
+      <!-- Estimated Cost -->
+      <div class="info-box cost">
+        <div class="info-box-header">
+          <span class="emoji">💰</span>
+          <span class="title">Estimated Cost</span>
         </div>
-        <div class="progress-bar-container">
-          <div class="progress-bar" id="progress-bar"></div>
+        <div class="info-box-content">
+          <strong>Total:</strong> $18-25<br>
+          <strong>Per serving:</strong> ~$1.80-2.50<br>
+          <span style="font-size: 13px; color: #718096; font-style: italic;">
+            Main purchase: Gochujang ($5-7) • Most other items are pantry staples
+          </span>
+        </div>
+      </div>
+
+      <!-- Shopping Tips -->
+      <div class="info-box tips">
+        <div class="info-box-header">
+          <span class="emoji">💡</span>
+          <span class="title">Shopping Tips</span>
+        </div>
+        <div class="info-box-content">
+          <ul>
+            <li><strong>Gochujang:</strong> Find at Asian markets or regular stores in Asian aisle. Get mild or medium heat.</li>
+            <li><strong>Tofu:</strong> Extra-firm is essential for crispy texture</li>
+            <li><strong>Vegetables:</strong> Use any mushrooms (cremini, shiitake, or button work great)</li>
+            <li><strong>Cost saver:</strong> Buy vegetables loose instead of pre-packaged</li>
+          </ul>
         </div>
       </div>
 
       <!-- Grocery Categories -->
       <div id="grocery-list"></div>
 
-      <!-- Footer -->
-      <div class="footer-box">
-        <h4>🛒 Shopping Tips</h4>
-        <ul>
-          <li><strong>Smoked paprika is essential!</strong> Look for Spanish pimentón (sweet/dulce) in the spice aisle.</li>
-          <li>Use the ripest tomatoes you can find for the best color and flavor.</li>
-          <li>Check your pantry for spices and oil before shopping.</li>
-          <li><strong>Estimated cost:</strong> $18-24 total ($1.80-2.40 per serving)</li>
-        </ul>
-      </div>
-
-      <p class="footer-text">
-        Tap items to check them off as you shop • ¡Buen provecho!
+      <p class="footer-note">
+        Tap items to check them off as you shop
       </p>
     </div>
 
     <!-- Recipe Section -->
     <div id="recipe-section" class="content-section">
       <div class="header">
-        <h1>🇪🇸 Spanish-Inspired Recipe</h1>
-        <h2>Smoky Paprika Tofu with Tomato Rice</h2>
-        <p class="meta">Week of January 19, 2026</p>
+        <h1>🇰🇷 Korean Gochujang Tofu Bowls</h1>
+        <h2>with Vegetables</h2>
+        <p class="meta">Week of January 27, 2026</p>
       </div>
 
       <div class="recipe-meta-info">
         <div class="recipe-meta-item">
-          <strong>Makes:</strong>
-          10 servings (5 days × 2 servings)
+          <strong>Servings:</strong>
+          10 (2 servings/day × 5 days)
         </div>
         <div class="recipe-meta-item">
           <strong>Prep time:</strong>
@@ -473,58 +562,61 @@
         </div>
         <div class="recipe-meta-item">
           <strong>Cook time:</strong>
-          45 minutes
+          35 minutes
         </div>
         <div class="recipe-meta-item">
           <strong>Total time:</strong>
-          65 minutes
+          55 minutes
         </div>
       </div>
 
       <div class="recipe-content">
-        <h3>What Makes This Special</h3>
-        <p>This dish brings the warm, smoky flavors of Spain to your meal prep! The star ingredient is <strong>pimentón</strong> (Spanish smoked paprika), which gives the tofu an incredible depth of flavor. Combined with Spanish-style tomato rice (similar to arroz con tomate), you get a complete meal that's completely different from anything you've made recently.</p>
-
-        <p>Unlike your recent Asian cuisines, this has Mediterranean vibes with:</p>
-        <ul>
-          <li><strong>Smoky, earthy paprika-roasted tofu</strong> that gets wonderfully crispy</li>
-          <li><strong>Aromatic tomato rice</strong> cooked in the Spanish style with bell peppers</li>
-          <li><strong>Simple ingredients</strong> but bold, memorable flavors</li>
-          <li><strong>No wok needed</strong> - oven-roasted tofu and stovetop rice</li>
-        </ul>
-
-        <hr>
+        <div class="overview-box">
+          <h3 style="margin-top: 0; border: none; padding: 0;">Overview</h3>
+          <p>Bold, spicy-sweet Korean flavors meet crispy tofu and colorful vegetables in this satisfying wok-friendly meal. The gochujang (Korean red chili paste) creates a complex sauce that's spicy, savory, and slightly sweet - perfect for meal prep! This recipe <strong>minimizes cornstarch use</strong> (only ~3 tbsp total for sauce thickening) by pan-frying the tofu plain to achieve crispy edges.</p>
+          <p style="margin-bottom: 0;"><strong>Cost:</strong> $18-25 total (~$1.80-2.50 per serving)</p>
+        </div>
 
         <h3>Ingredients</h3>
 
         <div class="recipe-section">
-          <h4>For the Smoky Paprika Tofu:</h4>
+          <h4>For the Tofu:</h4>
           <ul>
-            <li>2.5 lbs extra-firm tofu (2-3 blocks)</li>
-            <li>4 tablespoons olive oil</li>
-            <li>3 tablespoons smoked paprika (Spanish pimentón dulce)</li>
-            <li>1 teaspoon garlic powder</li>
-            <li>1 teaspoon onion powder</li>
-            <li>1 teaspoon sea salt</li>
-            <li>1/2 teaspoon black pepper</li>
+            <li><strong>48 oz extra-firm tofu</strong> (3 blocks, 16 oz each)</li>
+            <li><strong>¼ cup neutral oil</strong> (vegetable, canola, or avocado) - for pan-frying</li>
           </ul>
         </div>
 
         <div class="recipe-section">
-          <h4>For the Spanish Tomato Rice:</h4>
+          <h4>For the Vegetables:</h4>
           <ul>
-            <li>4 cups long-grain white rice (uncooked)</li>
-            <li>3 medium yellow onions, diced</li>
-            <li>8-10 cloves garlic, minced</li>
-            <li>6-7 large tomatoes, diced (or 2 cans, 28 oz each, diced tomatoes)</li>
-            <li>3 medium bell peppers (red or yellow), diced</li>
-            <li>1/4 cup tomato paste</li>
-            <li>7 cups vegetable broth</li>
-            <li>3 tablespoons olive oil</li>
-            <li>2 teaspoons dried oregano</li>
-            <li>1 tablespoon smoked paprika</li>
-            <li>Salt and pepper to taste</li>
-            <li>Fresh parsley for garnish</li>
+            <li><strong>4 medium bell peppers</strong> (red, yellow, or orange), cut into 1-inch pieces (~5 cups)</li>
+            <li><strong>1.5 lbs mushrooms</strong> (cremini or shiitake), sliced (~6 cups)</li>
+            <li><strong>2 large heads broccoli</strong>, cut into florets (~6 cups)</li>
+            <li><strong>10 cloves garlic</strong>, minced</li>
+            <li><strong>2-inch piece fresh ginger</strong>, minced or grated</li>
+          </ul>
+        </div>
+
+        <div class="recipe-section">
+          <h4>For the Gochujang Sauce:</h4>
+          <ul>
+            <li><strong>⅔ cup gochujang</strong> (Korean red chili paste) - adjust to taste</li>
+            <li><strong>10 tablespoons soy sauce</strong> (low sodium preferred, or tamari for GF)</li>
+            <li><strong>⅓ cup maple syrup or honey</strong></li>
+            <li><strong>5 tablespoons rice vinegar</strong> (unseasoned)</li>
+            <li><strong>3 tablespoons toasted sesame oil</strong></li>
+            <li><strong>3 tablespoons cornstarch</strong> - dissolved in ¼ cup water</li>
+            <li><strong>½ cup water</strong> (for thinning sauce as needed)</li>
+          </ul>
+        </div>
+
+        <div class="recipe-section">
+          <h4>For Serving:</h4>
+          <ul>
+            <li><strong>4 cups uncooked jasmine or short-grain white rice</strong> (yields 10 cups cooked)</li>
+            <li><strong>2 bunches green onions</strong>, sliced (for garnish)</li>
+            <li><strong>Sesame seeds</strong> (for garnish, optional)</li>
           </ul>
         </div>
 
@@ -532,143 +624,206 @@
 
         <h3>Instructions</h3>
 
-        <h4>Step 1: Prepare the Tofu (20 minutes)</h4>
+        <h4>Step 1: Prep the Tofu (15 minutes)</h4>
         <ol>
-          <li><strong>Preheat oven</strong> to 480°F (250°C) - use your highest setting with bake mode.</li>
-          <li><strong>Press the tofu:</strong> Remove tofu from packaging and pat very dry with paper towels. Press down firmly with paper towels to remove as much liquid as possible. The drier the tofu, the crispier it will get!</li>
-          <li><strong>Cut tofu:</strong> Cut each block in half lengthwise, then cut into 3/4-inch cubes.</li>
-          <li><strong>Season the tofu:</strong> In a large bowl, combine 4 tablespoons olive oil, 3 tablespoons smoked paprika, 1 teaspoon garlic powder, 1 teaspoon onion powder, 1 teaspoon salt, and 1/2 teaspoon black pepper.</li>
-          <li><strong>Coat tofu:</strong> Add cubed tofu to the bowl and toss gently but thoroughly until every piece is well coated with the paprika mixture.</li>
-          <li><strong>Arrange on baking sheet:</strong> Line 2 large baking sheets with parchment paper or foil. Spread tofu in a single layer - don't overcrowd! Leave space between pieces for maximum crispiness.</li>
-          <li><strong>Bake:</strong> Place in preheated oven and bake for 15 minutes. The tofu should be crispy on the outside with beautiful red color from the paprika.</li>
-          <li><strong>Set aside:</strong> Remove from oven and let cool slightly while you make the rice.</li>
+          <li><strong>Remove tofu from packages</strong> and press to remove excess water. Place tofu blocks on a clean dish towel or paper towels, top with another towel, and place something heavy on top (like a cast iron pan or heavy books). Press for <strong>10-15 minutes</strong>.</li>
+          <li><strong>Cut tofu</strong> into ¾-inch cubes. Pat dry again with paper towels if still moist.</li>
         </ol>
 
-        <h4>Step 2: Make the Spanish Tomato Rice (45 minutes)</h4>
+        <h4>Step 2: Make the Rice (While Tofu Presses)</h4>
         <ol>
-          <li><strong>Heat oil:</strong> In a large pot or Dutch oven, heat 3 tablespoons olive oil over medium heat.</li>
-          <li><strong>Sauté aromatics:</strong> Add diced onions and cook for 5-7 minutes until softened and starting to turn golden. Add minced garlic and cook for 1 minute more until fragrant.</li>
-          <li><strong>Toast the rice:</strong> Add the 4 cups of uncooked rice to the pot. Stir constantly for 2-3 minutes until the rice starts to smell toasty and turns slightly golden. This step is crucial for fluffy rice!</li>
-          <li><strong>Add tomato paste and paprika:</strong> Stir in the tomato paste and 1 tablespoon smoked paprika. Cook for 30 seconds, stirring constantly.</li>
-          <li><strong>Add vegetables and liquids:</strong> Add diced tomatoes, diced bell peppers, 7 cups vegetable broth, 2 teaspoons dried oregano, and salt and pepper to taste.</li>
-          <li><strong>Bring to boil:</strong> Stir everything together and bring to a rolling boil over high heat.</li>
-          <li><strong>Simmer:</strong> Once boiling, reduce heat to LOW, cover with a tight-fitting lid, and simmer for 20 minutes. <strong>DO NOT LIFT THE LID OR STIR!</strong> This is critical for fluffy rice.</li>
-          <li><strong>Rest:</strong> After 20 minutes, remove from heat but keep the lid on. Let it sit covered for 10 more minutes to steam and finish cooking.</li>
-          <li><strong>Fluff:</strong> Remove lid and gently fluff the rice with a fork. The rice should be tender and have absorbed all the liquid.</li>
+          <li><strong>Cook rice</strong> according to package directions using <strong>4 cups uncooked rice</strong> and the appropriate amount of water (typically 8 cups for white rice). This yields <strong>10 cups cooked rice</strong>.</li>
+          <li><strong>Keep warm</strong> until ready to serve, or cool completely for meal prep containers.</li>
         </ol>
 
-        <h4>Step 3: Combine and Portion (5 minutes)</h4>
+        <h4>Step 3: Prepare the Sauce (5 minutes)</h4>
         <ol>
-          <li><strong>Mix gently:</strong> Add the crispy paprika tofu to the pot of rice. Gently fold together, being careful not to break up the tofu too much.</li>
-          <li><strong>Taste and adjust:</strong> Taste and add more salt, pepper, or paprika if needed.</li>
-          <li><strong>Garnish:</strong> Sprinkle with freshly chopped parsley.</li>
-          <li><strong>Portion:</strong> Divide into 10 equal portions in your meal prep containers.</li>
+          <li><strong>In a medium bowl</strong>, whisk together:
+            <ul>
+              <li>⅔ cup gochujang</li>
+              <li>10 tablespoons soy sauce</li>
+              <li>⅓ cup maple syrup or honey</li>
+              <li>5 tablespoons rice vinegar</li>
+              <li>3 tablespoons toasted sesame oil</li>
+              <li>½ cup water (add more if sauce is too thick)</li>
+            </ul>
+          </li>
+          <li><strong>Taste and adjust</strong> - add more maple syrup for sweetness, more gochujang for heat, or more soy sauce for saltiness.</li>
+          <li><strong>In a small bowl</strong>, mix <strong>3 tablespoons cornstarch</strong> with <strong>¼ cup cold water</strong> until smooth. Set aside.</li>
         </ol>
+
+        <h4>Step 4: Pan-Fry the Tofu (12-15 minutes)</h4>
+        <div class="recipe-highlight">
+          <p style="margin-top: 0;"><strong>Note:</strong> This is where we <strong>avoid using cornstarch</strong> on the tofu - we'll get it crispy through proper technique instead!</p>
+        </div>
+        <ol>
+          <li><strong>Heat wok or large pan</strong> over medium-high heat. Add <strong>2 tablespoons neutral oil</strong>.</li>
+          <li><strong>Add half the tofu cubes</strong> in a single layer (don't overcrowd!). Cook undisturbed for <strong>4-5 minutes</strong> until golden brown on the bottom.</li>
+          <li><strong>Flip tofu pieces</strong> and cook another <strong>4-5 minutes</strong> until golden and crispy on multiple sides. Transfer to a plate.</li>
+          <li><strong>Repeat</strong> with remaining <strong>2 tablespoons oil</strong> and remaining tofu. Set all cooked tofu aside.</li>
+        </ol>
+
+        <h4>Step 5: Cook the Vegetables (8-10 minutes)</h4>
+        <ol>
+          <li><strong>In the same wok</strong> (wiped clean if needed), heat <strong>1 tablespoon oil</strong> over high heat.</li>
+          <li><strong>Add mushrooms</strong> (6 cups sliced) in a single layer. Let cook undisturbed for <strong>2-3 minutes</strong> until browned on one side. Stir and cook another <strong>2-3 minutes</strong> until mushrooms are cooked through and most liquid has evaporated. Remove to the plate with tofu.</li>
+          <li><strong>Add bell peppers</strong> (5 cups) to the wok with another <strong>1 tablespoon oil</strong> if needed. Stir-fry for <strong>2-3 minutes</strong> until slightly softened but still crisp.</li>
+          <li><strong>Add broccoli florets</strong> (6 cups) and stir-fry for <strong>2-3 minutes</strong> until bright green and slightly tender but still crisp.</li>
+          <li><strong>Add minced garlic</strong> (10 cloves) and <strong>minced ginger</strong> (2-inch piece). Stir-fry for <strong>30-60 seconds</strong> until fragrant.</li>
+        </ol>
+
+        <h4>Step 6: Combine Everything (3-5 minutes)</h4>
+        <ol>
+          <li><strong>Return mushrooms and tofu</strong> to the wok with the vegetables.</li>
+          <li><strong>Pour the gochujang sauce</strong> over everything and stir gently to coat.</li>
+          <li><strong>Bring to a simmer</strong> over medium-high heat, stirring occasionally.</li>
+          <li><strong>Stir the cornstarch slurry</strong> (from Step 3) to recombine, then pour into the wok while stirring constantly.</li>
+          <li><strong>Cook for 1-2 minutes</strong> until sauce thickens and becomes glossy, coating everything beautifully. If sauce is too thick, add water <strong>2 tablespoons at a time</strong> until desired consistency.</li>
+          <li><strong>Taste and adjust</strong> seasoning - add more soy sauce for saltiness, maple syrup for sweetness, or rice vinegar for tang.</li>
+        </ol>
+
+        <h4>Step 7: Serve or Meal Prep</h4>
+        <div class="recipe-section">
+          <p><strong>For immediate serving:</strong></p>
+          <ul>
+            <li>Divide <strong>10 cups cooked rice</strong> into bowls</li>
+            <li>Top with gochujang tofu and vegetables</li>
+            <li>Garnish with <strong>sliced green onions</strong> and <strong>sesame seeds</strong></li>
+          </ul>
+
+          <p><strong>For meal prep:</strong></p>
+          <ul>
+            <li>Let everything cool completely (about 30 minutes)</li>
+            <li>Divide into <strong>10 meal prep containers</strong>:
+              <ul>
+                <li><strong>1 cup cooked rice</strong> per container</li>
+                <li>Top with tofu and vegetable mixture</li>
+              </ul>
+            </li>
+            <li>Garnish each with <strong>green onions</strong> and <strong>sesame seeds</strong></li>
+            <li>Refrigerate for up to 5 days</li>
+          </ul>
+        </div>
 
         <hr>
 
         <h3>Storage & Reheating</h3>
         <div class="recipe-section">
-          <p><strong>Storage:</strong> Let cool completely before sealing containers. Store in the refrigerator for up to 5 days.</p>
+          <p><strong>Storage:</strong> Store in airtight containers in the refrigerator for up to <strong>5 days</strong>.</p>
 
           <p><strong>Reheating:</strong></p>
           <ul>
-            <li><strong>Microwave:</strong> 2-3 minutes on high, stirring halfway through. Add a splash of water if it seems dry.</li>
-            <li><strong>Stovetop:</strong> Reheat in a pan over medium heat with a splash of water or broth, stirring occasionally, 5-7 minutes.</li>
+            <li><strong>Microwave:</strong> Heat for 2-3 minutes, stirring halfway through. Add a splash of water if needed to loosen the sauce.</li>
+            <li><strong>Stovetop:</strong> Heat in a pan over medium heat with a splash of water, stirring occasionally, until heated through (about 5 minutes).</li>
           </ul>
 
-          <p><strong>Pro tip:</strong> The flavors actually improve after a day in the fridge as everything marinates together!</p>
+          <p><strong>Pro tip:</strong> The tofu won't be as crispy after refrigeration, but the flavors will be even better! For maximum crispiness, you can briefly pan-fry or air-fry the reheated portions.</p>
         </div>
 
         <hr>
 
-        <h3>Why This Recipe Works for Meal Prep</h3>
+        <h3>Nutrition (Per Serving, Approximate)</h3>
+        <table>
+          <tr>
+            <th>Nutrient</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>Calories</td>
+            <td>420</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>18g</td>
+          </tr>
+          <tr>
+            <td>Carbohydrates</td>
+            <td>62g</td>
+          </tr>
+          <tr>
+            <td>Fat</td>
+            <td>12g</td>
+          </tr>
+          <tr>
+            <td>Fiber</td>
+            <td>5g</td>
+          </tr>
+          <tr>
+            <td>Sodium</td>
+            <td>680mg</td>
+          </tr>
+        </table>
+
+        <hr>
+
+        <h3>Recipe Notes & Tips</h3>
+
+        <div class="recipe-highlight">
+          <h4 style="margin-top: 0;">Why This Recipe Minimizes Cornstarch:</h4>
+          <p style="margin-bottom: 0;">Unlike traditional recipes that coat tofu in cornstarch before frying, this method achieves crispy tofu through <strong>high-heat pan-frying</strong> without coating. We only use <strong>3 tablespoons cornstarch total</strong> (less than 1 teaspoon per serving) to thicken the sauce slightly. This keeps the recipe simpler and healthier while still delivering great texture!</p>
+        </div>
+
+        <h4>Adjusting Spice Level:</h4>
+        <ul>
+          <li><strong>Mild:</strong> Start with ½ cup gochujang and taste before adding more</li>
+          <li><strong>Medium:</strong> Use ⅔ cup gochujang as written</li>
+          <li><strong>Spicy:</strong> Use ¾-1 cup gochujang, or add gochugaru (Korean red pepper flakes)</li>
+        </ul>
+
+        <h4>Vegetable Substitutions:</h4>
+        <ul>
+          <li><strong>Instead of bell peppers:</strong> Try snap peas, snow peas, or zucchini</li>
+          <li><strong>Instead of broccoli:</strong> Try bok choy, cabbage, or asparagus</li>
+          <li><strong>Instead of mushrooms:</strong> Use more broccoli and peppers</li>
+          <li><strong>Avoid:</strong> Green beans, carrots, corn (as per your preferences)</li>
+        </ul>
+
+        <h4>Make-Ahead Tips:</h4>
         <ol>
-          <li><strong>Incredible flavors</strong> - Spanish smoked paprika creates a unique, memorable taste</li>
-          <li><strong>Reheats beautifully</strong> - The rice stays moist, tofu stays flavorful</li>
-          <li><strong>Complete nutrition</strong> - Protein from tofu, vegetables, and satisfying carbs</li>
-          <li><strong>Budget-friendly</strong> - About $1.80-2.40 per serving</li>
-          <li><strong>Different cuisine</strong> - A refreshing break from Asian flavors</li>
-          <li><strong>Simple ingredients</strong> - No specialty items except smoked paprika</li>
-          <li><strong>No cornstarch, no carrots, no green beans</strong> - Fits your preferences perfectly!</li>
+          <li><strong>Press and cube tofu</strong> the night before, store in an airtight container in the fridge</li>
+          <li><strong>Prep vegetables</strong> (wash, chop) and store in containers</li>
+          <li><strong>Make the sauce</strong> up to 3 days ahead and refrigerate</li>
+          <li><strong>Cook rice</strong> ahead and refrigerate - it actually makes better fried dishes when using day-old rice!</li>
         </ol>
 
-        <hr>
-
-        <h3>Nutrition (per serving, approximate)</h3>
-        <div class="recipe-section">
-          <ul>
-            <li><strong>Calories:</strong> ~420</li>
-            <li><strong>Protein:</strong> 18g</li>
-            <li><strong>Carbohydrates:</strong> 62g</li>
-            <li><strong>Fat:</strong> 12g</li>
-            <li><strong>Fiber:</strong> 4g</li>
-          </ul>
-        </div>
+        <h4>Wok Cooking Tips:</h4>
+        <ul>
+          <li><strong>High heat is your friend</strong> - the wok should be very hot for that characteristic "wok hei" (breath of the wok) flavor</li>
+          <li><strong>Don't overcrowd</strong> - cook in batches if needed to maintain high heat</li>
+          <li><strong>Keep ingredients moving</strong> - constant stirring prevents burning while ensuring even cooking</li>
+          <li><strong>Have everything prepped</strong> before you start - wok cooking moves fast!</li>
+        </ul>
 
         <hr>
 
-        <h3>Tips for Success</h3>
+        <h3>What Makes This Dish Special</h3>
+        <div class="overview-box">
+          <p><strong>Gochujang</strong> is a Korean fermented chili paste that's been made the same way for centuries. It's made from red chili flakes, fermented soybeans, glutinous rice, and salt. The fermentation process creates deep umami flavors with layers of spicy, sweet, and savory notes that you simply can't replicate with other hot sauces.</p>
 
-        <div class="recipe-highlight">
-          <h4>Crispy Tofu:</h4>
-          <ul>
-            <li>Press tofu REALLY well - the drier it is, the crispier it gets</li>
-            <li>Use your oven's highest temperature</li>
-            <li>Don't overcrowd the baking sheet</li>
-            <li>Spanish smoked paprika (pimentón) gives the best flavor - look for "dulce" (sweet) or "agridulce" (bittersweet)</li>
-          </ul>
-        </div>
+          <p>This dish is inspired by traditional Korean <strong>Jeyuk Bokkeum</strong> (spicy pork stir-fry) but adapted with tofu for a plant-based version. In Korea, it's considered comfort food and is often eaten with banchan (small side dishes) and kimchi.</p>
 
-        <div class="recipe-highlight">
-          <h4>Perfect Rice:</h4>
-          <ul>
-            <li>Toasting the rice before adding liquid is crucial for fluffy, separate grains</li>
-            <li>Use a 1:1.75 rice-to-liquid ratio (4 cups rice to 7 cups broth)</li>
-            <li>DON'T lift the lid while simmering!</li>
-            <li>Let it rest covered after cooking</li>
-            <li>If rice seems too dry after cooking, add a splash more broth</li>
-            <li>If there's still liquid after 20 minutes, cook uncovered for 2-3 more minutes</li>
-          </ul>
-        </div>
-
-        <div class="recipe-highlight">
-          <h4>Flavor Variations:</h4>
-          <ul>
-            <li>Add Spanish olives for a briny kick</li>
-            <li>Mix in chickpeas for extra protein</li>
-            <li>Top with a fried egg when reheating</li>
-            <li>Serve with a side of cucumber salad for freshness</li>
-            <li>Add a squeeze of lemon juice before eating</li>
-          </ul>
-        </div>
-
-        <hr>
-
-        <div class="footer-box">
-          <h4>Shopping Notes</h4>
-          <p><strong>Essential ingredient:</strong> Spanish smoked paprika (pimentón) is what makes this dish special. It's different from regular paprika - it has a deep, smoky flavor that's irreplaceable. Look for it in the spice aisle or international section. Brands like La Chinata or La Dalia are excellent.</p>
-          <p><strong>Estimated total cost:</strong> $18-24 for all ingredients ($1.80-2.40 per serving)</p>
-          <p><strong>What you likely already have:</strong> Olive oil, garlic powder, onion powder, dried oregano, salt, pepper</p>
+          <p style="margin-bottom: 0;">The combination of crispy tofu, tender-crisp vegetables, and that addictive gochujang sauce over fluffy rice makes this the kind of meal you'll actually look forward to eating all week!</p>
         </div>
 
         <hr>
 
         <div class="recipe-section">
           <h4>Recipe Sources</h4>
-          <p>This recipe is adapted from:</p>
+          <p>Adapted from:</p>
           <ul>
-            <li><strong>Tofu technique:</strong> Spain on a Fork's Oven-Roasted Tofu with Spanish Paprika (Albert Bevia)</li>
-            <li><strong>Rice method:</strong> Traditional Spanish arroz con tomate and Mexican arroz rojo techniques</li>
+            <li><strong>Jessica in the Kitchen</strong> - Korean Gochujang Tofu Rice Bowls</li>
+            <li><strong>The Foodie Takes Flight</strong> - Gochujang Tofu (Jeyuk Bokkeum inspired)</li>
+            <li><strong>Vegan Richa</strong> - Gochujang Tofu Stir Fry</li>
+            <li><strong>Christie at Home</strong> - Quick & Easy Gochujang Tofu</li>
           </ul>
         </div>
 
-        <p style="text-align: center; font-size: 18px; margin-top: 32px;">
-          <strong>¡Buen provecho!</strong> Enjoy your week of Spanish-inspired meals! 🇪🇸
+        <p style="text-align: center; font-size: 18px; margin-top: 32px; font-weight: 600;">
+          Enjoy your week of bold Korean flavors! 🇰🇷🌶️
         </p>
 
-        <p class="footer-text">
-          This recipe completely avoids green beans, cornstarch, and carrots as requested.
+        <p class="footer-note">
+          This recipe avoids green beans, carrots, and minimizes cornstarch use as requested.
         </p>
       </div>
     </div>
@@ -678,50 +833,50 @@
     // Grocery data
     const groceryData = [
       {
-        category: "Proteins",
+        category: "🌶️ Key Ingredients (Must Buy)",
         items: [
-          { id: "tofu", name: "Extra-firm tofu", quantity: "2.5 lbs", note: "About 2-3 blocks (14-16 oz each)" }
+          { id: "gochujang", name: "Gochujang (Korean red chili paste)", quantity: "1 tub (7-8 oz)", note: "Look for red rectangular tub - mild or medium heat" }
         ]
       },
       {
-        category: "Fresh Produce",
+        category: "🥬 Fresh Produce",
         items: [
-          { id: "onion", name: "Yellow onions", quantity: "3 medium", note: "" },
-          { id: "garlic", name: "Garlic", quantity: "1 bulb", note: "Need 8-10 cloves" },
-          { id: "tomatoes", name: "Fresh tomatoes", quantity: "6-7 large", note: "Roma or plum tomatoes work great" },
-          { id: "bell-peppers", name: "Bell peppers", quantity: "3 medium", note: "Red or yellow for color" },
-          { id: "parsley", name: "Fresh parsley", quantity: "1 bunch", note: "For garnish" }
+          { id: "bell-peppers", name: "Bell peppers (red, yellow, or orange)", quantity: "4 medium", note: "Any color except green" },
+          { id: "mushrooms", name: "Mushrooms (cremini or shiitake)", quantity: "1.5 lbs", note: "About 6 cups sliced" },
+          { id: "broccoli", name: "Broccoli", quantity: "2 large heads", note: "About 6 cups florets" },
+          { id: "garlic", name: "Fresh garlic", quantity: "1 bulb", note: "Need 10 cloves" },
+          { id: "ginger", name: "Fresh ginger", quantity: "1 small knob", note: "About 2 inches" },
+          { id: "green-onions", name: "Green onions (scallions)", quantity: "2 bunches", note: "For garnish" }
         ]
       },
       {
-        category: "Rice",
+        category: "🍚 Protein & Grains",
         items: [
-          { id: "rice", name: "Long-grain white rice", quantity: "4 cups uncooked", note: "Basmati or jasmine rice" }
+          { id: "tofu", name: "Extra-firm tofu", quantity: "3 blocks (16 oz each)", note: "48 oz total" },
+          { id: "rice", name: "Jasmine or short-grain white rice", quantity: "4 cups uncooked", note: "Yields 10 cups cooked" }
         ]
       },
       {
-        category: "Pantry & Spices - Check First!",
+        category: "🥢 Sauces & Condiments (Check Pantry First)",
         items: [
-          { id: "paprika", name: "Smoked paprika (Spanish)", quantity: "3-4 tablespoons", note: "⭐ KEY INGREDIENT - pimentón dulce preferred", highlight: true },
-          { id: "tomato-paste", name: "Tomato paste", quantity: "1 small can (6 oz)", note: "" },
-          { id: "olive-oil", name: "Olive oil", quantity: "For cooking", note: "Extra virgin preferred" },
-          { id: "garlic-powder", name: "Garlic powder", quantity: "1 teaspoon", note: "" },
-          { id: "onion-powder", name: "Onion powder", quantity: "1 teaspoon", note: "" },
-          { id: "oregano", name: "Dried oregano", quantity: "2 teaspoons", note: "" },
-          { id: "salt", name: "Sea salt", quantity: "To taste", note: "" },
-          { id: "pepper", name: "Black pepper", quantity: "To taste", note: "" }
+          { id: "soy-sauce", name: "Soy sauce (low sodium preferred)", quantity: "~½ cup", note: "Or tamari for gluten-free" },
+          { id: "rice-vinegar", name: "Rice vinegar", quantity: "~¼ cup", note: "Unseasoned" },
+          { id: "sesame-oil", name: "Toasted sesame oil", quantity: "~3 tbsp", note: "Small bottle" },
+          { id: "maple-syrup", name: "Maple syrup or honey", quantity: "~⅓ cup", note: "To balance spice" }
         ]
       },
       {
-        category: "Broth",
+        category: "🧂 Pantry Basics (Likely Have)",
         items: [
-          { id: "broth", name: "Vegetable broth", quantity: "7 cups", note: "About 2 cartons (32 oz each)" }
+          { id: "neutral-oil", name: "Neutral cooking oil", quantity: "For frying", note: "Vegetable, canola, or avocado" },
+          { id: "cornstarch", name: "Cornstarch", quantity: "~3 tbsp", note: "Minimal use for sauce only" },
+          { id: "sesame-seeds", name: "Sesame seeds", quantity: "For garnish", note: "Optional but recommended" }
         ]
       }
     ];
 
     // State management
-    let checkedItems = JSON.parse(localStorage.getItem('checkedItems') || '{}');
+    let checkedItems = JSON.parse(localStorage.getItem('checkedItemsGochujang') || '{}');
 
     // Initialize
     function init() {
@@ -750,16 +905,17 @@
           const itemDiv = document.createElement('div');
           itemDiv.className = 'grocery-item';
           if (checkedItems[item.id]) itemDiv.classList.add('checked');
-          if (item.highlight) itemDiv.classList.add('highlight');
           itemDiv.onclick = () => toggleItem(item.id);
 
           itemDiv.innerHTML = `
-            <div class="checkbox">
-              <span class="checkmark">✓</span>
-            </div>
-            <div class="item-details">
-              <div class="item-name">${item.name}</div>
-              ${item.note ? `<div class="item-note">${item.note}</div>` : ''}
+            <div class="item-left">
+              <div class="checkbox">
+                <span class="checkmark">✓</span>
+              </div>
+              <div class="item-details">
+                <div class="item-name">${item.name}</div>
+                ${item.note ? `<div class="item-note">${item.note}</div>` : ''}
+              </div>
             </div>
             <div class="quantity-badge">${item.quantity}</div>
           `;
@@ -775,7 +931,7 @@
     // Toggle item
     function toggleItem(id) {
       checkedItems[id] = !checkedItems[id];
-      localStorage.setItem('checkedItems', JSON.stringify(checkedItems));
+      localStorage.setItem('checkedItemsGochujang', JSON.stringify(checkedItems));
       renderGroceryList();
       updateProgress();
     }
@@ -784,11 +940,21 @@
     function updateProgress() {
       const totalItems = groceryData.reduce((sum, cat) => sum + cat.items.length, 0);
       const checkedCount = Object.values(checkedItems).filter(Boolean).length;
-      const progress = (checkedCount / totalItems) * 100;
+      const progress = Math.round((checkedCount / totalItems) * 100);
 
-      document.getElementById('total-count').textContent = totalItems;
-      document.getElementById('checked-count').textContent = checkedCount;
       document.getElementById('progress-bar').style.width = progress + '%';
+      document.getElementById('progress-percent').textContent = progress + '%';
+
+      const progressInfo = document.getElementById('progress-info');
+      const progressLabel = document.getElementById('progress-label');
+
+      if (progress === 100) {
+        progressInfo.classList.add('complete');
+        progressLabel.textContent = '🎉 All done!';
+      } else {
+        progressInfo.classList.remove('complete');
+        progressLabel.textContent = `${checkedCount} of ${totalItems} items`;
+      }
     }
 
     // Toggle between sections
