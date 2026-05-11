@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuban Black Beans & Rice</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Pad Kee Mao</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,57 +13,57 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: 'DM Sans', system-ui, sans-serif;
       min-height: 100vh;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      padding: 24px;
+      background: linear-gradient(135deg, #1a0f1f 0%, #2a1320 50%, #1f1018 100%);
+      background-attachment: fixed;
+      padding: 32px 20px 80px;
+      color: #f4e8d0;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 560px;
       margin: 0 auto;
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 20px;
-      padding: 32px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     }
 
-    /* Toggle Button */
+    /* Toggle */
     .toggle-container {
       display: flex;
-      gap: 12px;
-      margin-bottom: 24px;
-      background: #f1f5f9;
+      gap: 8px;
+      margin-bottom: 28px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(232,168,114,0.15);
       border-radius: 12px;
-      padding: 6px;
+      padding: 5px;
     }
 
     .toggle-btn {
       flex: 1;
-      padding: 12px 20px;
+      padding: 10px 16px;
       border: none;
       background: transparent;
-      color: #64748b;
-      font-size: 15px;
-      font-weight: 600;
+      color: rgba(244,232,208,0.55);
+      font-size: 13px;
+      font-weight: 700;
       cursor: pointer;
       border-radius: 8px;
       transition: all 0.3s ease;
-      font-family: 'Inter', sans-serif;
+      font-family: 'DM Sans', sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .toggle-btn.active {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+      background: linear-gradient(135deg, #e8a872 0%, #d4633a 100%);
+      color: #1a0f1f;
     }
 
     .toggle-btn:hover:not(.active) {
-      background: #e2e8f0;
-      color: #475569;
+      background: rgba(255,255,255,0.05);
+      color: #f4e8d0;
     }
 
-    /* Content Sections */
+    /* Sections */
     .content-section {
       display: none;
     }
@@ -73,163 +73,150 @@
     }
 
     /* Header */
-    .header {
-      margin-bottom: 24px;
-    }
-
-    h1 {
-      font-size: 28px;
-      font-weight: 700;
-      color: #1a202c;
+    .week-label {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #e8a872;
       margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    h2 {
-      font-size: 16px;
-      color: #4a5568;
-      margin: 0 0 4px 0;
       font-weight: 500;
     }
 
-    .meta {
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 1.05;
+      color: #f4e8d0;
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
       font-size: 14px;
-      color: #718096;
-      margin: 4px 0 0 0;
+      color: rgba(244,232,208,0.55);
+      letter-spacing: 0.3px;
     }
 
-    /* Progress Bar */
-    .progress-bar-bg {
-      background: #e2e8f0;
+    .header {
+      margin-bottom: 28px;
+    }
+
+    /* Progress */
+    .progress-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(232,168,114,0.15);
       border-radius: 12px;
-      height: 12px;
-      margin-bottom: 24px;
-      overflow: hidden;
+      padding: 16px 18px;
+      margin-bottom: 28px;
     }
 
-    .progress-bar {
-      height: 100%;
-      background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
-      transition: width 0.3s ease;
-      border-radius: 12px;
-    }
-
-    .progress-info {
+    .progress-top {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-      padding: 12px 16px;
-      background: #ebf4ff;
-      border-radius: 12px;
-      border: 2px solid #4299e1;
-    }
-
-    .progress-info.complete {
-      background: #c6f6d5;
-      border-color: #48bb78;
+      align-items: baseline;
+      margin-bottom: 10px;
     }
 
     .progress-label {
-      font-size: 14px;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(244,232,208,0.55);
+    }
+
+    .progress-count {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      color: #e8a872;
       font-weight: 600;
-      color: #2c5282;
     }
 
-    .progress-info.complete .progress-label {
-      color: #22543d;
+    .progress-track {
+      height: 4px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 4px;
+      overflow: hidden;
     }
 
-    .progress-percent {
-      font-size: 18px;
-      font-weight: 700;
-      color: #2c5282;
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #e8a872 0%, #d4633a 100%);
+      transition: width 0.3s ease;
     }
 
-    .progress-info.complete .progress-percent {
-      color: #22543d;
-    }
-
-    /* Category */
+    /* Categories */
     .category {
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
     .category-title {
-      font-size: 18px;
-      font-weight: 700;
-      color: #2d3748;
-      margin-bottom: 12px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #e8a872;
+      margin: 0 0 14px 0;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid rgba(232,168,114,0.2);
       padding-bottom: 8px;
-      border-bottom: 2px solid #e2e8f0;
-    }
-
-    .items-container {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
     }
 
     /* Grocery Item */
     .grocery-item {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
-      padding: 12px 16px;
-      background: white;
-      border: 2px solid #e5e7eb;
-      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
       cursor: pointer;
       transition: all 0.2s ease;
+      gap: 12px;
     }
 
     .grocery-item:hover {
-      background: #fafafa;
-      transform: translateX(4px);
+      background: rgba(255,255,255,0.045);
     }
 
     .grocery-item.checked {
-      background: #f0fdf4;
-      border-color: #86efac;
-      opacity: 0.7;
-    }
-
-    .grocery-item.checked:hover {
-      background: #f0fdf4;
-      transform: none;
+      background: rgba(126,232,162,0.05);
+      border-color: rgba(126,232,162,0.25);
     }
 
     .item-left {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 12px;
       flex: 1;
     }
 
     .checkbox {
-      width: 24px;
-      height: 24px;
-      border-radius: 6px;
-      border: 2px solid #d1d5db;
-      background: white;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid rgba(232,168,114,0.4);
+      background: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.2s ease;
       flex-shrink: 0;
+      margin-top: 2px;
+      transition: all 0.2s ease;
     }
 
     .grocery-item.checked .checkbox {
-      background: #22c55e;
-      border-color: #22c55e;
+      background: #7ee8a2;
+      border-color: #7ee8a2;
     }
 
     .checkmark {
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
+      color: #1a0f1f;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1;
       display: none;
     }
 
@@ -237,106 +224,104 @@
       display: block;
     }
 
-    .item-details {
-      flex: 1;
-    }
-
     .item-name {
       font-size: 15px;
-      font-weight: 600;
-      color: #1f2937;
-      margin-bottom: 2px;
+      color: #f4e8d0;
+      line-height: 1.4;
+      transition: all 0.2s ease;
     }
 
     .grocery-item.checked .item-name {
-      color: #6b7280;
+      color: rgba(244,232,208,0.4);
       text-decoration: line-through;
     }
 
-    .item-note {
-      color: rgba(107, 114, 128, 0.8);
-      font-size: 12px;
-      margin-top: 2px;
-    }
-
     .quantity-badge {
-      background: rgba(147, 51, 234, 0.15);
-      color: #7c3aed;
+      background: rgba(232,168,114,0.12);
+      color: #e8a872;
       padding: 4px 10px;
       border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 11px;
+      font-weight: 700;
       white-space: nowrap;
-      transition: all 0.2s ease;
       flex-shrink: 0;
+      margin-top: 2px;
+      transition: all 0.2s ease;
     }
 
     .grocery-item.checked .quantity-badge {
-      background: rgba(74, 222, 128, 0.2);
-      color: #16a34a;
+      background: rgba(126,232,162,0.1);
+      color: #7ee8a2;
     }
 
     .footer-note {
-      color: rgba(0, 0, 0, 0.4);
-      font-size: 12px;
+      color: rgba(244,232,208,0.2);
+      font-size: 11px;
       text-align: center;
-      margin-top: 24px;
+      margin-top: 28px;
+      letter-spacing: 0.3px;
     }
 
-    /* Recipe Styles */
+    /* Recipe styles */
     .recipe-content {
-      color: #333;
+      color: #f4e8d0;
       line-height: 1.8;
     }
 
     .recipe-content h3 {
-      font-size: 22px;
-      color: #1a202c;
-      margin: 28px 0 16px 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 24px;
+      color: #f4e8d0;
+      margin: 32px 0 16px 0;
       padding-bottom: 8px;
-      border-bottom: 2px solid #e2e8f0;
-      font-weight: 700;
+      border-bottom: 1px solid rgba(232,168,114,0.2);
+      font-weight: 600;
     }
 
     .recipe-content h4 {
-      font-size: 17px;
-      color: #2d3748;
-      margin: 20px 0 12px 0;
-      font-weight: 700;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 18px;
+      color: #e8a872;
+      margin: 20px 0 10px 0;
+      font-weight: 600;
+      font-style: italic;
     }
 
     .recipe-meta-info {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      padding: 20px;
-      background: linear-gradient(135deg, #fef5e7 0%, #e6f7ff 100%);
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+      padding: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(232,168,114,0.2);
       border-radius: 12px;
-      border: 2px solid #667eea;
       margin-bottom: 24px;
     }
 
     .recipe-meta-item strong {
       display: block;
-      color: #7c3aed;
-      font-size: 13px;
+      color: #e8a872;
+      font-size: 11px;
       margin-bottom: 4px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 1.5px;
+      font-family: 'DM Sans', sans-serif;
     }
 
     .recipe-meta-item {
-      font-size: 15px;
-      color: #2d3748;
+      font-size: 14px;
+      color: #f4e8d0;
     }
 
     .recipe-content p {
       margin: 12px 0;
+      color: rgba(244,232,208,0.85);
     }
 
     .recipe-content ul, .recipe-content ol {
       margin: 12px 0;
-      padding-left: 24px;
+      padding-left: 20px;
+      color: rgba(244,232,208,0.85);
     }
 
     .recipe-content li {
@@ -344,64 +329,57 @@
     }
 
     .recipe-content strong {
-      color: #7c3aed;
+      color: #f4e8d0;
       font-weight: 600;
     }
 
-    .recipe-highlight {
-      background: #f8f4ff;
-      border: 2px solid #a78bfa;
-      border-radius: 12px;
-      padding: 16px;
-      margin: 16px 0;
-    }
-
     .recipe-section {
-      background: #f9fafb;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 16px 0;
-      border-left: 4px solid #667eea;
+      background: rgba(255,255,255,0.025);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 12px 0;
+      border-left: 3px solid #e8a872;
     }
 
     .overview-box {
-      background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
-      border: 2px solid #8b5cf6;
+      background: rgba(232,168,114,0.06);
+      border: 1px solid rgba(232,168,114,0.2);
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 24px;
     }
 
-    .overview-box p {
-      margin: 8px 0;
+    .overview-box h3 {
+      margin-top: 0 !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .recipe-highlight {
+      background: rgba(126,232,162,0.05);
+      border: 1px solid rgba(126,232,162,0.2);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
     }
 
     hr {
       border: none;
-      border-top: 2px solid #e2e8f0;
-      margin: 24px 0;
+      border-top: 1px solid rgba(232,168,114,0.15);
+      margin: 28px 0;
     }
 
     @media (max-width: 600px) {
       body {
-        padding: 16px;
-      }
-
-      .container {
-        padding: 20px;
+        padding: 24px 16px 60px;
       }
 
       h1 {
-        font-size: 24px;
-      }
-
-      .toggle-btn {
-        font-size: 13px;
-        padding: 10px 12px;
+        font-size: 32px;
       }
 
       .recipe-meta-info {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
       }
     }
   </style>
@@ -410,123 +388,125 @@
   <div class="container">
     <!-- Toggle Buttons -->
     <div class="toggle-container">
-      <button class="toggle-btn active" onclick="showSection('grocery')">
-        🛒 Grocery List
+      <button class="toggle-btn active" onclick="showSection('grocery', this)">
+        Grocery List
       </button>
-      <button class="toggle-btn" onclick="showSection('recipe')">
-        📖 Recipe
+      <button class="toggle-btn" onclick="showSection('recipe', this)">
+        Recipe
       </button>
     </div>
 
     <!-- Grocery List Section -->
     <div id="grocery-section" class="content-section active">
       <div class="header">
-        <h1><span>🛒</span> Grocery List</h1>
-        <h2>Cuban Black Beans & Rice</h2>
-        <p class="meta">Week of March 31, 2026 • 10 servings</p>
+        <div class="week-label">Week of May 11</div>
+        <h1>Pad Kee Mao</h1>
+        <div class="subtitle">Thai Drunken Noodles · 10 servings</div>
       </div>
 
-      <!-- Progress Bar -->
-      <div class="progress-bar-bg">
-        <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+      <div class="progress-card">
+        <div class="progress-top">
+          <span class="progress-label">Progress</span>
+          <span class="progress-count" id="progress-count">0/0</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-bar" style="width: 0%"></div>
+        </div>
       </div>
 
-      <div class="progress-info" id="progress-info">
-        <span class="progress-label" id="progress-label">0 of 0 items</span>
-        <span class="progress-percent" id="progress-percent">0%</span>
-      </div>
-
-      <!-- Grocery Categories -->
       <div id="grocery-list"></div>
 
-      <p class="footer-note">
-        Tap items to check them off as you shop
-      </p>
+      <p class="footer-note">Tap items to check off while shopping</p>
     </div>
 
     <!-- Recipe Section -->
     <div id="recipe-section" class="content-section">
       <div class="header">
-        <h1>🇨🇺 Cuban Black Beans & Rice</h1>
-        <h2>Frijoles Negros with White Rice</h2>
-        <p class="meta">Week of March 31, 2026</p>
+        <div class="week-label">Week of May 11</div>
+        <h1>Pad Kee Mao</h1>
+        <div class="subtitle">Thai Drunken Noodles with Tofu</div>
       </div>
 
       <div class="recipe-meta-info">
         <div class="recipe-meta-item">
-          <strong>Servings:</strong>
+          <strong>Servings</strong>
           10
         </div>
         <div class="recipe-meta-item">
-          <strong>Prep time:</strong>
-          15 minutes
+          <strong>Active Time</strong>
+          ~30 min
         </div>
         <div class="recipe-meta-item">
-          <strong>Cook time:</strong>
-          45 minutes
+          <strong>Total Time</strong>
+          ~50 min
         </div>
         <div class="recipe-meta-item">
-          <strong>Total time:</strong>
-          ~60 minutes
+          <strong>Equipment</strong>
+          Single wok
         </div>
       </div>
 
       <div class="recipe-content">
         <div class="overview-box">
-          <h3 style="margin-top: 0; border: none; padding: 0;">Overview</h3>
-          <p>Classic Cuban-style black beans (frijoles negros) slow-simmered with sofrito — a fragrant base of onion, bell pepper, garlic, and cumin — until thick and deeply savory. Served over fluffy white rice.</p>
-          <p style="margin-bottom: 0;"><em>Simple pantry ingredients, big flavor. The beans thicken naturally into a rich, saucy stew perfect for meal prep.</em></p>
+          <h3>Overview</h3>
+          <p>Pad Kee Mao — literally "drunkard's stir-fry" — is Thai street food at its most aggressive: wide rice noodles charred over screaming-hot heat, slicked in a savory-sweet sauce, and packed with garlic, Thai chili, and an absolute mountain of holy basil (or Thai basil). We're using up your leftover Thai chili from a few weeks back, and folding a little leftover lemongrass into the chili paste for an extra-aromatic twist.</p>
+          <p style="margin-bottom: 0;"><em>Cooked in two batches of 5 — don't try to cram 10 servings in one wok or you'll steam instead of stir-fry and lose all the char.</em></p>
         </div>
 
         <h3>Ingredients</h3>
 
         <div class="recipe-section">
-          <h4>Beans:</h4>
+          <h4>Tofu:</h4>
           <ul>
-            <li><strong>4 cans (15 oz each) black beans</strong>, drained and rinsed</li>
-            <li><strong>2 cups vegetable broth</strong></li>
-            <li><strong>1 cup water</strong></li>
+            <li><strong>3 blocks extra-firm tofu</strong> (14–16 oz each, ~2.75 lbs total)</li>
+            <li><strong>3 tbsp neutral oil</strong> for searing</li>
+            <li><strong>2 tbsp soy sauce</strong> for marinating</li>
           </ul>
         </div>
 
         <div class="recipe-section">
-          <h4>Sofrito Base:</h4>
+          <h4>Noodles:</h4>
           <ul>
-            <li><strong>3 tbsp olive oil</strong></li>
-            <li><strong>2 medium yellow onions</strong>, finely diced</li>
-            <li><strong>2 green bell peppers</strong>, finely diced</li>
-            <li><strong>8 garlic cloves</strong>, minced</li>
-            <li><strong>2 tsp ground cumin</strong></li>
-            <li><strong>1 tsp dried oregano</strong></li>
-            <li><strong>½ tsp smoked paprika</strong></li>
-            <li><strong>1 bay leaf</strong></li>
-            <li><strong>Salt and black pepper</strong> to taste</li>
+            <li><strong>1.5 lbs dried wide rice noodles</strong> (or 2.5 lbs fresh if available)</li>
+          </ul>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Chili-Garlic-Lemongrass Paste:</h4>
+          <ul>
+            <li><strong>8–12 Thai bird's eye chilis</strong> (leftover supply — adjust to heat tolerance)</li>
+            <li><strong>1 red bell pepper</strong>, deseeded and roughly chopped</li>
+            <li><strong>16 garlic cloves</strong>, peeled</li>
+            <li><strong>2 stalks lemongrass</strong>, inner pale part only, thinly sliced (leftover use)</li>
+          </ul>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Stir-fry:</h4>
+          <ul>
+            <li><strong>6 tbsp neutral oil</strong> (split between two batches)</li>
+            <li><strong>2 red bell peppers</strong>, sliced into strips</li>
+            <li><strong>4 cups holy basil or Thai basil leaves</strong>, loosely packed (~4 large bunches)</li>
+          </ul>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Sauce:</h4>
+          <ul>
+            <li><strong>6 tbsp oyster sauce</strong></li>
+            <li><strong>4 tbsp dark soy sauce</strong></li>
+            <li><strong>3 tbsp regular soy sauce</strong></li>
+            <li><strong>2 tbsp fish sauce</strong></li>
+            <li><strong>3 tbsp brown sugar</strong></li>
+            <li><strong>4 tbsp water</strong></li>
           </ul>
         </div>
 
         <div class="recipe-section">
           <h4>Finishing:</h4>
           <ul>
-            <li><strong>2 tbsp apple cider vinegar</strong></li>
-            <li><strong>1 tsp sugar</strong></li>
-          </ul>
-        </div>
-
-        <div class="recipe-section">
-          <h4>White Rice:</h4>
-          <ul>
-            <li><strong>4 cups long-grain white rice</strong></li>
-            <li><strong>5½ cups water</strong></li>
-            <li><strong>1 tsp salt</strong></li>
-            <li><strong>1 tbsp olive oil</strong></li>
-          </ul>
-        </div>
-
-        <div class="recipe-section">
-          <h4>Garnish (optional):</h4>
-          <ul>
-            <li><strong>Fresh cilantro</strong>, chopped (1 bunch)</li>
-            <li><strong>Lime wedges</strong> (2-3 limes)</li>
+            <li><strong>2 limes</strong>, cut into wedges</li>
+            <li>Optional: chili flakes or chili oil at the table</li>
           </ul>
         </div>
 
@@ -534,122 +514,114 @@
 
         <h3>Instructions</h3>
 
-        <h4>Step 1: Make the Sofrito (10 min)</h4>
-        <ol>
-          <li>Heat <strong>3 tbsp olive oil</strong> in a large pot or Dutch oven over medium heat.</li>
-          <li>Add <strong>2 diced onions</strong> and <strong>2 diced green bell peppers</strong>. Cook, stirring occasionally, until softened and lightly golden, about <strong>7-8 minutes</strong>.</li>
-          <li>Add <strong>8 cloves minced garlic</strong>, <strong>2 tsp cumin</strong>, <strong>1 tsp oregano</strong>, and <strong>½ tsp smoked paprika</strong>. Stir for <strong>1 minute</strong> until fragrant.</li>
-        </ol>
+        <h4>Step 1: Press and prep the tofu (15 min, mostly passive)</h4>
+        <p>Drain all <strong>3 blocks of tofu</strong>. Wrap each in paper towels or a clean kitchen towel and press under a heavy pan for at least 15 minutes (overnight in the fridge is ideal). Cut into 1-inch cubes. Toss with <strong>2 tbsp soy sauce</strong> and set aside.</p>
 
-        <h4>Step 2: Build the Beans (5 min)</h4>
-        <ol>
-          <li>Add the <strong>4 cans of drained black beans</strong>, <strong>2 cups vegetable broth</strong>, <strong>1 cup water</strong>, and <strong>1 bay leaf</strong>.</li>
-          <li>Stir to combine and bring to a boil.</li>
-        </ol>
+        <h4>Step 2: Soak the noodles (15–20 min)</h4>
+        <p>Fill a large bowl with hot tap water and soak the <strong>1.5 lbs noodles</strong> for 15–20 minutes until pliable but still firm — they should bend without snapping but feel slightly underdone. Drain just before cooking. If using fresh noodles, microwave at 50% power for 1–2 minutes to soften, then gently separate the strands.</p>
 
-        <h4>Step 3: Simmer (30 min)</h4>
-        <ol>
-          <li>Reduce heat to medium-low. Simmer uncovered for <strong>25-30 minutes</strong>, stirring occasionally.</li>
-          <li>Use the back of a spoon to mash about <strong>¼ of the beans</strong> against the side of the pot — this thickens the sauce naturally.</li>
-          <li>The beans are ready when the liquid has reduced to a thick, glossy sauce.</li>
-          <li>Remove bay leaf. Stir in <strong>2 tbsp apple cider vinegar</strong> and <strong>1 tsp sugar</strong>. Taste and adjust salt.</li>
-        </ol>
+        <h4>Step 3: Make the chili-garlic-lemongrass paste (5 min)</h4>
+        <p>In a mortar and pestle (or mini food processor), pound together the <strong>8–12 Thai chilis</strong>, <strong>1 chopped red bell pepper</strong>, <strong>16 garlic cloves</strong>, and <strong>2 stalks sliced lemongrass</strong> until you have a rough paste. Don't over-process — you want texture, not a purée. Set aside.</p>
 
-        <h4>Step 4: Cook the Rice (25 min, parallel)</h4>
-        <ol>
-          <li>While beans simmer, rinse <strong>4 cups white rice</strong> until water runs clear.</li>
-          <li>Combine rice with <strong>5½ cups water</strong>, <strong>1 tsp salt</strong>, and <strong>1 tbsp olive oil</strong> in a saucepan.</li>
-          <li>Bring to a boil, then reduce to lowest heat, cover tightly, and cook for <strong>18 minutes</strong>.</li>
-          <li>Remove from heat and let sit covered for <strong>5 minutes</strong>. Fluff with a fork.</li>
-        </ol>
+        <h4>Step 4: Mix the sauce (2 min)</h4>
+        <p>In a bowl, whisk together all sauce ingredients until the sugar dissolves. Set aside.</p>
 
-        <h4>Step 5: Portion for Meal Prep</h4>
-        <ol>
-          <li>Divide rice among 10 containers.</li>
-          <li>Ladle beans generously over the rice.</li>
-          <li>Top with cilantro if using. Add lime wedges on the side.</li>
-        </ol>
+        <h4>Step 5: Sear the tofu (8 min)</h4>
+        <p>Heat <strong>3 tbsp neutral oil</strong> in the wok over medium-high heat until shimmering. Add tofu cubes in a single layer (work in batches if crowded). Sear undisturbed for 3–4 minutes per side until deeply golden. Transfer to a plate.</p>
+
+        <h4>Step 6: Stir-fry — Batch 1 (5 min, have everything ready)</h4>
+        <div class="recipe-section">
+          <p>Wipe out the wok. Heat <strong>3 tbsp oil</strong> over the highest heat your stove can produce until smoking.</p>
+          <ol>
+            <li>Add <strong>half the chili-garlic-lemongrass paste</strong>, stir-fry 20–30 seconds until intensely fragrant.</li>
+            <li>Add <strong>1 sliced red bell pepper</strong>, stir-fry 30 seconds.</li>
+            <li>Add <strong>half the seared tofu</strong>, toss 30 seconds.</li>
+            <li>Add <strong>half the drained noodles</strong>, toss with a scooping motion for 1 minute.</li>
+            <li>Pour <strong>half the sauce</strong> over the noodles. Toss vigorously, then let noodles sit untouched 15–20 seconds to catch char. Toss again and repeat — this is where the wok hei comes from.</li>
+            <li>Kill the heat, add <strong>2 cups basil leaves</strong>, toss until just wilted (5 seconds).</li>
+            <li>Transfer to meal prep containers.</li>
+          </ol>
+        </div>
+
+        <h4>Step 7: Stir-fry — Batch 2 (5 min)</h4>
+        <p>Wipe out the wok briefly. Repeat Step 6 with the remaining half of everything: paste, bell pepper, tofu, noodles, sauce, basil.</p>
+
+        <h4>Step 8: Pack and store</h4>
+        <p>Divide between 10 meal prep containers. Tuck a <strong>lime wedge</strong> into each container. Refrigerate up to 5 days.</p>
 
         <hr>
 
-        <h3>Meal Prep Notes</h3>
+        <h3>Reheating</h3>
         <div class="recipe-section">
           <ul>
-            <li><strong>Reheating:</strong> Microwave 2-3 minutes. Add a splash of water if beans look dry — they thicken in the fridge.</li>
-            <li><strong>Gets better with time:</strong> Flavors deepen significantly by day 2.</li>
-            <li><strong>Storage:</strong> Keeps well in the fridge for 5 days.</li>
-            <li><strong>Freezer-friendly:</strong> Beans (without rice) freeze well for up to 3 months.</li>
+            <li><strong>Microwave:</strong> Sprinkle 1 tsp water over the noodles, cover loosely, microwave 90 seconds–2 minutes. Squeeze lime before eating.</li>
+            <li><strong>Wok/pan (best):</strong> Heat 1 tsp oil over medium-high, dump in noodles, toss 2 minutes until heated through. The noodles will re-crisp slightly.</li>
           </ul>
         </div>
 
         <hr>
 
-        <h3>Notes</h3>
+        <h3>Notes & Tips</h3>
         <div class="recipe-highlight">
           <ul>
-            <li><strong>The sofrito is the foundation.</strong> Don't rush it — taking time to properly cook the onions and peppers builds the flavor base everything else rests on.</li>
-            <li><strong>Mash some beans.</strong> Smashing a quarter of the beans thickens the sauce without any starch. It's the key to that rich, restaurant-style consistency.</li>
-            <li><strong>Vinegar at the end.</strong> A splash of apple cider vinegar brightens the whole dish — add it off the heat so the flavor stays sharp.</li>
-            <li><strong>Green bell pepper, not red.</strong> Traditional Cuban sofrito uses green bell pepper for its slightly bitter, grassy flavor. It makes a difference.</li>
+            <li><strong>Heat tolerance:</strong> 8 Thai chilis = moderate-spicy. 12 = legitimately hot. Leftover chilis are likely riper/hotter than fresh.</li>
+            <li><strong>Basil:</strong> Holy basil is traditional (peppery/clove-like). Thai basil (anise notes) is a great sub. Italian sweet basil works in a pinch.</li>
+            <li><strong>Why two batches:</strong> A home wok can't maintain wok hei with more than ~5 servings at once. Two quick batches = great pad kee mao vs. sad steamed noodles.</li>
+            <li><strong>Dark soy:</strong> Gives pad kee mao its signature deep brown color and slight molasses sweetness. If using only regular soy, add an extra tbsp of brown sugar.</li>
+            <li><strong>Lemongrass riff:</strong> Not traditional, but using up leftover stalks in the chili paste adds a lovely citrus note. Skip if you'd rather stay strictly authentic.</li>
           </ul>
         </div>
+
+        <p style="color: rgba(244,232,208,0.4); font-size: 13px; margin-top: 24px;">Estimated cost: ~$1.40–1.90 per serving</p>
       </div>
     </div>
   </div>
 
   <script>
-    // Grocery data
     const groceryData = [
       {
-        category: "🫘 Beans",
+        category: "Produce",
         items: [
-          { id: "black-beans", name: "Canned black beans", quantity: "4 cans (15 oz each)", note: "Drain and rinse before use" }
+          { id: "red-bell-peppers", name: "Red bell peppers", quantity: "3 large" },
+          { id: "thai-chilis", name: "Thai bird's eye chilis", quantity: "use leftover (8–12)" },
+          { id: "garlic", name: "Garlic", quantity: "1 large head (16 cloves)" },
+          { id: "lemongrass", name: "Lemongrass", quantity: "use leftover (2 stalks)" },
+          { id: "basil", name: "Holy basil or Thai basil", quantity: "4 large bunches" },
+          { id: "limes", name: "Limes", quantity: "2" }
         ]
       },
       {
-        category: "🧅 Produce",
+        category: "Protein",
         items: [
-          { id: "onions", name: "Yellow onions", quantity: "2 medium", note: "Finely diced for sofrito" },
-          { id: "bell-peppers", name: "Green bell peppers", quantity: "2", note: "Finely diced — traditional Cuban sofrito" },
-          { id: "garlic", name: "Garlic", quantity: "1 bulb (~8 cloves)", note: "Minced" },
-          { id: "limes", name: "Limes", quantity: "2-3", note: "For serving — brightens the dish" },
-          { id: "cilantro", name: "Fresh cilantro", quantity: "1 bunch", note: "Optional garnish" }
+          { id: "tofu", name: "Extra-firm tofu", quantity: "3 blocks (~2.75 lbs)" }
         ]
       },
       {
-        category: "🥫 Pantry",
+        category: "Pantry & Asian Market",
         items: [
-          { id: "broth", name: "Vegetable broth", quantity: "1 carton (need 2 cups)", note: "Low-sodium preferred" },
-          { id: "vinegar", name: "Apple cider vinegar", quantity: "small bottle (need 2 tbsp)", note: "Brightens the beans — add at end" },
-          { id: "bay-leaf", name: "Bay leaves", quantity: "1 leaf needed", note: "Check pantry first" }
+          { id: "rice-noodles", name: "Dried wide rice noodles", quantity: "1.5 lbs" },
+          { id: "oyster-sauce", name: "Oyster sauce", quantity: "small bottle (need 6 tbsp)" },
+          { id: "dark-soy", name: "Dark soy sauce", quantity: "small bottle (need 4 tbsp)" },
+          { id: "fish-sauce", name: "Fish sauce", quantity: "small bottle (need 2 tbsp)" }
         ]
       },
       {
-        category: "🌿 Spices (check pantry first)",
+        category: "Likely on hand",
         items: [
-          { id: "cumin", name: "Ground cumin", quantity: "2 tsp needed", note: "Core flavor of the sofrito" },
-          { id: "oregano", name: "Dried oregano", quantity: "1 tsp needed", note: "Cuban staple" },
-          { id: "smoked-paprika", name: "Smoked paprika", quantity: "½ tsp needed", note: "Adds depth" }
-        ]
-      },
-      {
-        category: "🍚 Grain",
-        items: [
-          { id: "rice", name: "Long-grain white rice", quantity: "4 cups (~2 lbs)", note: "Rinse well before cooking" }
+          { id: "soy-sauce", name: "Regular soy sauce", quantity: "3 tbsp" },
+          { id: "brown-sugar", name: "Brown sugar", quantity: "3 tbsp" },
+          { id: "neutral-oil", name: "Neutral oil", quantity: "~½ cup total" }
         ]
       }
     ];
 
-    // State management
-    let checkedItems = JSON.parse(localStorage.getItem('checkedItemsCuban') || '{}');
+    let checkedItems = JSON.parse(localStorage.getItem('checkedItemsPadKeeMao') || '{}');
 
-    // Initialize
     function init() {
       renderGroceryList();
       updateProgress();
     }
 
-    // Render grocery list
     function renderGroceryList() {
       const container = document.getElementById('grocery-list');
       container.innerHTML = '';
@@ -658,13 +630,10 @@
         const categoryDiv = document.createElement('div');
         categoryDiv.className = 'category';
 
-        const categoryTitle = document.createElement('h3');
-        categoryTitle.className = 'category-title';
-        categoryTitle.textContent = category.category;
-        categoryDiv.appendChild(categoryTitle);
-
-        const itemsContainer = document.createElement('div');
-        itemsContainer.className = 'items-container';
+        const title = document.createElement('h3');
+        title.className = 'category-title';
+        title.textContent = category.category;
+        categoryDiv.appendChild(title);
 
         category.items.forEach(item => {
           const itemDiv = document.createElement('div');
@@ -677,70 +646,42 @@
               <div class="checkbox">
                 <span class="checkmark">✓</span>
               </div>
-              <div class="item-details">
-                <div class="item-name">${item.name}</div>
-                ${item.note ? `<div class="item-note">${item.note}</div>` : ''}
-              </div>
+              <span class="item-name">${item.name}</span>
             </div>
-            ${item.quantity ? `<div class="quantity-badge">${item.quantity}</div>` : ''}
+            <div class="quantity-badge">${item.quantity}</div>
           `;
 
-          itemsContainer.appendChild(itemDiv);
+          categoryDiv.appendChild(itemDiv);
         });
 
-        categoryDiv.appendChild(itemsContainer);
         container.appendChild(categoryDiv);
       });
     }
 
-    // Toggle item
     function toggleItem(id) {
       checkedItems[id] = !checkedItems[id];
-      localStorage.setItem('checkedItemsCuban', JSON.stringify(checkedItems));
+      localStorage.setItem('checkedItemsPadKeeMao', JSON.stringify(checkedItems));
       renderGroceryList();
       updateProgress();
     }
 
-    // Update progress bar
     function updateProgress() {
       const totalItems = groceryData.reduce((sum, cat) => sum + cat.items.length, 0);
       const checkedCount = Object.values(checkedItems).filter(Boolean).length;
       const progress = Math.round((checkedCount / totalItems) * 100);
 
       document.getElementById('progress-bar').style.width = progress + '%';
-      document.getElementById('progress-percent').textContent = progress + '%';
-
-      const progressInfo = document.getElementById('progress-info');
-      const progressLabel = document.getElementById('progress-label');
-
-      if (progress === 100) {
-        progressInfo.classList.add('complete');
-        progressLabel.textContent = '🎉 All done!';
-      } else {
-        progressInfo.classList.remove('complete');
-        progressLabel.textContent = `${checkedCount} of ${totalItems} items`;
-      }
+      document.getElementById('progress-count').textContent = `${checkedCount}/${totalItems}`;
     }
 
-    // Toggle between sections
-    function showSection(section) {
-      // Update buttons
-      document.querySelectorAll('.toggle-btn').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      event.target.classList.add('active');
-
-      // Update sections
-      document.querySelectorAll('.content-section').forEach(sec => {
-        sec.classList.remove('active');
-      });
+    function showSection(section, btn) {
+      document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
       document.getElementById(section + '-section').classList.add('active');
-
-      // Scroll to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Initialize on load
     init();
   </script>
 </body>
