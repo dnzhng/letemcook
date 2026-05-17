@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pad Kee Mao</title>
+  <title>Mapo Tofu Week</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -15,10 +15,10 @@
     body {
       font-family: 'DM Sans', system-ui, sans-serif;
       min-height: 100vh;
-      background: linear-gradient(135deg, #1a0f1f 0%, #2a1320 50%, #1f1018 100%);
+      background: linear-gradient(160deg, #2a0e0e 0%, #3d1818 40%, #4a1f1a 100%);
       background-attachment: fixed;
       padding: 32px 20px 80px;
-      color: #f4e8d0;
+      color: #f5e1b4;
     }
 
     .container {
@@ -32,7 +32,7 @@
       gap: 8px;
       margin-bottom: 28px;
       background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(232,168,114,0.15);
+      border: 1px solid rgba(212,160,78,0.15);
       border-radius: 12px;
       padding: 5px;
     }
@@ -42,7 +42,7 @@
       padding: 10px 16px;
       border: none;
       background: transparent;
-      color: rgba(244,232,208,0.55);
+      color: rgba(245,225,180,0.55);
       font-size: 13px;
       font-weight: 700;
       cursor: pointer;
@@ -54,13 +54,13 @@
     }
 
     .toggle-btn.active {
-      background: linear-gradient(135deg, #e8a872 0%, #d4633a 100%);
-      color: #1a0f1f;
+      background: linear-gradient(135deg, #d4a04e 0%, #dc3c1e 100%);
+      color: #1a0808;
     }
 
     .toggle-btn:hover:not(.active) {
       background: rgba(255,255,255,0.05);
-      color: #f4e8d0;
+      color: #f5e1b4;
     }
 
     /* Sections */
@@ -74,13 +74,12 @@
 
     /* Header */
     .week-label {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 13px;
-      letter-spacing: 3px;
+      font-size: 11px;
+      letter-spacing: 4px;
       text-transform: uppercase;
-      color: #e8a872;
+      color: #d4a04e;
       margin-bottom: 8px;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     h1 {
@@ -88,62 +87,45 @@
       font-size: 38px;
       font-weight: 600;
       line-height: 1.05;
-      color: #f4e8d0;
+      color: #f5e1b4;
       font-style: italic;
       margin-bottom: 6px;
     }
 
     .subtitle {
-      font-size: 14px;
-      color: rgba(244,232,208,0.55);
+      font-size: 13px;
+      color: rgba(245,225,180,0.55);
       letter-spacing: 0.3px;
     }
 
     .header {
-      margin-bottom: 28px;
+      margin-bottom: 32px;
+      text-align: center;
     }
 
     /* Progress */
-    .progress-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(232,168,114,0.15);
-      border-radius: 12px;
-      padding: 16px 18px;
-      margin-bottom: 28px;
-    }
-
-    .progress-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 10px;
-    }
-
-    .progress-label {
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: rgba(244,232,208,0.55);
-    }
-
-    .progress-count {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 22px;
-      color: #e8a872;
-      font-weight: 600;
-    }
-
     .progress-track {
-      height: 4px;
-      background: rgba(255,255,255,0.06);
-      border-radius: 4px;
+      height: 8px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 100px;
       overflow: hidden;
+      border: 1px solid rgba(212,160,78,0.15);
+      margin-bottom: 8px;
     }
 
     .progress-fill {
       height: 100%;
-      background: linear-gradient(90deg, #e8a872 0%, #d4633a 100%);
+      background: linear-gradient(90deg, #d4a04e 0%, #dc3c1e 100%);
       transition: width 0.3s ease;
+      border-radius: 100px;
+    }
+
+    .progress-text {
+      text-align: center;
+      font-size: 12px;
+      color: rgba(245,225,180,0.5);
+      margin-bottom: 28px;
+      font-weight: 500;
     }
 
     /* Categories */
@@ -151,15 +133,25 @@
       margin-bottom: 28px;
     }
 
-    .category-title {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 22px;
-      font-weight: 600;
-      color: #e8a872;
-      margin: 0 0 14px 0;
-      letter-spacing: 0.5px;
-      border-bottom: 1px solid rgba(232,168,114,0.2);
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
       padding-bottom: 8px;
+      border-bottom: 1px solid rgba(212,160,78,0.15);
+    }
+
+    .category-emoji {
+      font-size: 22px;
+    }
+
+    .category-title {
+      font-family: Georgia, 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #f5e1b4;
+      letter-spacing: 0.3px;
     }
 
     /* Grocery Item */
@@ -169,16 +161,16 @@
       justify-content: space-between;
       padding: 14px 16px;
       margin-bottom: 8px;
-      background: rgba(255,255,255,0.025);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 10px;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(212,160,78,0.1);
+      border-radius: 12px;
       cursor: pointer;
       transition: all 0.2s ease;
-      gap: 12px;
+      gap: 14px;
     }
 
     .grocery-item:hover {
-      background: rgba(255,255,255,0.045);
+      background: rgba(0,0,0,0.35);
     }
 
     .grocery-item.checked {
@@ -189,15 +181,15 @@
     .item-left {
       display: flex;
       align-items: flex-start;
-      gap: 12px;
+      gap: 14px;
       flex: 1;
     }
 
     .checkbox {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      border: 2px solid rgba(232,168,114,0.4);
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      border: 2px solid rgba(245,225,180,0.3);
       background: transparent;
       display: flex;
       align-items: center;
@@ -213,9 +205,9 @@
     }
 
     .checkmark {
-      color: #1a0f1f;
-      font-size: 11px;
-      font-weight: 900;
+      color: #1a0808;
+      font-size: 14px;
+      font-weight: 700;
       line-height: 1;
       display: none;
     }
@@ -226,19 +218,28 @@
 
     .item-name {
       font-size: 15px;
-      color: #f4e8d0;
+      font-weight: 500;
+      color: #f5e1b4;
       line-height: 1.4;
       transition: all 0.2s ease;
+      margin-bottom: 3px;
     }
 
     .grocery-item.checked .item-name {
-      color: rgba(244,232,208,0.4);
+      color: rgba(245,225,180,0.4);
       text-decoration: line-through;
     }
 
+    .item-note {
+      font-size: 12px;
+      color: rgba(245,225,180,0.45);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
     .quantity-badge {
-      background: rgba(232,168,114,0.12);
-      color: #e8a872;
+      background: rgba(220,60,30,0.18);
+      color: #e87c5c;
       padding: 4px 10px;
       border-radius: 20px;
       font-size: 11px;
@@ -255,7 +256,7 @@
     }
 
     .footer-note {
-      color: rgba(244,232,208,0.2);
+      color: rgba(245,225,180,0.18);
       font-size: 11px;
       text-align: center;
       margin-top: 28px;
@@ -264,24 +265,24 @@
 
     /* Recipe styles */
     .recipe-content {
-      color: #f4e8d0;
+      color: #f5e1b4;
       line-height: 1.8;
     }
 
     .recipe-content h3 {
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-size: 24px;
-      color: #f4e8d0;
+      color: #f5e1b4;
       margin: 32px 0 16px 0;
       padding-bottom: 8px;
-      border-bottom: 1px solid rgba(232,168,114,0.2);
+      border-bottom: 1px solid rgba(212,160,78,0.2);
       font-weight: 600;
     }
 
     .recipe-content h4 {
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-size: 18px;
-      color: #e8a872;
+      color: #d4a04e;
       margin: 20px 0 10px 0;
       font-weight: 600;
       font-style: italic;
@@ -293,14 +294,14 @@
       gap: 12px;
       padding: 18px;
       background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(232,168,114,0.2);
+      border: 1px solid rgba(212,160,78,0.2);
       border-radius: 12px;
       margin-bottom: 24px;
     }
 
     .recipe-meta-item strong {
       display: block;
-      color: #e8a872;
+      color: #d4a04e;
       font-size: 11px;
       margin-bottom: 4px;
       text-transform: uppercase;
@@ -310,18 +311,18 @@
 
     .recipe-meta-item {
       font-size: 14px;
-      color: #f4e8d0;
+      color: #f5e1b4;
     }
 
     .recipe-content p {
       margin: 12px 0;
-      color: rgba(244,232,208,0.85);
+      color: rgba(245,225,180,0.85);
     }
 
     .recipe-content ul, .recipe-content ol {
       margin: 12px 0;
       padding-left: 20px;
-      color: rgba(244,232,208,0.85);
+      color: rgba(245,225,180,0.85);
     }
 
     .recipe-content li {
@@ -329,7 +330,7 @@
     }
 
     .recipe-content strong {
-      color: #f4e8d0;
+      color: #f5e1b4;
       font-weight: 600;
     }
 
@@ -338,12 +339,12 @@
       border-radius: 10px;
       padding: 16px 20px;
       margin: 12px 0;
-      border-left: 3px solid #e8a872;
+      border-left: 3px solid #d4a04e;
     }
 
     .overview-box {
-      background: rgba(232,168,114,0.06);
-      border: 1px solid rgba(232,168,114,0.2);
+      background: rgba(212,160,78,0.06);
+      border: 1px solid rgba(212,160,78,0.2);
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 24px;
@@ -365,7 +366,7 @@
 
     hr {
       border: none;
-      border-top: 1px solid rgba(232,168,114,0.15);
+      border-top: 1px solid rgba(212,160,78,0.15);
       margin: 28px 0;
     }
 
@@ -399,20 +400,15 @@
     <!-- Grocery List Section -->
     <div id="grocery-section" class="content-section active">
       <div class="header">
-        <div class="week-label">Week of May 11</div>
-        <h1>Pad Kee Mao</h1>
-        <div class="subtitle">Thai Drunken Noodles · 10 servings</div>
+        <div class="week-label">麻婆豆腐 · Week of May 18</div>
+        <h1 style="font-style: normal; font-weight: 400; font-family: Georgia, 'Times New Roman', serif;">Grocery List</h1>
+        <div class="subtitle" style="font-style: italic; margin-top: 10px;">Tikka Masala · Japanese Curry · Mapo Tofu</div>
       </div>
 
-      <div class="progress-card">
-        <div class="progress-top">
-          <span class="progress-label">Progress</span>
-          <span class="progress-count" id="progress-count">0/0</span>
-        </div>
-        <div class="progress-track">
-          <div class="progress-fill" id="progress-bar" style="width: 0%"></div>
-        </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-bar" style="width: 0%"></div>
       </div>
+      <div class="progress-text" id="progress-count">0 of 0 items collected</div>
 
       <div id="grocery-list"></div>
 
@@ -422,23 +418,23 @@
     <!-- Recipe Section -->
     <div id="recipe-section" class="content-section">
       <div class="header">
-        <div class="week-label">Week of May 11</div>
-        <h1>Pad Kee Mao</h1>
-        <div class="subtitle">Thai Drunken Noodles with Tofu</div>
+        <div class="week-label">麻婆豆腐 · Week of May 18</div>
+        <h1 style="font-style: normal; font-weight: 400; font-family: Georgia, 'Times New Roman', serif;">Mapo Tofu Week</h1>
+        <div class="subtitle" style="font-style: italic; margin-top: 10px;">Tikka Masala · Japanese Curry · Mapo Tofu</div>
       </div>
 
       <div class="recipe-meta-info">
         <div class="recipe-meta-item">
-          <strong>Servings</strong>
+          <strong>Total Servings</strong>
           10
         </div>
         <div class="recipe-meta-item">
-          <strong>Active Time</strong>
-          ~30 min
+          <strong>Meals</strong>
+          3 dishes
         </div>
         <div class="recipe-meta-item">
-          <strong>Total Time</strong>
-          ~50 min
+          <strong>Active Time</strong>
+          ~80 min total
         </div>
         <div class="recipe-meta-item">
           <strong>Equipment</strong>
@@ -449,130 +445,236 @@
       <div class="recipe-content">
         <div class="overview-box">
           <h3>Overview</h3>
-          <p>Pad Kee Mao — literally "drunkard's stir-fry" — is Thai street food at its most aggressive: wide rice noodles charred over screaming-hot heat, slicked in a savory-sweet sauce, and packed with garlic, Thai chili, and an absolute mountain of holy basil (or Thai basil). We're using up your leftover Thai chili from a few weeks back, and folding a little leftover lemongrass into the chili paste for an extra-aromatic twist.</p>
-          <p style="margin-bottom: 0;"><em>Cooked in two batches of 5 — don't try to cram 10 servings in one wok or you'll steam instead of stir-fry and lose all the char.</em></p>
+          <p>Two quick "burn-down" meals (Tikka Masala + Japanese Curry) take care of 4 servings using sauces already in your fridge. The main event is <strong>Mapo Tofu (麻婆豆腐)</strong> — a Sichuan classic that's deeply garlic-and-chili-forward and burns through the rest of your leftover aromatics.</p>
+          <ul style="margin-top: 12px;">
+            <li><strong>Chicken Tikka Masala over Basmati Rice</strong> — 2 servings (Monday)</li>
+            <li><strong>Japanese Curry with Crispy Tofu over Rice</strong> — 2 servings (Tuesday)</li>
+            <li><strong>Mapo Tofu over Rice</strong> — 6 servings (Wed–Fri)</li>
+          </ul>
+          <p style="margin-top: 12px; margin-bottom: 0;"><em>All single-wok recipes. Total active cook time across all three meals: ~80 minutes.</em></p>
         </div>
 
-        <h3>Ingredients</h3>
+        <hr>
+
+        <h3>🔪 Bulk Mise en Place</h3>
+        <p>Do this all at once — each meal becomes mostly assembly. Plan for ~35 minutes of dedicated prep time.</p>
 
         <div class="recipe-section">
-          <h4>Tofu:</h4>
+          <h4>Step 1: Press the tofu (start first — 30+ min hands-off)</h4>
           <ul>
-            <li><strong>3 blocks extra-firm tofu</strong> (14–16 oz each, ~2.75 lbs total)</li>
-            <li><strong>3 tbsp neutral oil</strong> for searing</li>
-            <li><strong>2 tbsp soy sauce</strong> for marinating</li>
+            <li><strong>1 block extra-firm tofu</strong> (for Japanese curry) — press between paper towels with a weight on top</li>
+            <li><strong>3 blocks soft/medium-firm tofu</strong> (for mapo) — drain but don't press (they'll be blanched, not crisped)</li>
           </ul>
         </div>
 
         <div class="recipe-section">
-          <h4>Noodles:</h4>
+          <h4>Step 2: Cook all the rice at once (5 min active, 25 min hands-off)</h4>
+          <p>Make all 5 cups in one batch — saves you cooking 3 separate batches.</p>
           <ul>
-            <li><strong>1.5 lbs dried wide rice noodles</strong> (or 2.5 lbs fresh if available)</li>
+            <li><strong>5 cups jasmine rice</strong> (covers all 3 meals — substitute 1 cup with basmati for tikka if you want, but jasmine works fine across the board)</li>
+            <li><strong>7.5 cups water</strong></li>
+            <li>Pinch of salt</li>
+          </ul>
+          <p>Rinse rice until water runs clear. Combine with water and salt in a large pot. Bring to boil, cover, reduce to lowest heat for 18 minutes. Rest 5 minutes covered. Fluff and portion into containers (2 servings each × 5).</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 3: Prep all proteins (5 min)</h4>
+          <ul>
+            <li><strong>1 lb chicken thighs</strong> → cut into 1-inch chunks. Container labeled "tikka".</li>
+            <li><strong>¾ lb ground pork</strong> → keep in original package or transfer to container labeled "mapo".</li>
+            <li><strong>1 block pressed extra-firm tofu</strong> → cut into 1-inch cubes. Container labeled "curry tofu".</li>
+            <li><strong>3 blocks soft tofu</strong> → cut into 1-inch cubes. <strong>Blanch now:</strong> bring a pot of water to a simmer with 1 tsp salt, gently slide in tofu, simmer 2–3 minutes, drain carefully. Store in container labeled "mapo tofu".</li>
           </ul>
         </div>
 
         <div class="recipe-section">
-          <h4>Chili-Garlic-Lemongrass Paste:</h4>
+          <h4>Step 4: Toast & grind Sichuan peppercorns (3 min)</h4>
+          <p>In a dry wok over medium-low heat, toast <strong>2 tsp Sichuan peppercorns</strong> for 2–3 minutes, swirling. Grind in mortar/pestle or spice grinder. Store in small container — you'll use this twice (sprinkle during cooking + sprinkle when serving).</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 5: Prep all aromatics (10 min)</h4>
+          <p><em>Do this all at once with one cutting board session.</em></p>
+          <p><strong>For Japanese Curry:</strong></p>
           <ul>
-            <li><strong>8–12 Thai bird's eye chilis</strong> (leftover supply — adjust to heat tolerance)</li>
-            <li><strong>1 red bell pepper</strong>, deseeded and roughly chopped</li>
-            <li><strong>16 garlic cloves</strong>, peeled</li>
-            <li><strong>2 stalks lemongrass</strong>, inner pale part only, thinly sliced (leftover use)</li>
+            <li><strong>1 yellow onion</strong> → sliced into half-moons. Container labeled "curry onion".</li>
+          </ul>
+          <p style="margin-top: 10px;"><strong>For Mapo Tofu:</strong></p>
+          <ul>
+            <li><strong>12 cloves garlic</strong> → finely minced.</li>
+            <li><strong>2-inch piece ginger</strong> → finely minced. Add to same container as garlic.</li>
+            <li><strong>6–10 Thai chilis</strong> → finely chopped. Add to same container as garlic + ginger.</li>
+            <li><strong>8 scallions</strong> → thinly slice, <strong>keep whites and greens in separate containers</strong> (they're added at different times).</li>
           </ul>
         </div>
 
         <div class="recipe-section">
-          <h4>Stir-fry:</h4>
+          <h4>Step 6: Pre-mix the mapo sauce (2 min)</h4>
+          <p>In a jar or container, combine and shake:</p>
           <ul>
-            <li><strong>6 tbsp neutral oil</strong> (split between two batches)</li>
-            <li><strong>2 red bell peppers</strong>, sliced into strips</li>
-            <li><strong>4 cups holy basil or Thai basil leaves</strong>, loosely packed (~4 large bunches)</li>
+            <li><strong>2 tbsp Shaoxing wine</strong></li>
+            <li><strong>2 tbsp soy sauce</strong></li>
+            <li><strong>1 tbsp dark soy sauce</strong></li>
+            <li><strong>2 tsp sugar</strong></li>
           </ul>
+          <p>Label "mapo liquid". Refrigerate.</p>
         </div>
 
         <div class="recipe-section">
-          <h4>Sauce:</h4>
+          <h4>Step 7: Pre-portion the mapo paste (1 min)</h4>
+          <p>In a small container, combine:</p>
           <ul>
-            <li><strong>6 tbsp oyster sauce</strong></li>
-            <li><strong>4 tbsp dark soy sauce</strong></li>
-            <li><strong>3 tbsp regular soy sauce</strong></li>
-            <li><strong>2 tbsp fish sauce</strong></li>
-            <li><strong>3 tbsp brown sugar</strong></li>
-            <li><strong>4 tbsp water</strong></li>
+            <li><strong>4 tbsp doubanjiang</strong></li>
+            <li><strong>2 tbsp fermented black beans</strong> (chopped roughly), if using</li>
           </ul>
+          <p>Label "mapo paste". Refrigerate.</p>
         </div>
 
-        <div class="recipe-section">
-          <h4>Finishing:</h4>
-          <ul>
-            <li><strong>2 limes</strong>, cut into wedges</li>
-            <li>Optional: chili flakes or chili oil at the table</li>
+        <div class="recipe-highlight">
+          <p><strong>Mise en Place Output — your fridge should contain:</strong></p>
+          <ul style="margin-top: 8px;">
+            <li>Cooked rice, portioned</li>
+            <li>Chicken chunks, raw</li>
+            <li>Ground pork, raw</li>
+            <li>Pressed extra-firm tofu cubes (for curry)</li>
+            <li>Blanched soft tofu cubes (for mapo)</li>
+            <li>Ground Sichuan peppercorns</li>
+            <li>Sliced onion (for curry)</li>
+            <li>Garlic + ginger + Thai chili mince (for mapo)</li>
+            <li>Scallion whites</li>
+            <li>Scallion greens</li>
+            <li>Mapo liquid jar</li>
+            <li>Mapo paste container</li>
           </ul>
         </div>
 
         <hr>
 
-        <h3>Instructions</h3>
+        <h3>Meal 1: Chicken Tikka Masala</h3>
+        <p style="color: rgba(245,225,180,0.55); font-size: 13px; margin-bottom: 16px;">2 servings · ~15 min active (after bulk prep)</p>
 
-        <h4>Step 1: Press and prep the tofu (15 min, mostly passive)</h4>
-        <p>Drain all <strong>3 blocks of tofu</strong>. Wrap each in paper towels or a clean kitchen towel and press under a heavy pan for at least 15 minutes (overnight in the fridge is ideal). Cut into 1-inch cubes. Toss with <strong>2 tbsp soy sauce</strong> and set aside.</p>
-
-        <h4>Step 2: Soak the noodles (15–20 min)</h4>
-        <p>Fill a large bowl with hot tap water and soak the <strong>1.5 lbs noodles</strong> for 15–20 minutes until pliable but still firm — they should bend without snapping but feel slightly underdone. Drain just before cooking. If using fresh noodles, microwave at 50% power for 1–2 minutes to soften, then gently separate the strands.</p>
-
-        <h4>Step 3: Make the chili-garlic-lemongrass paste (5 min)</h4>
-        <p>In a mortar and pestle (or mini food processor), pound together the <strong>8–12 Thai chilis</strong>, <strong>1 chopped red bell pepper</strong>, <strong>16 garlic cloves</strong>, and <strong>2 stalks sliced lemongrass</strong> until you have a rough paste. Don't over-process — you want texture, not a purée. Set aside.</p>
-
-        <h4>Step 4: Mix the sauce (2 min)</h4>
-        <p>In a bowl, whisk together all sauce ingredients until the sugar dissolves. Set aside.</p>
-
-        <h4>Step 5: Sear the tofu (8 min)</h4>
-        <p>Heat <strong>3 tbsp neutral oil</strong> in the wok over medium-high heat until shimmering. Add tofu cubes in a single layer (work in batches if crowded). Sear undisturbed for 3–4 minutes per side until deeply golden. Transfer to a plate.</p>
-
-        <h4>Step 6: Stir-fry — Batch 1 (5 min, have everything ready)</h4>
         <div class="recipe-section">
-          <p>Wipe out the wok. Heat <strong>3 tbsp oil</strong> over the highest heat your stove can produce until smoking.</p>
-          <ol>
-            <li>Add <strong>half the chili-garlic-lemongrass paste</strong>, stir-fry 20–30 seconds until intensely fragrant.</li>
-            <li>Add <strong>1 sliced red bell pepper</strong>, stir-fry 30 seconds.</li>
-            <li>Add <strong>half the seared tofu</strong>, toss 30 seconds.</li>
-            <li>Add <strong>half the drained noodles</strong>, toss with a scooping motion for 1 minute.</li>
-            <li>Pour <strong>half the sauce</strong> over the noodles. Toss vigorously, then let noodles sit untouched 15–20 seconds to catch char. Toss again and repeat — this is where the wok hei comes from.</li>
-            <li>Kill the heat, add <strong>2 cups basil leaves</strong>, toss until just wilted (5 seconds).</li>
-            <li>Transfer to meal prep containers.</li>
-          </ol>
+          <h4>Step 1: Sear the chicken (5 min)</h4>
+          <p>Heat <strong>1 tbsp neutral oil</strong> in your wok over medium-high heat. Pat the <strong>chicken chunks</strong> dry, season with <strong>salt and pepper</strong>, and add to wok in a single layer. Don't crowd. Sear 3–4 minutes until golden, then flip and cook another 2 minutes. Chicken doesn't need to be fully cooked through — it'll finish in the sauce.</p>
         </div>
 
-        <h4>Step 7: Stir-fry — Batch 2 (5 min)</h4>
-        <p>Wipe out the wok briefly. Repeat Step 6 with the remaining half of everything: paste, bell pepper, tofu, noodles, sauce, basil.</p>
+        <div class="recipe-section">
+          <h4>Step 2: Simmer in sauce (10 min)</h4>
+          <p>Pour the <strong>2 servings of tikka masala sauce</strong> directly into the wok over the chicken. Stir to coat. Bring to a gentle simmer, reduce heat to medium-low, and cook 8–10 minutes, stirring occasionally, until the chicken is cooked through and the sauce has thickened slightly.</p>
+        </div>
 
-        <h4>Step 8: Pack and store</h4>
-        <p>Divide between 10 meal prep containers. Tuck a <strong>lime wedge</strong> into each container. Refrigerate up to 5 days.</p>
+        <div class="recipe-section">
+          <h4>Step 3: Plate</h4>
+          <p>Reheat 2 servings of rice (microwave with a splash of water). Serve chicken over rice. Optional: top with fresh cilantro and a squeeze of lemon.</p>
+        </div>
 
         <hr>
 
-        <h3>Reheating</h3>
+        <h3>Meal 2: Japanese Curry with Crispy Tofu</h3>
+        <p style="color: rgba(245,225,180,0.55); font-size: 13px; margin-bottom: 16px;">2 servings · ~20 min active (after bulk prep)</p>
+
+        <div class="recipe-section">
+          <h4>Step 1: Crisp the tofu (8 min)</h4>
+          <p>Heat <strong>3 tbsp neutral oil</strong> in your wok over medium-high heat. Add the <strong>tofu cubes</strong> in a single layer and let them sit untouched for 3–4 minutes until the bottom is golden. Flip and crisp another side 2–3 minutes. Repeat once more so most sides are golden. Transfer to a plate.</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 2: Sauté onion & build curry (10 min)</h4>
+          <p>In the same wok with residual oil, add the <strong>sliced onion</strong> and a pinch of <strong>salt</strong>. Cook over medium heat 4–5 minutes until softened and starting to brown. Add the <strong>2 servings of leftover Japanese curry</strong> and <strong>¼ cup water</strong> (to loosen it back up). Bring to a simmer and cook 3–4 minutes until heated through and saucy.</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 3: Combine & serve (1 min)</h4>
+          <p>Return the crispy tofu to the wok and gently fold into the curry. Cook 1 minute to warm through. Reheat 2 servings of rice and serve curry over the top.</p>
+        </div>
+
+        <hr>
+
+        <h3>Meal 3: Mapo Tofu (麻婆豆腐)</h3>
+        <p style="color: rgba(245,225,180,0.55); font-size: 13px; margin-bottom: 16px;">6 servings · ~20 min active (after bulk prep)</p>
+
+        <div class="overview-box" style="margin-bottom: 20px;">
+          <h3>About This Dish</h3>
+          <p>Mapo tofu is the most iconic dish of Sichuan cuisine — silky tofu cubes braised in a deeply savory, spicy, numbing sauce built on doubanjiang, garlic, ginger, and Sichuan peppercorns. The Sichuan name describes five flavor dimensions: <strong>má</strong> (numbing), <strong>là</strong> (spicy), <strong>xiāng</strong> (aromatic), <strong>tàng</strong> (hot), and <strong>nèn</strong> (tender).</p>
+          <p style="margin-bottom: 0;"><em>We skip cornstarch and reduce naturally — you lose a touch of glossiness but the flavor is identical.</em></p>
+        </div>
+
+        <p><strong>Kept at stove:</strong> 2½ cups chicken or vegetable stock (low-sodium) · 4 tbsp neutral oil · 1 tbsp toasted sesame oil</p>
+
+        <div class="recipe-section">
+          <h4>Step 1: Brown the pork (5 min)</h4>
+          <p>Heat <strong>4 tbsp neutral oil</strong> in the wok over medium-high. Add the <strong>ground pork</strong> and break it up. Stir-fry 4–5 minutes until the water has evaporated and the pork is crispy and slightly browned. You want texture, not just cooked meat.</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 2: Bloom the doubanjiang (2 min)</h4>
+          <p>Reduce heat to medium. Push pork to one side. Add the <strong>mapo paste</strong> (doubanjiang + fermented black beans) to the empty side. Fry in the oil 1–2 minutes, stirring, until the oil turns deep red and the paste is intensely fragrant. <strong>This step is critical</strong> — don't rush it.</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 3: Add aromatics (1 min)</h4>
+          <p>Add the <strong>garlic + ginger + chili mince</strong> and <strong>scallion whites</strong>. Stir everything together. Cook 30–60 seconds until fragrant. Don't let the garlic burn.</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 4: Build the sauce (2 min)</h4>
+          <p>Pour in the <strong>mapo liquid jar</strong> and stir 30 seconds. Pour in <strong>2½ cups stock</strong>. Bring to a simmer.</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 5: Braise the tofu (10–12 min)</h4>
+          <p>Gently slide the <strong>blanched tofu cubes</strong> into the wok. Don't stir vigorously — push the sauce around the tofu with the back of a spoon. Bring to a steady simmer and cook <strong>10–12 minutes</strong>, gently swirling occasionally. The sauce reduces by about half and naturally thickens as the tofu absorbs flavor.</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 6: Finish (1 min)</h4>
+          <p>Sprinkle in <strong>1½ tsp ground Sichuan peppercorns</strong> (reserve the rest for serving) and the <strong>scallion greens</strong>. Drizzle <strong>1 tbsp toasted sesame oil</strong> over the top. One final gentle swirl. Kill the heat.</p>
+        </div>
+
+        <div class="recipe-section">
+          <h4>Step 7: Serve & store</h4>
+          <p>Plate over rice. Sprinkle remaining Sichuan peppercorn over the top. For meal prep, portion rice and mapo into containers — the tofu continues absorbing sauce overnight and day 2 is excellent.</p>
+        </div>
+
+        <hr>
+
+        <h3>Reheating & Storage</h3>
         <div class="recipe-section">
           <ul>
-            <li><strong>Microwave:</strong> Sprinkle 1 tsp water over the noodles, cover loosely, microwave 90 seconds–2 minutes. Squeeze lime before eating.</li>
-            <li><strong>Wok/pan (best):</strong> Heat 1 tsp oil over medium-high, dump in noodles, toss 2 minutes until heated through. The noodles will re-crisp slightly.</li>
+            <li><strong>Reheating:</strong> Microwave 2–3 minutes. Add a splash of water to the mapo before reheating to loosen the sauce.</li>
+            <li><strong>All three meals improve overnight</strong> — flavors deepen across the board.</li>
+            <li><strong>Mapo keeps 4–5 days.</strong> Sichuan peppercorn aroma fades slightly each day — sprinkle a fresh pinch when serving if you have extra.</li>
+            <li><strong>Tofu texture:</strong> Medium-firm holds up to microwaving more robustly than silken. Handle reheated silken portions gently.</li>
           </ul>
         </div>
 
         <hr>
 
-        <h3>Notes & Tips</h3>
+        <h3>Tips for Mapo Tofu</h3>
         <div class="recipe-highlight">
           <ul>
-            <li><strong>Heat tolerance:</strong> 8 Thai chilis = moderate-spicy. 12 = legitimately hot. Leftover chilis are likely riper/hotter than fresh.</li>
-            <li><strong>Basil:</strong> Holy basil is traditional (peppery/clove-like). Thai basil (anise notes) is a great sub. Italian sweet basil works in a pinch.</li>
-            <li><strong>Why two batches:</strong> A home wok can't maintain wok hei with more than ~5 servings at once. Two quick batches = great pad kee mao vs. sad steamed noodles.</li>
-            <li><strong>Dark soy:</strong> Gives pad kee mao its signature deep brown color and slight molasses sweetness. If using only regular soy, add an extra tbsp of brown sugar.</li>
-            <li><strong>Lemongrass riff:</strong> Not traditional, but using up leftover stalks in the chili paste adds a lovely citrus note. Skip if you'd rather stay strictly authentic.</li>
+            <li><strong>Doubanjiang is non-negotiable.</strong> Look for "Pixian broad bean paste" (郫县豆瓣) at the Asian market. Lee Kum Kee works in a pinch. Without it, you're not making mapo tofu.</li>
+            <li><strong>Blanch the tofu.</strong> The salt water simmer firms up silken/soft tofu and seasons it from the inside. Skip this and the cubes will crumble.</li>
+            <li><strong>Bloom the doubanjiang properly.</strong> Frying it until the oil turns red transforms it from raw and harsh to deeply savory. Don't rush this step.</li>
+            <li><strong>Pork should be crispy.</strong> Small amount, used as a flavor agent — get it dry and crisp before adding the doubanjiang.</li>
+            <li><strong>Toast peppercorns whole, then grind.</strong> Pre-ground is flat. Fresh-toasted is night-and-day better.</li>
+            <li><strong>Don't stir aggressively after tofu goes in.</strong> Use a gentle pushing motion with a spoon.</li>
           </ul>
         </div>
 
-        <p style="color: rgba(244,232,208,0.4); font-size: 13px; margin-top: 24px;">Estimated cost: ~$1.40–1.90 per serving</p>
+        <hr>
+
+        <h3>Flavor Profiles Across the Week</h3>
+        <div class="recipe-section">
+          <ul>
+            <li><strong>Tikka Masala:</strong> Creamy, warming, mildly spiced</li>
+            <li><strong>Japanese Curry:</strong> Savory, slightly sweet, mellow</li>
+            <li><strong>Mapo Tofu:</strong> Spicy, numbing (má), deeply savory, aromatic — the most intense of the three</li>
+          </ul>
+        </div>
+
+        <p style="color: rgba(245,225,180,0.4); font-size: 12px; margin-top: 24px;">Mapo tofu adapted from The Woks of Life, Red House Spice, and Omnivore's Cookbook. All recipes avoid green beans, cornstarch, and carrots. Everything cooks in a single wok.</p>
       </div>
     </div>
   </div>
@@ -580,42 +682,59 @@
   <script>
     const groceryData = [
       {
-        category: "Produce",
-        items: [
-          { id: "red-bell-peppers", name: "Red bell peppers", quantity: "3 large" },
-          { id: "thai-chilis", name: "Thai bird's eye chilis", quantity: "use leftover (8–12)" },
-          { id: "garlic", name: "Garlic", quantity: "1 large head (16 cloves)" },
-          { id: "lemongrass", name: "Lemongrass", quantity: "use leftover (2 stalks)" },
-          { id: "basil", name: "Holy basil or Thai basil", quantity: "4 large bunches" },
-          { id: "limes", name: "Limes", quantity: "2" }
-        ]
-      },
-      {
         category: "Protein",
+        emoji: "🫘",
         items: [
-          { id: "tofu", name: "Extra-firm tofu", quantity: "3 blocks (~2.75 lbs)" }
-        ]
+          { id: "tofu-soft", name: "Soft or medium-firm tofu", quantity: "3 blocks (14–16 oz each)", note: "For mapo — silken/soft is most authentic" },
+          { id: "tofu-firm", name: "Extra-firm tofu", quantity: "1 block (14–16 oz)", note: "For Japanese curry" },
+          { id: "chicken", name: "Boneless skinless chicken thighs", quantity: "1 lb", note: "For tikka masala" },
+          { id: "pork", name: "Ground pork", quantity: "¾ lb", note: "For mapo — small amount as flavor agent. Sub ground beef/turkey if needed" },
+        ],
       },
       {
-        category: "Pantry & Asian Market",
+        category: "Grains",
+        emoji: "🍚",
         items: [
-          { id: "rice-noodles", name: "Dried wide rice noodles", quantity: "1.5 lbs" },
-          { id: "oyster-sauce", name: "Oyster sauce", quantity: "small bottle (need 6 tbsp)" },
-          { id: "dark-soy", name: "Dark soy sauce", quantity: "small bottle (need 4 tbsp)" },
-          { id: "fish-sauce", name: "Fish sauce", quantity: "small bottle (need 2 tbsp)" }
-        ]
+          { id: "jasmine", name: "Jasmine rice", quantity: "3 cups", note: "For mapo tofu (main meal)" },
+          { id: "basmati", name: "Basmati rice", quantity: "1 cup", note: "For tikka masala — may already have on hand" },
+          { id: "short-rice", name: "Short-grain or jasmine rice", quantity: "1 cup", note: "For Japanese curry — may already have on hand" },
+        ],
       },
       {
-        category: "Likely on hand",
+        category: "Produce",
+        emoji: "🌿",
         items: [
-          { id: "soy-sauce", name: "Regular soy sauce", quantity: "3 tbsp" },
-          { id: "brown-sugar", name: "Brown sugar", quantity: "3 tbsp" },
-          { id: "neutral-oil", name: "Neutral oil", quantity: "~½ cup total" }
-        ]
-      }
+          { id: "ginger", name: "Fresh ginger", quantity: "1 small piece (~3 inches)", note: "Need 2 inches minced for mapo" },
+          { id: "onion-yellow", name: "Yellow onion", quantity: "1 medium", note: "For Japanese curry" },
+          { id: "scallions", name: "Scallions / green onions", quantity: "1 bunch (~8 stalks)", note: "For mapo — separate whites and greens" },
+          { id: "cilantro", name: "Fresh cilantro (optional)", quantity: "Small bunch", note: "Garnish for tikka masala" },
+          { id: "lemon", name: "Lemon (optional)", quantity: "1", note: "Garnish for tikka masala" },
+        ],
+      },
+      {
+        category: "Sichuan Pantry — Specialty",
+        emoji: "🌶️",
+        items: [
+          { id: "doubanjiang", name: "Doubanjiang (Pixian broad bean paste)", quantity: "1 jar", note: "ESSENTIAL — look for 郫县豆瓣 at Asian market. Lee Kum Kee works in a pinch" },
+          { id: "sichuan-peppercorn", name: "Sichuan peppercorns", quantity: "Small package", note: "Whole, not ground — toast & grind fresh" },
+          { id: "douchi", name: "Fermented black beans (douchi, 豆豉)", quantity: "Small package (optional)", note: "Adds depth — skip if hard to find" },
+          { id: "shaoxing", name: "Shaoxing wine", quantity: "Small bottle", note: "Dry sherry is acceptable substitute. Check if you already have this" },
+          { id: "dark-soy", name: "Dark soy sauce", quantity: "1 tbsp", note: "Different from regular soy — gives color. Check pantry first" },
+        ],
+      },
+      {
+        category: "Using Up (no purchase needed)",
+        emoji: "♻️",
+        items: [
+          { id: "tikka-leftover", name: "Tikka masala sauce", quantity: "2 servings", note: "From your fridge — for Meal 1" },
+          { id: "curry-leftover", name: "Japanese curry", quantity: "2 servings", note: "From your fridge — for Meal 2" },
+          { id: "garlic-leftover", name: "Garlic", quantity: "12 cloves", note: "From your stash — for mapo" },
+          { id: "thai-chilis-leftover", name: "Thai chilis", quantity: "6–10", note: "From your stash — adjust to spice preference" },
+        ],
+      },
     ];
 
-    let checkedItems = JSON.parse(localStorage.getItem('checkedItemsPadKeeMao') || '{}');
+    let checkedItems = JSON.parse(localStorage.getItem('checkedItemsMapoTofu') || '{}');
 
     function init() {
       renderGroceryList();
@@ -630,10 +749,20 @@
         const categoryDiv = document.createElement('div');
         categoryDiv.className = 'category';
 
-        const title = document.createElement('h3');
+        const headerDiv = document.createElement('div');
+        headerDiv.className = 'category-header';
+
+        const emojiSpan = document.createElement('span');
+        emojiSpan.className = 'category-emoji';
+        emojiSpan.textContent = category.emoji;
+        headerDiv.appendChild(emojiSpan);
+
+        const title = document.createElement('div');
         title.className = 'category-title';
         title.textContent = category.category;
-        categoryDiv.appendChild(title);
+        headerDiv.appendChild(title);
+
+        categoryDiv.appendChild(headerDiv);
 
         category.items.forEach(item => {
           const itemDiv = document.createElement('div');
@@ -641,12 +770,19 @@
           if (checkedItems[item.id]) itemDiv.classList.add('checked');
           itemDiv.onclick = () => toggleItem(item.id);
 
+          const noteHtml = item.note
+            ? `<div class="item-note">${item.note}</div>`
+            : '';
+
           itemDiv.innerHTML = `
             <div class="item-left">
               <div class="checkbox">
                 <span class="checkmark">✓</span>
               </div>
-              <span class="item-name">${item.name}</span>
+              <div>
+                <div class="item-name">${item.name}</div>
+                ${noteHtml}
+              </div>
             </div>
             <div class="quantity-badge">${item.quantity}</div>
           `;
@@ -660,7 +796,7 @@
 
     function toggleItem(id) {
       checkedItems[id] = !checkedItems[id];
-      localStorage.setItem('checkedItemsPadKeeMao', JSON.stringify(checkedItems));
+      localStorage.setItem('checkedItemsMapoTofu', JSON.stringify(checkedItems));
       renderGroceryList();
       updateProgress();
     }
@@ -668,10 +804,10 @@
     function updateProgress() {
       const totalItems = groceryData.reduce((sum, cat) => sum + cat.items.length, 0);
       const checkedCount = Object.values(checkedItems).filter(Boolean).length;
-      const progress = Math.round((checkedCount / totalItems) * 100);
+      const progress = totalItems > 0 ? Math.round((checkedCount / totalItems) * 100) : 0;
 
       document.getElementById('progress-bar').style.width = progress + '%';
-      document.getElementById('progress-count').textContent = `${checkedCount}/${totalItems}`;
+      document.getElementById('progress-count').textContent = `${checkedCount} of ${totalItems} items collected`;
     }
 
     function showSection(section, btn) {
