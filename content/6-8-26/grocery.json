@@ -1,0 +1,54 @@
+{
+  "theme": {
+    "bgGradient": "radial-gradient(circle at 15% 10%, #1b4d3e 0%, #0e2a26 45%, #0a1f1c 100%)",
+    "primaryRgb": "244, 185, 66",
+    "accentRgb": "46, 139, 87",
+    "checkedRgb": "127, 209, 163"
+  },
+  "meta": {
+    "weekLabel": "Week of June 9 · 10 servings",
+    "title": "Jerk Tofu & Coconut Rice & Peas",
+    "subtitle": "Single wok · no cornstarch · island flavors 🌴"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "🫛",
+      "items": [
+        { "id": "tofu", "name": "Extra-firm tofu", "qty": "3 blocks (14–16 oz each)", "note": "Press well — dry tofu sears and glazes best" }
+      ]
+    },
+    {
+      "category": "Rice & Beans",
+      "emoji": "🍚",
+      "items": [
+        { "id": "rice", "name": "Long-grain white rice", "qty": "4½ cups dry", "note": "Long-grain, NOT jasmine — holds texture for meal prep" },
+        { "id": "kidney", "name": "Red kidney beans", "qty": "2 cans (15 oz each)", "note": "The 'peas' in rice & peas. Drain & rinse" }
+      ]
+    },
+    {
+      "category": "Produce & Fresh",
+      "emoji": "🌿",
+      "items": [
+        { "id": "scallions", "name": "Scallions / green onions", "qty": "2 bunches", "note": "1 for the rice, extra for garnish" },
+        { "id": "garlic", "name": "Garlic", "qty": "1 bulb (need 6 cloves)", "note": "Smashed into the rice" },
+        { "id": "thyme", "name": "Fresh thyme", "qty": "1 small bundle", "note": "Or sub 1 tbsp dried thyme" },
+        { "id": "scotch", "name": "Scotch bonnet pepper", "qty": "1 (optional)", "note": "Left WHOLE in the rice for aroma, not heat. Habanero works too" },
+        { "id": "cilantro", "name": "Cilantro (optional)", "qty": "Small bunch", "note": "Garnish" },
+        { "id": "lime", "name": "Lime (optional)", "qty": "1–2", "note": "Garnish" }
+      ]
+    },
+    {
+      "category": "Pantry / Specialty",
+      "emoji": "🥥",
+      "items": [
+        { "id": "coconut", "name": "Full-fat coconut milk", "qty": "1 can (13.5 oz)", "note": "Full-fat for creaminess — the Thai-style canned kind" },
+        { "id": "jerk", "name": "Wet jerk seasoning / paste", "qty": "1 jar (need 3 tbsp)", "note": "Walkerswood is the easy standard. Must be WET, not dry. It's hot!" },
+        { "id": "bbqsauce", "name": "BBQ sauce", "qty": "1 bottle (need 1 cup)", "note": "A plain/basic one — let the jerk be the star" },
+        { "id": "bbqseason", "name": "BBQ dry seasoning/rub", "qty": "1 (need 1 tbsp)", "note": "For the quick tofu marinade" },
+        { "id": "broth", "name": "Vegetable broth", "qty": "1 cup", "note": "For the tofu marinade — may already have a carton/cube" },
+        { "id": "allspice", "name": "Ground allspice (pimento)", "qty": "Small jar (need 1½ tsp)", "note": "Signature Jamaican spice — likely already in your rack" }
+      ]
+    }
+  ]
+}
