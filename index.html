@@ -595,7 +595,15 @@
       if (document.visibilityState === 'visible') requestWakeLock();
     });
 
-    requestWakeLock();
+    // iOS Safari requires a user gesture before granting a wake lock,
+    // so acquire it on first tap rather than on page load.
+    function acquireWakeLockOnFirstInteraction() {
+      requestWakeLock();
+      document.removeEventListener('click', acquireWakeLockOnFirstInteraction);
+      document.removeEventListener('touchstart', acquireWakeLockOnFirstInteraction);
+    }
+    document.addEventListener('click', acquireWakeLockOnFirstInteraction);
+    document.addEventListener('touchstart', acquireWakeLockOnFirstInteraction);
 
     document.addEventListener('DOMContentLoaded', async () => {
       try {
