@@ -578,6 +578,12 @@
       document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
       document.getElementById(section + '-section').classList.add('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (section === 'recipe') {
+        enableNoSleepVideo();
+      } else {
+        disableNoSleepVideo();
+      }
     }
 
     let noSleepVideo = null;
@@ -619,19 +625,14 @@
       noSleepVideo = video;
     }
 
-    document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible') enableNoSleepVideo();
-    });
-
-    // iOS requires a user gesture before allowing video playback, so start
-    // it on first tap rather than on page load.
-    function enableNoSleepVideoOnFirstInteraction() {
-      enableNoSleepVideo();
-      document.removeEventListener('click', enableNoSleepVideoOnFirstInteraction);
-      document.removeEventListener('touchstart', enableNoSleepVideoOnFirstInteraction);
+    function disableNoSleepVideo() {
+      if (noSleepVideo) noSleepVideo.pause();
     }
-    document.addEventListener('click', enableNoSleepVideoOnFirstInteraction);
-    document.addEventListener('touchstart', enableNoSleepVideoOnFirstInteraction);
+
+    document.addEventListener('visibilitychange', () => {
+      const recipeActive = document.getElementById('recipe-section').classList.contains('active');
+      if (document.visibilityState === 'visible' && recipeActive) enableNoSleepVideo();
+    });
 
     document.addEventListener('DOMContentLoaded', async () => {
       try {
