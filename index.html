@@ -581,22 +581,64 @@
     }
 
     let wakeLock = null;
+    let noSleepVideo = null;
+
+    // Fallback for browsers that don't expose navigator.wakeLock (e.g. Chrome
+    // and other third-party browsers on iOS, which all run on WebKit but
+    // don't get the Wake Lock API like Safari does). A muted video sourced
+    // from a canvas stream, looping forever, keeps the screen awake on iOS
+    // regardless of which browser is used.
+    function enableNoSleepVideo() {
+      if (noSleepVideo) {
+        noSleepVideo.play().catch(() => {});
+        return;
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width = 1;
+      canvas.height = 1;
+      const ctx = canvas.getContext('2d');
+      ctx.fillRect(0, 0, 1, 1);
+
+      if (typeof canvas.captureStream !== 'function') return;
+      const stream = canvas.captureStream(1);
+
+      const video = document.createElement('video');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('muted', '');
+      video.muted = true;
+      video.loop = true;
+      video.style.position = 'fixed';
+      video.style.top = '0';
+      video.style.left = '0';
+      video.style.width = '1px';
+      video.style.height = '1px';
+      video.style.opacity = '0';
+      video.style.pointerEvents = 'none';
+
+      video.srcObject = stream;
+      document.body.appendChild(video);
+      video.play().catch(() => {});
+      noSleepVideo = video;
+    }
 
     async function requestWakeLock() {
-      if (!('wakeLock' in navigator)) return;
-      try {
-        wakeLock = await navigator.wakeLock.request('screen');
-      } catch (e) {
-        // silently ignore
+      if ('wakeLock' in navigator) {
+        try {
+          wakeLock = await navigator.wakeLock.request('screen');
+          return;
+        } catch (e) {
+          // fall through to video fallback
+        }
       }
+      enableNoSleepVideo();
     }
 
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'visible') requestWakeLock();
     });
 
-    // iOS Safari requires a user gesture before granting a wake lock,
-    // so acquire it on first tap rather than on page load.
+    // iOS requires a user gesture before granting a wake lock or allowing
+    // video playback, so acquire it on first tap rather than on page load.
     function acquireWakeLockOnFirstInteraction() {
       requestWakeLock();
       document.removeEventListener('click', acquireWakeLockOnFirstInteraction);
