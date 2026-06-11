@@ -578,32 +578,61 @@
       document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
       document.getElementById(section + '-section').classList.add('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
 
-    let wakeLock = null;
-
-    async function requestWakeLock() {
-      if (!('wakeLock' in navigator)) return;
-      try {
-        wakeLock = await navigator.wakeLock.request('screen');
-      } catch (e) {
-        // silently ignore
+      if (section === 'recipe') {
+        enableNoSleepVideo();
+      } else {
+        disableNoSleepVideo();
       }
     }
 
-    document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible') requestWakeLock();
-    });
+    let noSleepVideo = null;
 
-    // iOS Safari requires a user gesture before granting a wake lock,
-    // so acquire it on first tap rather than on page load.
-    function acquireWakeLockOnFirstInteraction() {
-      requestWakeLock();
-      document.removeEventListener('click', acquireWakeLockOnFirstInteraction);
-      document.removeEventListener('touchstart', acquireWakeLockOnFirstInteraction);
+    // Keeps the screen awake on iOS regardless of browser, by playing a
+    // muted, looping video sourced from a canvas stream. The native Wake
+    // Lock API isn't reliably available or effective across iOS browsers
+    // and versions, so this is the sole mechanism used.
+    function enableNoSleepVideo() {
+      if (noSleepVideo) {
+        noSleepVideo.play().catch(() => {});
+        return;
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width = 1;
+      canvas.height = 1;
+      const ctx = canvas.getContext('2d');
+      ctx.fillRect(0, 0, 1, 1);
+
+      if (typeof canvas.captureStream !== 'function') return;
+      const stream = canvas.captureStream(1);
+
+      const video = document.createElement('video');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('muted', '');
+      video.muted = true;
+      video.loop = true;
+      video.style.position = 'fixed';
+      video.style.top = '0';
+      video.style.left = '0';
+      video.style.width = '1px';
+      video.style.height = '1px';
+      video.style.opacity = '0';
+      video.style.pointerEvents = 'none';
+
+      video.srcObject = stream;
+      document.body.appendChild(video);
+      video.play().catch(() => {});
+      noSleepVideo = video;
     }
-    document.addEventListener('click', acquireWakeLockOnFirstInteraction);
-    document.addEventListener('touchstart', acquireWakeLockOnFirstInteraction);
+
+    function disableNoSleepVideo() {
+      if (noSleepVideo) noSleepVideo.pause();
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      const recipeActive = document.getElementById('recipe-section').classList.contains('active');
+      if (document.visibilityState === 'visible' && recipeActive) enableNoSleepVideo();
+    });
 
     document.addEventListener('DOMContentLoaded', async () => {
       try {
