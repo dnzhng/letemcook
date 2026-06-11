@@ -580,14 +580,12 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    let wakeLock = null;
     let noSleepVideo = null;
 
-    // Fallback for browsers that don't expose navigator.wakeLock (e.g. Chrome
-    // and other third-party browsers on iOS, which all run on WebKit but
-    // don't get the Wake Lock API like Safari does). A muted video sourced
-    // from a canvas stream, looping forever, keeps the screen awake on iOS
-    // regardless of which browser is used.
+    // Keeps the screen awake on iOS regardless of browser, by playing a
+    // muted, looping video sourced from a canvas stream. The native Wake
+    // Lock API isn't reliably available or effective across iOS browsers
+    // and versions, so this is the sole mechanism used.
     function enableNoSleepVideo() {
       if (noSleepVideo) {
         noSleepVideo.play().catch(() => {});
@@ -621,35 +619,19 @@
       noSleepVideo = video;
     }
 
-    async function requestWakeLock() {
-      // Run both: the native Wake Lock API isn't reliable on iOS even in
-      // Safari (depends on iOS version, secure context, low power mode,
-      // etc.), so the video fallback runs unconditionally as the primary
-      // mechanism, with the native API as a bonus when it works.
-      enableNoSleepVideo();
-
-      if ('wakeLock' in navigator) {
-        try {
-          wakeLock = await navigator.wakeLock.request('screen');
-        } catch (e) {
-          // ignore, video fallback is already active
-        }
-      }
-    }
-
     document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible') requestWakeLock();
+      if (document.visibilityState === 'visible') enableNoSleepVideo();
     });
 
-    // iOS requires a user gesture before granting a wake lock or allowing
-    // video playback, so acquire it on first tap rather than on page load.
-    function acquireWakeLockOnFirstInteraction() {
-      requestWakeLock();
-      document.removeEventListener('click', acquireWakeLockOnFirstInteraction);
-      document.removeEventListener('touchstart', acquireWakeLockOnFirstInteraction);
+    // iOS requires a user gesture before allowing video playback, so start
+    // it on first tap rather than on page load.
+    function enableNoSleepVideoOnFirstInteraction() {
+      enableNoSleepVideo();
+      document.removeEventListener('click', enableNoSleepVideoOnFirstInteraction);
+      document.removeEventListener('touchstart', enableNoSleepVideoOnFirstInteraction);
     }
-    document.addEventListener('click', acquireWakeLockOnFirstInteraction);
-    document.addEventListener('touchstart', acquireWakeLockOnFirstInteraction);
+    document.addEventListener('click', enableNoSleepVideoOnFirstInteraction);
+    document.addEventListener('touchstart', enableNoSleepVideoOnFirstInteraction);
 
     document.addEventListener('DOMContentLoaded', async () => {
       try {
