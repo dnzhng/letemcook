@@ -622,15 +622,19 @@
     }
 
     async function requestWakeLock() {
+      // Run both: the native Wake Lock API isn't reliable on iOS even in
+      // Safari (depends on iOS version, secure context, low power mode,
+      // etc.), so the video fallback runs unconditionally as the primary
+      // mechanism, with the native API as a bonus when it works.
+      enableNoSleepVideo();
+
       if ('wakeLock' in navigator) {
         try {
           wakeLock = await navigator.wakeLock.request('screen');
-          return;
         } catch (e) {
-          // fall through to video fallback
+          // ignore, video fallback is already active
         }
       }
-      enableNoSleepVideo();
     }
 
     document.addEventListener('visibilitychange', () => {
