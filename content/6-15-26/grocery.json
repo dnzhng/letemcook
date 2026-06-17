@@ -1,0 +1,48 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #3a2416 0%, #1f140d 100%)",
+    "primaryRgb": "232, 160, 44",
+    "accentRgb": "200, 68, 46",
+    "checkedRgb": "91, 140, 90"
+  },
+  "meta": {
+    "weekLabel": "Week of June 15 · 10 servings",
+    "title": "Tahu Kecap (Sweet Soy Glazed Tofu)",
+    "subtitle": "Sweet soy glazed tofu over jasmine rice — one wok, no cornstarch, no kecap manis."
+  },
+  "categories": [
+    {
+      "category": "Tofu & Grain",
+      "emoji": "🧊",
+      "items": [
+        { "id": "firm-tofu", "name": "Firm or extra-firm tofu", "qty": "4 blocks (~3.5 lb / 1.6 kg)" },
+        { "id": "jasmine-rice", "name": "Jasmine rice (dry)", "qty": "4.5 cups" }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🥬",
+      "items": [
+        { "id": "red-bell-pepper", "name": "Red bell peppers", "qty": "2" },
+        { "id": "green-bell-pepper", "name": "Green bell pepper", "qty": "1" },
+        { "id": "shallots", "name": "Shallots", "qty": "5 (or 1 onion + 2 shallots)" },
+        { "id": "garlic", "name": "Garlic", "qty": "12 cloves (1 head)" },
+        { "id": "ginger", "name": "Fresh ginger", "qty": "3-inch piece" },
+        { "id": "red-chilies", "name": "Red chilies (Fresno / bird's eye)", "qty": "4–6", "note": "Adjust to heat preference" },
+        { "id": "scallions", "name": "Scallions", "qty": "1 bunch", "note": "Garnish" },
+        { "id": "limes", "name": "Limes", "qty": "2", "note": "Garnish" }
+      ]
+    },
+    {
+      "category": "Pantry & Sauces",
+      "emoji": "🍯",
+      "items": [
+        { "id": "soy-sauce", "name": "Soy sauce", "qty": "1/2 cup", "note": "Base of the sweet soy glaze — check you have enough" },
+        { "id": "brown-sugar", "name": "Brown sugar", "qty": "1/2 cup + 2 tbsp", "note": "Sweetens the glaze" },
+        { "id": "molasses", "name": "Molasses", "qty": "1 tsp", "note": "Optional, adds depth" },
+        { "id": "bay-leaves", "name": "Bay leaves", "qty": "4", "note": "Optional aromatic" },
+        { "id": "veg-stock", "name": "Vegetable stock (or water)", "qty": "2 cups" }
+      ]
+    }
+  ]
+}
