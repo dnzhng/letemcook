@@ -1,0 +1,49 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(165deg, #1a1520 0%, #0d1117 40%, #0f1a12 100%)",
+    "primaryRgb": "232, 160, 74",
+    "accentRgb": "122, 139, 110",
+    "checkedRgb": "122, 139, 110"
+  },
+  "meta": {
+    "weekLabel": "Week of June 22 · 10 servings",
+    "title": "Pad See Ew Fried Rice",
+    "subtitle": "Tofu · Egg · Broccoli · Bell Pepper"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "🫘",
+      "items": [
+        { "id": "tofu", "name": "Extra-firm tofu", "qty": "3 blocks (14–16 oz each)", "note": "Press 30 min before cooking" },
+        { "id": "eggs", "name": "Eggs", "qty": "8 large", "note": "Already have — use from fridge" }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🥦",
+      "items": [
+        { "id": "broccoli", "name": "Broccoli", "qty": "2 large heads", "note": "Already have — use leftover" },
+        { "id": "bell-peppers", "name": "Bell peppers (red/yellow/orange)", "qty": "3 total", "note": "Already have — use leftover" },
+        { "id": "garlic", "name": "Garlic", "qty": "1 bulb (need 10 cloves)" },
+        { "id": "scallions", "name": "Scallions", "qty": "1 bunch" }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "🍚",
+      "items": [
+        { "id": "jasmine-rice", "name": "Jasmine rice", "qty": "5 cups dry (~2.5 lbs)", "note": "Cook night before for best results" }
+      ]
+    },
+    {
+      "category": "Sauces & Pantry",
+      "emoji": "🫙",
+      "items": [
+        { "id": "dark-soy", "name": "Dark soy sauce", "qty": "1/2 cup", "note": "NOT regular soy — thicker, sweeter, darker" },
+        { "id": "oyster-sauce", "name": "Oyster sauce", "qty": "3 tbsp", "note": "Or vegetarian oyster sauce" },
+        { "id": "rice-vinegar", "name": "Rice vinegar", "qty": "3 tbsp", "note": "Check if you have from previous weeks" }
+      ]
+    }
+  ]
+}
