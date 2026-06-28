@@ -1,5 +1,5 @@
 # Jamaican Jerk Tofu with Coconut Rice & Peas
-## Week of June 8, 2026
+## Week of June 7, 2026
 
 **Servings:** 10 (2/day × 5 days)
 **Active Time:** ~40 minutes
