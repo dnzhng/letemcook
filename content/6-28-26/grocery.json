@@ -1,0 +1,61 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(165deg, #1a1611 0%, #2a2218 40%, #1e1a14 100%)",
+    "primaryRgb": "166, 139, 91",
+    "accentRgb": "196, 122, 74",
+    "checkedRgb": "127, 178, 120"
+  },
+  "meta": {
+    "weekLabel": "Week of June 28 · 10 servings",
+    "title": "Shawarma-Spiced Tofu",
+    "subtitle": "with Turmeric Rice & Quick Pickled Onions"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "🫘",
+      "items": [
+        { "id": "tofu", "name": "Extra-firm tofu", "qty": "3 blocks (14–16 oz each)", "note": "Press 30 min before cooking" }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧅",
+      "items": [
+        { "id": "red-onion", "name": "Red onions", "qty": "2 medium", "note": "For quick pickling" },
+        { "id": "yellow-onion", "name": "Yellow onion", "qty": "1 medium", "note": "Diced, for turmeric rice" },
+        { "id": "garlic", "name": "Garlic", "qty": "1 bulb (need 12 cloves)" },
+        { "id": "lemons", "name": "Lemons", "qty": "4–5", "note": "Need ~8 tbsp juice total" },
+        { "id": "parsley", "name": "Fresh flat-leaf parsley", "qty": "1 bunch", "note": "Optional garnish; cilantro works too" }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "🍚",
+      "items": [
+        { "id": "rice", "name": "Basmati or jasmine rice", "qty": "5 cups dry (~2.5 lbs)" }
+      ]
+    },
+    {
+      "category": "Pantry & Sauces",
+      "emoji": "🫙",
+      "items": [
+        { "id": "tahini", "name": "Tahini", "qty": "1/2 cup + extra", "note": "For the drizzle sauce" },
+        { "id": "rice-vinegar", "name": "Rice vinegar", "qty": "1/2 cup", "note": "Or white vinegar — for pickling onions" }
+      ]
+    },
+    {
+      "category": "Spices to Check",
+      "emoji": "🌿",
+      "items": [
+        { "id": "cumin", "name": "Ground cumin", "qty": "1 tbsp" },
+        { "id": "coriander", "name": "Ground coriander", "qty": "1 tbsp" },
+        { "id": "smoked-paprika", "name": "Smoked paprika", "qty": "1 tbsp" },
+        { "id": "turmeric", "name": "Ground turmeric", "qty": "2.5 tsp total", "note": "1 tsp shawarma + 1.5 tsp rice" },
+        { "id": "cinnamon", "name": "Ground cinnamon", "qty": "1 tsp" },
+        { "id": "allspice", "name": "Ground allspice", "qty": "1/2 tsp" },
+        { "id": "cayenne", "name": "Cayenne pepper", "qty": "1/2 tsp", "note": "Adjust to heat preference" }
+      ]
+    }
+  ]
+}
