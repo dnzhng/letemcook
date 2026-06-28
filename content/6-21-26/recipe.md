@@ -1,6 +1,6 @@
 # Pad See Ew Fried Rice with Tofu, Egg & Broccoli 🇹🇭
 
-## Week of June 22, 2026
+## Week of June 21, 2026
 
 **Servings:** 10 (2/day × 5 days)
 **Active Time:** ~30 minutes
