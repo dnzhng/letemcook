@@ -1,0 +1,106 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(5,26,14) 0%, rgb(4,20,11) 50%, rgb(3,17,9) 100%)",
+    "primaryRgb": "39, 174, 96",
+    "accentRgb": "46, 208, 115",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of May 10 · 10 servings",
+    "title": "Cuban Black Beans & Rice (Moros y Cristianos) with Crispy Tofu",
+    "subtitle": "Cuban Black Beans & Rice"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🫘",
+      "items": [
+        {
+          "id": "tofu-23",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-23",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Beans & Cans",
+      "emoji": "🥫",
+      "items": [
+        {
+          "id": "black-beans-23",
+          "name": "Black beans",
+          "qty": "3 cans (15 oz each)",
+          "note": "DO NOT DRAIN — the liquid flavors the rice"
+        },
+        {
+          "id": "broth-23",
+          "name": "Vegetable broth",
+          "qty": "1 cup"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧅",
+      "items": [
+        {
+          "id": "onion-23",
+          "name": "Yellow onions",
+          "qty": "2 large"
+        },
+        {
+          "id": "garlic-23",
+          "name": "Garlic",
+          "qty": "1 bulb (need 10 cloves)"
+        },
+        {
+          "id": "green-pepper-23",
+          "name": "Green bell pepper",
+          "qty": "1 large"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "cumin-23",
+          "name": "Cumin",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "oregano-23",
+          "name": "Dried oregano",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "paprika-23",
+          "name": "Smoked paprika",
+          "qty": "1 tsp"
+        },
+        {
+          "id": "bay-leaves-23",
+          "name": "Bay leaves",
+          "qty": "3"
+        },
+        {
+          "id": "vinegar-23",
+          "name": "White wine vinegar",
+          "qty": "2 tbsp",
+          "note": "Traditional Cuban finish — adds subtle tang"
+        },
+        {
+          "id": "olive-oil-23",
+          "name": "Olive oil",
+          "qty": "4 tbsp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(21,10,25) 0%, rgb(17,8,20) 50%, rgb(14,6,17) 100%)",
+    "primaryRgb": "142, 68, 173",
+    "accentRgb": "170, 81, 207",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of January 4 · 10 servings",
+    "title": "Korean Gochujang Tofu Rice Bowls",
+    "subtitle": "Korean Gochujang Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🌶️",
+      "items": [
+        {
+          "id": "tofu-5",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-5",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🥦",
+      "items": [
+        {
+          "id": "garlic-5",
+          "name": "Garlic",
+          "qty": "1 bulb (need 8 cloves)"
+        },
+        {
+          "id": "ginger-5",
+          "name": "Fresh ginger",
+          "qty": "1-inch knob"
+        },
+        {
+          "id": "green-onion-5",
+          "name": "Green onions",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "veg-5",
+          "name": "Broccoli, mushrooms, or bell peppers",
+          "qty": "2 cups"
+        }
+      ]
+    },
+    {
+      "category": "Key Purchase",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "gochujang-5",
+          "name": "Gochujang (Korean red chili paste)",
+          "qty": "1 tub (7–8 oz)",
+          "note": "Red rectangular tub — mild or medium"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-5",
+          "name": "Soy sauce",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "sesame-5",
+          "name": "Sesame oil",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "vinegar-5",
+          "name": "Rice vinegar",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sugar-5",
+          "name": "Sugar",
+          "qty": "1 tbsp"
+        }
+      ]
+    }
+  ]
+}

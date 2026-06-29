@@ -1,0 +1,112 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(34,11,9) 0%, rgb(27,9,7) 50%, rgb(23,7,6) 100%)",
+    "primaryRgb": "231, 76, 60",
+    "accentRgb": "255, 91, 72",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of April 19 · 10 servings",
+    "title": "Kimchi Jjim (Braised Kimchi with Pork Belly & Tofu)",
+    "subtitle": "Kimchi Jjim"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🥩",
+      "items": [
+        {
+          "id": "pork-20",
+          "name": "Pork belly",
+          "qty": "1.5 lbs (leftover)"
+        },
+        {
+          "id": "tofu-20",
+          "name": "Firm tofu",
+          "qty": "3 blocks (14–16 oz each)",
+          "note": "Slice thick — don't press"
+        },
+        {
+          "id": "rice-20",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Key Ingredient",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "kimchi-20",
+          "name": "Kimchi (old/fermented = better)",
+          "qty": "3–4 cups",
+          "note": "Reserve kimchi juice too"
+        },
+        {
+          "id": "mushrooms-20",
+          "name": "King oyster mushrooms (leftover)",
+          "qty": "as available"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧅",
+      "items": [
+        {
+          "id": "onion-20",
+          "name": "Yellow onions",
+          "qty": "2 medium"
+        },
+        {
+          "id": "green-onion-20",
+          "name": "Green onions",
+          "qty": "2 bunches"
+        },
+        {
+          "id": "garlic-20",
+          "name": "Garlic",
+          "qty": "1 bulb"
+        }
+      ]
+    },
+    {
+      "category": "Sauce",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "gochugaru-20",
+          "name": "Gochugaru (Korean red pepper flakes)",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "soy-20",
+          "name": "Soy sauce",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "sesame-20",
+          "name": "Sesame oil",
+          "qty": "1 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "For Serving (on the side)",
+      "emoji": "🥬",
+      "items": [
+        {
+          "id": "ssam-leaves-20",
+          "name": "Ssam leaves (perilla or lettuce)",
+          "qty": "1 pack"
+        },
+        {
+          "id": "ssamjang-20",
+          "name": "Ssamjang",
+          "qty": "1 tub (leftover)"
+        }
+      ]
+    }
+  ]
+}

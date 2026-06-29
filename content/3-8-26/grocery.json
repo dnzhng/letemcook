@@ -1,0 +1,122 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(21,10,25) 0%, rgb(17,8,20) 50%, rgb(14,6,17) 100%)",
+    "primaryRgb": "142, 68, 173",
+    "accentRgb": "170, 81, 207",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of March 8 · 10 servings",
+    "title": "Spicy Pork Belly Fried Rice",
+    "subtitle": "Pork Belly Fried Rice"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🥩",
+      "items": [
+        {
+          "id": "pork-14",
+          "name": "Pork belly",
+          "qty": "as available — slice ¼-inch"
+        },
+        {
+          "id": "eggs-14",
+          "name": "Eggs",
+          "qty": "4"
+        },
+        {
+          "id": "rice-14",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry",
+          "note": "Cook 1–2 days ahead"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧅",
+      "items": [
+        {
+          "id": "portobello-14",
+          "name": "Portobello mushrooms",
+          "qty": "2, diced"
+        },
+        {
+          "id": "bean-sprouts-14",
+          "name": "Bean sprouts",
+          "qty": "2 cups"
+        },
+        {
+          "id": "spinach-14",
+          "name": "Fresh spinach",
+          "qty": "3 cups"
+        },
+        {
+          "id": "shallots-14",
+          "name": "Shallots",
+          "qty": "3, thinly sliced"
+        },
+        {
+          "id": "garlic-14",
+          "name": "Garlic",
+          "qty": "4 cloves"
+        },
+        {
+          "id": "thai-chilies-14",
+          "name": "Thai chilies",
+          "qty": "4, sliced"
+        },
+        {
+          "id": "green-onion-14",
+          "name": "Green onions",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Key Purchase",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "oyster-14",
+          "name": "Oyster sauce",
+          "qty": "3 tbsp",
+          "note": "Main flavoring this week"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-14",
+          "name": "Soy sauce",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "sesame-14",
+          "name": "Sesame oil",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "sugar-14",
+          "name": "Sugar",
+          "qty": "1 tsp"
+        }
+      ]
+    },
+    {
+      "category": "To Serve (side)",
+      "emoji": "🥬",
+      "items": [
+        {
+          "id": "kimchi-14",
+          "name": "Kimchi (serve cold on the side)",
+          "qty": "½ cup per serving"
+        }
+      ]
+    }
+  ]
+}

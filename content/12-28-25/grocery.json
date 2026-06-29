@@ -1,0 +1,94 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(5,26,14) 0%, rgb(4,20,11) 50%, rgb(3,17,9) 100%)",
+    "primaryRgb": "39, 174, 96",
+    "accentRgb": "46, 208, 115",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of December 28 · 10 servings",
+    "title": "Mexican Chipotle Tofu Burrito Bowls",
+    "subtitle": "Mexican Chipotle Burrito Bowls"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🌯",
+      "items": [
+        {
+          "id": "tofu-4",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-4",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🍋",
+      "items": [
+        {
+          "id": "purple-cabbage-4",
+          "name": "Purple cabbage",
+          "qty": "½ head (for slaw — leftover)"
+        },
+        {
+          "id": "lime-4",
+          "name": "Limes",
+          "qty": "3"
+        },
+        {
+          "id": "cilantro-4",
+          "name": "Fresh cilantro",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "garlic-4",
+          "name": "Garlic",
+          "qty": "1 bulb (need 6 cloves)"
+        },
+        {
+          "id": "onion-4",
+          "name": "Yellow onion",
+          "qty": "1 medium"
+        }
+      ]
+    },
+    {
+      "category": "Pantry & Cans",
+      "emoji": "🥫",
+      "items": [
+        {
+          "id": "chipotles-4",
+          "name": "Chipotle peppers in adobo",
+          "qty": "1 can (7 oz)",
+          "note": "Need 2–3 peppers + 2 tbsp sauce"
+        },
+        {
+          "id": "black-beans-4",
+          "name": "Black beans",
+          "qty": "2 cans (15 oz each)"
+        },
+        {
+          "id": "cumin-4",
+          "name": "Cumin",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "paprika-4",
+          "name": "Smoked paprika",
+          "qty": "1 tsp"
+        },
+        {
+          "id": "olive-oil-4",
+          "name": "Olive oil",
+          "qty": "3 tbsp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(34,18,5) 0%, rgb(27,15,4) 50%, rgb(23,12,3) 100%)",
+    "primaryRgb": "230, 126, 34",
+    "accentRgb": "255, 151, 40",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of January 11 · 10 servings",
+    "title": "Japanese Miso Glazed Eggplant & Tofu Rice Bowls",
+    "subtitle": "Miso Eggplant & Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🍆",
+      "items": [
+        {
+          "id": "tofu-6",
+          "name": "Extra-firm tofu",
+          "qty": "2.5 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-6",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        },
+        {
+          "id": "eggplant-6",
+          "name": "Eggplant (Japanese preferred)",
+          "qty": "3–4 lbs"
+        }
+      ]
+    },
+    {
+      "category": "Aromatics",
+      "emoji": "🧄",
+      "items": [
+        {
+          "id": "garlic-6",
+          "name": "Garlic",
+          "qty": "1 bulb (need 4 cloves)"
+        },
+        {
+          "id": "green-onion-6",
+          "name": "Green onions",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Miso Glaze",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "miso-6",
+          "name": "White or red miso paste",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "mirin-6",
+          "name": "Mirin",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "sake-6",
+          "name": "Sake or dry sherry",
+          "qty": "2 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "sugar-6",
+          "name": "Sugar",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "soy-6",
+          "name": "Soy sauce",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sesame-oil-6",
+          "name": "Sesame oil (toasted)",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "sesame-seeds-6",
+          "name": "Sesame seeds",
+          "qty": "for garnish"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a1a0a 0%, #4a2a10 50%, #3a1a08 100%)",
+    "primaryRgb": "255, 152, 0",
+    "accentRgb": "198, 40, 40",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of October 4 \u00b7 10 servings",
+    "title": "Indian Chana Masala + Tofu",
+    "subtitle": "Spiced chickpea curry \u00b7 tangier than tikka masala"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        },
+        {
+          "id": "chickpeas",
+          "name": "Canned chickpeas",
+          "qty": "4 cans (15 oz each)"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uddc5",
+      "items": [
+        {
+          "id": "onions",
+          "name": "Yellow onions",
+          "qty": "5",
+          "note": "3 now + 2 carry to next week"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "8 cloves"
+        },
+        {
+          "id": "ginger",
+          "name": "Fresh ginger",
+          "qty": "3-inch piece",
+          "note": "Carries to next week"
+        },
+        {
+          "id": "serrano",
+          "name": "Serrano peppers",
+          "qty": "2"
+        },
+        {
+          "id": "cilantro",
+          "name": "Fresh cilantro",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Spices & Pantry",
+      "emoji": "\ud83c\udf36\ufe0f",
+      "items": [
+        {
+          "id": "garam-masala",
+          "name": "Garam masala",
+          "qty": "1.5 tsp"
+        },
+        {
+          "id": "amchoor",
+          "name": "Amchoor (dried mango powder)",
+          "qty": "1 tsp",
+          "note": "Or sub 2 tbsp lemon juice"
+        },
+        {
+          "id": "diced-tomatoes",
+          "name": "Canned diced tomatoes",
+          "qty": "4 cans",
+          "note": "2 now + 2 carry to next week"
+        },
+        {
+          "id": "tomato-paste",
+          "name": "Tomato paste",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "cumin",
+          "name": "Ground cumin",
+          "qty": "2 tsp",
+          "note": "Carries to next week"
+        },
+        {
+          "id": "coriander",
+          "name": "Ground coriander",
+          "qty": "2 tsp",
+          "note": "Carries to next week"
+        },
+        {
+          "id": "turmeric",
+          "name": "Ground turmeric",
+          "qty": "1 tsp"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "basmati",
+          "name": "Basmati rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

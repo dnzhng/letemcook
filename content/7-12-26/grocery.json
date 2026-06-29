@@ -1,0 +1,116 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1b2a1b 0%, #2d4a2d 50%, #1a3a1a 100%)",
+    "primaryRgb": "156, 204, 101",
+    "accentRgb": "255, 183, 77",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of July 12 \u00b7 10 servings",
+    "title": "Thai Green Curry Tofu",
+    "subtitle": "Bright & herbal coconut curry \u00b7 uses leftover coconut milk + limes"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\udd6c",
+      "items": [
+        {
+          "id": "bell-peppers",
+          "name": "Bell peppers (any color)",
+          "qty": "3"
+        },
+        {
+          "id": "zucchini",
+          "name": "Zucchini",
+          "qty": "2 medium"
+        },
+        {
+          "id": "thai-basil",
+          "name": "Thai basil",
+          "qty": "1 large bunch"
+        }
+      ]
+    },
+    {
+      "category": "Canned",
+      "emoji": "\ud83e\udd6b",
+      "items": [
+        {
+          "id": "bamboo-shoots",
+          "name": "Canned bamboo shoots",
+          "qty": "1 can (14 oz)"
+        }
+      ]
+    },
+    {
+      "category": "Pantry",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "green-curry-paste",
+          "name": "Thai green curry paste",
+          "qty": "5 tbsp",
+          "note": "Mae Ploy or Maesri brand"
+        },
+        {
+          "id": "palm-sugar",
+          "name": "Palm sugar or brown sugar",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "makrut-lime",
+          "name": "Makrut lime leaves",
+          "qty": "4\u20136 leaves",
+          "note": "Optional but excellent"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "jasmine-rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "coconut-carry",
+          "name": "Coconut milk",
+          "qty": "2 cans",
+          "note": "From last week's 6-can buy"
+        },
+        {
+          "id": "lime-carry",
+          "name": "Limes",
+          "qty": "3",
+          "note": "From last week's 8-lime buy"
+        },
+        {
+          "id": "fish-sauce-carry",
+          "name": "Fish sauce",
+          "qty": "3 tbsp",
+          "note": "Same bottle"
+        }
+      ]
+    }
+  ]
+}

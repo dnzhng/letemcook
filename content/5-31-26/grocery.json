@@ -1,0 +1,116 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(6,19,27) 0%, rgb(4,15,22) 50%, rgb(4,12,18) 100%)",
+    "primaryRgb": "41, 128, 185",
+    "accentRgb": "49, 153, 222",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of May 31 · 10 servings",
+    "title": "Greek Lemon Rice with Chickpeas & Crispy Herbed Tofu",
+    "subtitle": "Greek Lemon Rice & Chickpeas"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🫘",
+      "items": [
+        {
+          "id": "tofu-26",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-26",
+          "name": "Jasmine or long-grain rice",
+          "qty": "3.5 cups dry"
+        },
+        {
+          "id": "chickpeas-26",
+          "name": "Chickpeas",
+          "qty": "2 cans (15 oz each), drained"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🍋",
+      "items": [
+        {
+          "id": "lemons-26",
+          "name": "Lemons",
+          "qty": "4 (juice + zest)"
+        },
+        {
+          "id": "garlic-26",
+          "name": "Garlic",
+          "qty": "1 bulb (need 10 cloves)"
+        },
+        {
+          "id": "onion-26",
+          "name": "Yellow onion",
+          "qty": "1 large"
+        },
+        {
+          "id": "spinach-26",
+          "name": "Baby spinach",
+          "qty": "5 oz"
+        }
+      ]
+    },
+    {
+      "category": "Key Specialty Purchase",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "kalamata-26",
+          "name": "Kalamata olives (pitted)",
+          "qty": "1 cup",
+          "note": "Olive bar or small jar — don't skip"
+        }
+      ]
+    },
+    {
+      "category": "Fresh Herbs",
+      "emoji": "🌿",
+      "items": [
+        {
+          "id": "dill-26",
+          "name": "Fresh dill",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "parsley-26",
+          "name": "Fresh parsley",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "dried-oregano-26",
+          "name": "Dried oregano",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "broth-26",
+          "name": "Vegetable broth",
+          "qty": "3 cups"
+        },
+        {
+          "id": "olive-oil-26",
+          "name": "Olive oil",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "garlic-powder-26",
+          "name": "Garlic powder",
+          "qty": "1 tsp (tofu crust)"
+        }
+      ]
+    }
+  ]
+}

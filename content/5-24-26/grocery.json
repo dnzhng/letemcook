@@ -1,0 +1,120 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(21,10,25) 0%, rgb(17,8,20) 50%, rgb(14,6,17) 100%)",
+    "primaryRgb": "142, 68, 173",
+    "accentRgb": "170, 81, 207",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of May 24 · 10 servings",
+    "title": "Multi-Meal Week: Tikka / Japanese Curry / Mapo Tofu & Drunken Noodles",
+    "subtitle": "Multi-Meal Leftovers Week"
+  },
+  "categories": [
+    {
+      "category": "Proteins",
+      "emoji": "🥩",
+      "items": [
+        {
+          "id": "chicken-25",
+          "name": "Chicken thighs",
+          "qty": "4 (for tikka meal)"
+        },
+        {
+          "id": "tofu-25",
+          "name": "Extra-firm tofu",
+          "qty": "2.5 blocks (curry + mapo)"
+        }
+      ]
+    },
+    {
+      "category": "Grain & Noodles",
+      "emoji": "🍜",
+      "items": [
+        {
+          "id": "rice-25",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry total (all three dishes)"
+        },
+        {
+          "id": "noodles-25",
+          "name": "Wide rice noodles",
+          "qty": "2 lbs (for drunken noodles)"
+        }
+      ]
+    },
+    {
+      "category": "Using Up Leftovers",
+      "emoji": "♻️",
+      "items": [
+        {
+          "id": "tikka-25",
+          "name": "Leftover tikka masala sauce",
+          "qty": "2 servings"
+        },
+        {
+          "id": "curry-25",
+          "name": "Leftover Japanese curry",
+          "qty": "2 servings"
+        },
+        {
+          "id": "garlic-thai-chilies-25",
+          "name": "Leftover garlic + Thai chilies",
+          "qty": "as much as available"
+        }
+      ]
+    },
+    {
+      "category": "Mapo Aromatics & Sauce",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "doubanjiang-25",
+          "name": "Doubanjiang",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sichuan-peppercorn-25",
+          "name": "Sichuan peppercorns",
+          "qty": "2 tbsp (toast + grind)"
+        },
+        {
+          "id": "shaoxing-25",
+          "name": "Shaoxing wine",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "stock-25",
+          "name": "Vegetable stock",
+          "qty": "2.5 cups"
+        },
+        {
+          "id": "thai-basil-25",
+          "name": "Thai basil (for drunken noodles)",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-25",
+          "name": "Soy sauce + dark soy sauce",
+          "qty": "6 tbsp total"
+        },
+        {
+          "id": "oyster-25",
+          "name": "Oyster sauce",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "sesame-oil-25",
+          "name": "Sesame oil",
+          "qty": "1 tbsp"
+        }
+      ]
+    }
+  ]
+}

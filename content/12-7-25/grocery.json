@@ -1,0 +1,79 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(34,25,8) 0%, rgb(27,20,6) 50%, rgb(23,16,5) 100%)",
+    "primaryRgb": "232, 168, 56",
+    "accentRgb": "255, 201, 67",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of December 7 · 10 servings",
+    "title": "Tofu Fried Rice",
+    "subtitle": "Tofu Fried Rice"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🥚",
+      "items": [
+        {
+          "id": "tofu-1",
+          "name": "Extra-firm tofu",
+          "qty": "2 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-1",
+          "name": "Jasmine rice",
+          "qty": "4 cups dry",
+          "note": "Cook 1–2 days ahead"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧅",
+      "items": [
+        {
+          "id": "garlic-1",
+          "name": "Garlic",
+          "qty": "1 bulb (need 4 cloves)"
+        },
+        {
+          "id": "green-onion-1",
+          "name": "Green onions",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "eggs-1",
+          "name": "Eggs",
+          "qty": "4 large"
+        },
+        {
+          "id": "peas-1",
+          "name": "Frozen peas (or edamame/cabbage)",
+          "qty": "2 cups"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-1",
+          "name": "Soy sauce",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "sesame-1",
+          "name": "Sesame oil (toasted)",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "oil-1",
+          "name": "Neutral oil",
+          "qty": "3 tbsp"
+        }
+      ]
+    }
+  ]
+}

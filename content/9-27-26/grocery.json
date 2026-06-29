@@ -1,0 +1,94 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a2a1a 0%, #3a3a2a 50%, #2a2a18 100%)",
+    "primaryRgb": "255, 214, 0",
+    "accentRgb": "161, 136, 127",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of September 27 \u00b7 10 servings",
+    "title": "Burmese Chickpea Tofu Thoke",
+    "subtitle": "Chickpea-flour tofu salad \u00b7 first Burmese dish \u00b7 make tofu day before"
+  },
+  "categories": [
+    {
+      "category": "Main",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "chickpea-flour",
+          "name": "Chickpea flour (besan)",
+          "qty": "3 cups"
+        },
+        {
+          "id": "shallots",
+          "name": "Shallots",
+          "qty": "4",
+          "note": "For frying"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83c\udf3f",
+      "items": [
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "4 cloves"
+        },
+        {
+          "id": "cilantro",
+          "name": "Fresh cilantro",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "chili-flakes",
+          "name": "Red chili flakes",
+          "qty": "2 tsp"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "lime-carry",
+          "name": "Limes",
+          "qty": "4",
+          "note": "From last week's buy"
+        },
+        {
+          "id": "peanuts-carry",
+          "name": "Roasted peanuts",
+          "qty": "1 cup",
+          "note": "From last week"
+        },
+        {
+          "id": "fish-sauce-carry",
+          "name": "Fish sauce",
+          "qty": "4 tbsp",
+          "note": "Same bottle"
+        },
+        {
+          "id": "rice-vinegar-carry",
+          "name": "Rice vinegar",
+          "qty": "2 tbsp",
+          "note": "Same bottle"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "jasmine-rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

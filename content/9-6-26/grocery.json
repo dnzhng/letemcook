@@ -1,0 +1,96 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a1a2e 0%, #2e1a3e 50%, #1a0a2e 100%)",
+    "primaryRgb": "206, 147, 216",
+    "accentRgb": "255, 167, 38",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of September 6 \u00b7 10 servings",
+    "title": "Korean Japchae (\uc7a1\ucc44)",
+    "subtitle": "Glass noodle stir-fry \u00b7 sweet-savory sesame glaze"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        }
+      ]
+    },
+    {
+      "category": "Noodles",
+      "emoji": "\ud83c\udf5c",
+      "items": [
+        {
+          "id": "glass-noodles",
+          "name": "Sweet potato glass noodles (dangmyeon)",
+          "qty": "1.5 lbs"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83c\udf44",
+      "items": [
+        {
+          "id": "spinach",
+          "name": "Fresh spinach",
+          "qty": "1 lb"
+        },
+        {
+          "id": "mushrooms",
+          "name": "Shiitake or cremini mushrooms",
+          "qty": "1 lb"
+        },
+        {
+          "id": "bell-peppers",
+          "name": "Bell peppers",
+          "qty": "3"
+        },
+        {
+          "id": "onions",
+          "name": "Yellow onions",
+          "qty": "4",
+          "note": "2 now + 2 carry to next week"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "6 cloves"
+        }
+      ]
+    },
+    {
+      "category": "Pantry",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "sesame-oil",
+          "name": "Toasted sesame oil",
+          "qty": "4 tbsp",
+          "note": "Carries to next week"
+        },
+        {
+          "id": "mirin",
+          "name": "Mirin or rice wine",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sesame-seeds",
+          "name": "Sesame seeds",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sugar",
+          "name": "Sugar",
+          "qty": "3 tbsp"
+        }
+      ]
+    }
+  ]
+}

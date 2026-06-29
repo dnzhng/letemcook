@@ -1,0 +1,100 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a0a0a 0%, #4a1a1a 50%, #3a0808 100%)",
+    "primaryRgb": "244, 67, 54",
+    "accentRgb": "255, 152, 0",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of November 1 \u00b7 10 servings",
+    "title": "Korean Tteokbokki + Tofu",
+    "subtitle": "Sweet-spicy rice cakes \u00b7 Korean street food"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        }
+      ]
+    },
+    {
+      "category": "Rice Cakes",
+      "emoji": "\ud83c\udf61",
+      "items": [
+        {
+          "id": "tteok",
+          "name": "Korean rice cakes (tteok)",
+          "qty": "2 lbs",
+          "note": "Frozen or refrigerated \u2014 soak 20 min"
+        },
+        {
+          "id": "fish-cake",
+          "name": "Fish cakes (eomuk)",
+          "qty": "4 sheets",
+          "note": "Optional but traditional"
+        }
+      ]
+    },
+    {
+      "category": "Sauce",
+      "emoji": "\ud83c\udf36\ufe0f",
+      "items": [
+        {
+          "id": "gochujang",
+          "name": "Gochujang",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "gochugaru",
+          "name": "Gochugaru (Korean chili flakes)",
+          "qty": "2 tbsp",
+          "note": "Or more gochujang"
+        },
+        {
+          "id": "rice-syrup",
+          "name": "Rice syrup or honey",
+          "qty": "1 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "scallion-carry",
+          "name": "Scallions",
+          "qty": "1 bunch",
+          "note": "From last week"
+        },
+        {
+          "id": "sesame-carry",
+          "name": "Sesame oil + seeds",
+          "qty": "2 tbsp + 2 tbsp"
+        },
+        {
+          "id": "soy-carry",
+          "name": "Soy sauce",
+          "qty": "3 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Jasmine rice",
+          "qty": "4 cups dry",
+          "note": "Less than usual \u2014 rice cakes are the starch"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(34,11,9) 0%, rgb(27,9,7) 50%, rgb(23,7,6) 100%)",
+    "primaryRgb": "231, 76, 60",
+    "accentRgb": "255, 91, 72",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of March 22 · 10 servings",
+    "title": "Twice-Cooked Pork Belly (回锅肉 Hui Guo Rou)",
+    "subtitle": "Twice-Cooked Pork Belly"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🥩",
+      "items": [
+        {
+          "id": "pork-16",
+          "name": "Pork belly",
+          "qty": "1–1.5 lbs"
+        },
+        {
+          "id": "rice-16",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧄",
+      "items": [
+        {
+          "id": "garlic-16",
+          "name": "Garlic",
+          "qty": "1 bulb (need 8 cloves)"
+        },
+        {
+          "id": "ginger-16",
+          "name": "Fresh ginger",
+          "qty": "2-inch knob (+ 2 slices for par-boil)"
+        },
+        {
+          "id": "green-onion-16",
+          "name": "Green onions/scallions",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "green-beans-16",
+          "name": "Green beans (exception week)",
+          "qty": "2 lbs"
+        },
+        {
+          "id": "peppers-16",
+          "name": "Long hot green peppers (optional)",
+          "qty": "3–4"
+        }
+      ]
+    },
+    {
+      "category": "Key Sauces (Asian Grocer)",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "doubanjiang-16",
+          "name": "Doubanjiang (Pixian spicy broad bean paste)",
+          "qty": "3 tbsp",
+          "note": "ESSENTIAL — find at Asian grocery"
+        },
+        {
+          "id": "douchi-16",
+          "name": "Fermented black beans (douchi)",
+          "qty": "2 tbsp",
+          "note": "Optional but adds depth"
+        },
+        {
+          "id": "shaoxing-16",
+          "name": "Shaoxing wine",
+          "qty": "3 tbsp + 2 tbsp for par-boil"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "dark-soy-16",
+          "name": "Dark soy sauce",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "light-soy-16",
+          "name": "Light soy sauce",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sugar-16",
+          "name": "Sugar",
+          "qty": "1 tsp"
+        }
+      ]
+    }
+  ]
+}

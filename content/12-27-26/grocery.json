@@ -1,0 +1,125 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a1a0a 0%, #2a2818 50%, #1a1a08 100%)",
+    "primaryRgb": "161, 136, 127",
+    "accentRgb": "255, 214, 0",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of December 27 \u00b7 10 servings",
+    "title": "Taiwanese Braised Soy Tofu (\u6ef7\u8c46\u8150)",
+    "subtitle": "Master-sauce braised tofu + eggs \u00b7 end-of-year contemplation"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "firm-tofu",
+          "name": "Firm tofu",
+          "qty": "4 blocks (14\u201316 oz each)"
+        },
+        {
+          "id": "eggs",
+          "name": "Eggs",
+          "qty": "10",
+          "note": "Hard-boiled and peeled"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\udd6c",
+      "items": [
+        {
+          "id": "scallions",
+          "name": "Scallions",
+          "qty": "2"
+        },
+        {
+          "id": "bok-choy",
+          "name": "Bok choy or gai lan",
+          "qty": "2 lbs",
+          "note": "Blanched on the side"
+        }
+      ]
+    },
+    {
+      "category": "Braising Liquid",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "soy-sauce",
+          "name": "Soy sauce",
+          "qty": "1 cup"
+        },
+        {
+          "id": "shaoxing",
+          "name": "Shaoxing wine",
+          "qty": "1/2 cup"
+        },
+        {
+          "id": "rock-sugar",
+          "name": "Rock sugar or brown sugar",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "five-spice",
+          "name": "Five-spice powder",
+          "qty": "1 tbsp",
+          "note": "Same jar from Nov 23 char siu"
+        },
+        {
+          "id": "star-anise",
+          "name": "Star anise",
+          "qty": "5"
+        },
+        {
+          "id": "cinnamon-sticks",
+          "name": "Cinnamon sticks",
+          "qty": "2"
+        },
+        {
+          "id": "cloves",
+          "name": "Whole cloves",
+          "qty": "3"
+        },
+        {
+          "id": "bay-leaves",
+          "name": "Bay leaves",
+          "qty": "2"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "ginger-carry",
+          "name": "Ginger",
+          "qty": "3-inch piece",
+          "note": "From last week"
+        },
+        {
+          "id": "garlic-carry",
+          "name": "Garlic",
+          "qty": "6 cloves",
+          "note": "Smashed"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

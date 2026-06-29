@@ -1,0 +1,115 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a1a0a 0%, #3a2a1a 50%, #2a1808 100%)",
+    "primaryRgb": "255, 183, 77",
+    "accentRgb": "76, 175, 80",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of September 13 \u00b7 10 servings",
+    "title": "Filipino Sisig-Style Tofu",
+    "subtitle": "Tangy crispy chopped tofu \u00b7 Filipino bar food"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        },
+        {
+          "id": "eggs",
+          "name": "Eggs",
+          "qty": "5",
+          "note": "Optional \u2014 fried on top"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uddc5",
+      "items": [
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "8 cloves"
+        },
+        {
+          "id": "chilies",
+          "name": "Thai chilies or jalape\u00f1os",
+          "qty": "6 Thai or 3 jalape\u00f1os"
+        },
+        {
+          "id": "scallions",
+          "name": "Scallions",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "limes",
+          "name": "Limes",
+          "qty": "8",
+          "note": "4 now + 4 carry to next week"
+        }
+      ]
+    },
+    {
+      "category": "Pantry",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "mayo",
+          "name": "Mayonnaise",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "rice-vinegar",
+          "name": "Rice vinegar",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "butter",
+          "name": "Butter",
+          "qty": "1 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "onion-carry",
+          "name": "Yellow onions",
+          "qty": "3",
+          "note": "From last week's 4-onion buy"
+        },
+        {
+          "id": "soy-carry",
+          "name": "Soy sauce",
+          "qty": "4 tbsp",
+          "note": "Same bottle"
+        },
+        {
+          "id": "sesame-carry",
+          "name": "Sesame oil",
+          "qty": "Drizzle",
+          "note": "Same bottle"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "jasmine-rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a1a1a 0%, #3a2020 50%, #2a1010 100%)",
+    "primaryRgb": "229, 57, 53",
+    "accentRgb": "255, 202, 40",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of August 16 \u00b7 10 servings",
+    "title": "Turkish Menemen-Style Tofu",
+    "subtitle": "Spiced tomato-pepper scramble \u00b7 first Turkish dish"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\udd5a",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        },
+        {
+          "id": "eggs",
+          "name": "Large eggs",
+          "qty": "8"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uded1",
+      "items": [
+        {
+          "id": "bell-peppers",
+          "name": "Bell peppers (mixed colors)",
+          "qty": "4"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "6 cloves"
+        },
+        {
+          "id": "parsley",
+          "name": "Fresh parsley",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "dill",
+          "name": "Fresh dill",
+          "qty": "1 bunch",
+          "note": "Optional"
+        }
+      ]
+    },
+    {
+      "category": "New This Week",
+      "emoji": "\ud83d\uded2",
+      "items": [
+        {
+          "id": "aleppo",
+          "name": "Aleppo pepper",
+          "qty": "2 tsp",
+          "note": "Or red pepper flakes + paprika"
+        },
+        {
+          "id": "smoked-paprika",
+          "name": "Smoked paprika",
+          "qty": "1 tsp"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "onion-carry",
+          "name": "Yellow onions",
+          "qty": "2",
+          "note": "Buy 4 total \u2014 2 carry to next week"
+        },
+        {
+          "id": "tomato-carry",
+          "name": "Canned diced tomatoes",
+          "qty": "2 cans",
+          "note": "Buy 4 \u2014 2 carry to next week"
+        },
+        {
+          "id": "paste-carry",
+          "name": "Tomato paste",
+          "qty": "2 tbsp",
+          "note": "Same tube"
+        },
+        {
+          "id": "cumin-carry",
+          "name": "Ground cumin",
+          "qty": "2 tsp",
+          "note": "Same jar"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

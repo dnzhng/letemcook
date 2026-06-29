@@ -1,0 +1,106 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(34,18,5) 0%, rgb(27,15,4) 50%, rgb(23,12,3) 100%)",
+    "primaryRgb": "230, 126, 34",
+    "accentRgb": "255, 151, 40",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of March 29 · 10 servings",
+    "title": "Spanish Smoky Paprika Tofu with Tomato Rice",
+    "subtitle": "Spanish Smoky Paprika Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🫘",
+      "items": [
+        {
+          "id": "tofu-17",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-17",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🍅",
+      "items": [
+        {
+          "id": "onion-17",
+          "name": "Yellow onions",
+          "qty": "2 large"
+        },
+        {
+          "id": "garlic-17",
+          "name": "Garlic",
+          "qty": "1 bulb (need 8 cloves)"
+        },
+        {
+          "id": "bell-pepper-17",
+          "name": "Red bell peppers",
+          "qty": "2"
+        }
+      ]
+    },
+    {
+      "category": "Cans & Liquid",
+      "emoji": "🥫",
+      "items": [
+        {
+          "id": "crushed-tomatoes-17",
+          "name": "Crushed tomatoes",
+          "qty": "1 can (28 oz)"
+        },
+        {
+          "id": "broth-17",
+          "name": "Vegetable broth",
+          "qty": "2 cups"
+        }
+      ]
+    },
+    {
+      "category": "Key Spice",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "smoked-paprika-17",
+          "name": "Smoked paprika (pimentón)",
+          "qty": "3 tbsp total",
+          "note": "Star ingredient — Spanish if possible"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "cumin-17",
+          "name": "Cumin",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "oregano-17",
+          "name": "Dried oregano",
+          "qty": "1 tsp"
+        },
+        {
+          "id": "garlic-powder-17",
+          "name": "Garlic powder",
+          "qty": "1 tsp"
+        },
+        {
+          "id": "olive-oil-17",
+          "name": "Olive oil",
+          "qty": "4 tbsp"
+        }
+      ]
+    }
+  ]
+}

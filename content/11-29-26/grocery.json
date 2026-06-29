@@ -1,0 +1,97 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a2a0a 0%, #2a3a1a 50%, #1a2808 100%)",
+    "primaryRgb": "255, 214, 0",
+    "accentRgb": "76, 175, 80",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of November 29 \u00b7 10 servings",
+    "title": "Jamaican Curry Tofu",
+    "subtitle": "Allspice-thyme curry \u00b7 coconut milk \u00b7 potatoes"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uddc5",
+      "items": [
+        {
+          "id": "onions",
+          "name": "Yellow onions",
+          "qty": "3"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "6 cloves"
+        },
+        {
+          "id": "scotch-bonnet",
+          "name": "Scotch bonnet or habanero",
+          "qty": "2",
+          "note": "Use gloves!"
+        },
+        {
+          "id": "potatoes",
+          "name": "Yukon gold potatoes",
+          "qty": "2 lbs"
+        },
+        {
+          "id": "thyme",
+          "name": "Fresh thyme",
+          "qty": "6 sprigs",
+          "note": "Or 2 tsp dried"
+        },
+        {
+          "id": "scallions",
+          "name": "Scallions",
+          "qty": "2"
+        }
+      ]
+    },
+    {
+      "category": "Pantry",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "jamaican-curry",
+          "name": "Jamaican curry powder",
+          "qty": "3 tbsp",
+          "note": "Or 2 tbsp regular curry + 1 tsp allspice"
+        },
+        {
+          "id": "coconut-milk",
+          "name": "Coconut milk",
+          "qty": "2 cans (13.5 oz)"
+        },
+        {
+          "id": "allspice-ground",
+          "name": "Ground allspice",
+          "qty": "1 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

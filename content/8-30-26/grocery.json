@@ -1,0 +1,91 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a1a0a 0%, #2a2a1a 50%, #1a1a08 100%)",
+    "primaryRgb": "255, 214, 0",
+    "accentRgb": "121, 85, 72",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of August 30 \u00b7 10 servings",
+    "title": "Japanese Curry Tofu (\u30ab\u30ec\u30fc\u30e9\u30a4\u30b9)",
+    "subtitle": "Rich & mild comfort curry \u00b7 easiest recipe in the rotation"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\udd54",
+      "items": [
+        {
+          "id": "sweet-potatoes",
+          "name": "Sweet potatoes",
+          "qty": "2 medium",
+          "note": "Optional"
+        }
+      ]
+    },
+    {
+      "category": "Curry",
+      "emoji": "\ud83c\udf5b",
+      "items": [
+        {
+          "id": "curry-roux",
+          "name": "S&B Golden Curry roux",
+          "qty": "2 boxes",
+          "note": "Medium hot \u2014 no cornstarch needed"
+        },
+        {
+          "id": "honey",
+          "name": "Honey or brown sugar",
+          "qty": "1 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "potato-carry",
+          "name": "Potatoes",
+          "qty": "2 lbs",
+          "note": "From last week's 4-lb buy"
+        },
+        {
+          "id": "onion-carry",
+          "name": "Yellow onions",
+          "qty": "2",
+          "note": "From last week's buy"
+        },
+        {
+          "id": "soy-carry",
+          "name": "Soy sauce",
+          "qty": "2 tbsp",
+          "note": "Same bottle"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Japanese short-grain rice",
+          "qty": "5 cups dry",
+          "note": "Or jasmine"
+        }
+      ]
+    }
+  ]
+}

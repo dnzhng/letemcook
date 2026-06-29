@@ -1,0 +1,107 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a1a0a 0%, #2a2818 50%, #1a1a08 100%)",
+    "primaryRgb": "161, 136, 127",
+    "accentRgb": "255, 214, 0",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of November 15 \u00b7 10 servings",
+    "title": "Lebanese Mujaddara + Crispy Tofu",
+    "subtitle": "Lentils & rice \u00b7 caramelized onions \u00b7 first Lebanese dish"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        }
+      ]
+    },
+    {
+      "category": "Lentils & Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "lentils",
+          "name": "Brown or green lentils",
+          "qty": "2 cups"
+        },
+        {
+          "id": "rice",
+          "name": "Long-grain white rice",
+          "qty": "3 cups"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uddc5",
+      "items": [
+        {
+          "id": "lemons",
+          "name": "Lemons",
+          "qty": "2"
+        },
+        {
+          "id": "garlic-yogurt",
+          "name": "Garlic",
+          "qty": "1 clove"
+        }
+      ]
+    },
+    {
+      "category": "Dairy",
+      "emoji": "\ud83e\udd5b",
+      "items": [
+        {
+          "id": "yogurt",
+          "name": "Plain yogurt",
+          "qty": "2 cups"
+        }
+      ]
+    },
+    {
+      "category": "Spices",
+      "emoji": "\ud83c\udf3f",
+      "items": [
+        {
+          "id": "cumin",
+          "name": "Ground cumin",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "coriander",
+          "name": "Ground coriander",
+          "qty": "1 tsp"
+        },
+        {
+          "id": "cinnamon",
+          "name": "Ground cinnamon",
+          "qty": "1 tsp"
+        },
+        {
+          "id": "allspice",
+          "name": "Ground allspice",
+          "qty": "1 tsp"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "onion-carry",
+          "name": "Yellow onions",
+          "qty": "5",
+          "note": "3 from last week + 2 new \u2014 need A LOT for caramelizing"
+        }
+      ]
+    }
+  ]
+}

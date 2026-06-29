@@ -1,0 +1,96 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(3,24,19) 0%, rgb(2,19,15) 50%, rgb(2,16,13) 100%)",
+    "primaryRgb": "22, 160, 133",
+    "accentRgb": "26, 192, 159",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of May 3 · 10 servings",
+    "title": "Taiwanese Three Cup Tofu (三杯豆腐)",
+    "subtitle": "Taiwanese Three Cup Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🫘",
+      "items": [
+        {
+          "id": "tofu-22",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-22",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Fresh Produce",
+      "emoji": "🌿",
+      "items": [
+        {
+          "id": "thai-basil-22",
+          "name": "Fresh Thai basil",
+          "qty": "2 large bunches",
+          "note": "Add OFF HEAT — wilts black if over flame"
+        },
+        {
+          "id": "garlic-22",
+          "name": "Garlic",
+          "qty": "1 bulb (need 12 cloves — keep WHOLE)"
+        },
+        {
+          "id": "ginger-22",
+          "name": "Fresh ginger",
+          "qty": "2-inch piece, sliced into coins (not minced)"
+        },
+        {
+          "id": "dried-chilies-22",
+          "name": "Dried red chilies",
+          "qty": "6–8"
+        }
+      ]
+    },
+    {
+      "category": "The Three Cups",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "sesame-oil-22",
+          "name": "Toasted sesame oil",
+          "qty": "⅓ cup",
+          "note": "TOASTED (dark) — not plain sesame oil"
+        },
+        {
+          "id": "shaoxing-22",
+          "name": "Shaoxing rice wine",
+          "qty": "⅓ cup"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-22",
+          "name": "Soy sauce",
+          "qty": "⅓ cup"
+        },
+        {
+          "id": "dark-soy-22",
+          "name": "Dark soy sauce",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "sugar-22",
+          "name": "Sugar",
+          "qty": "2 tbsp"
+        }
+      ]
+    }
+  ]
+}

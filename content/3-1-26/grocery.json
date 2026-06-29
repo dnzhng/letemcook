@@ -1,0 +1,125 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(34,18,5) 0%, rgb(27,15,4) 50%, rgb(23,12,3) 100%)",
+    "primaryRgb": "230, 126, 34",
+    "accentRgb": "255, 151, 40",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of March 1 · 10 servings",
+    "title": "Tofu Tikka Masala with Basmati Rice",
+    "subtitle": "Tofu Tikka Masala"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🍛",
+      "items": [
+        {
+          "id": "tofu-13",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each, ~2.75 lbs)"
+        },
+        {
+          "id": "rice-13",
+          "name": "Basmati rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🍅",
+      "items": [
+        {
+          "id": "onions-13",
+          "name": "Yellow onions",
+          "qty": "5 medium"
+        },
+        {
+          "id": "ginger-13",
+          "name": "Fresh ginger",
+          "qty": "1 large piece (3–4 inches)"
+        },
+        {
+          "id": "tomatoes-13",
+          "name": "Fresh tomatoes (or 2 cans diced)",
+          "qty": "5 large"
+        },
+        {
+          "id": "limes-13",
+          "name": "Limes",
+          "qty": "3"
+        },
+        {
+          "id": "cilantro-13",
+          "name": "Fresh cilantro (optional garnish)",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Dairy & Sauce",
+      "emoji": "🥥",
+      "items": [
+        {
+          "id": "coconut-cream-13",
+          "name": "Coconut cream",
+          "qty": "2 cans (13.5 oz each)"
+        },
+        {
+          "id": "yogurt-13",
+          "name": "Plain yogurt (or coconut yogurt)",
+          "qty": "2.5 cups"
+        },
+        {
+          "id": "tomato-paste-13",
+          "name": "Tomato paste",
+          "qty": "1 cup"
+        },
+        {
+          "id": "cashews-13",
+          "name": "Raw cashews",
+          "qty": "1 cup",
+          "note": "Soak 15 min then blend into sauce"
+        }
+      ]
+    },
+    {
+      "category": "Spices (check first)",
+      "emoji": "🌶️",
+      "items": [
+        {
+          "id": "garam-masala-13",
+          "name": "Garam masala",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "cumin-13",
+          "name": "Ground cumin",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "coriander-13",
+          "name": "Ground coriander",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "turmeric-13",
+          "name": "Turmeric",
+          "qty": "1 tsp"
+        },
+        {
+          "id": "paprika-13",
+          "name": "Paprika",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "cayenne-13",
+          "name": "Cayenne",
+          "qty": "1 tsp"
+        }
+      ]
+    }
+  ]
+}

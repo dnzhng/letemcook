@@ -1,0 +1,101 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(6,9,12) 0%, rgb(5,7,9) 50%, rgb(4,6,8) 100%)",
+    "primaryRgb": "44, 62, 80",
+    "accentRgb": "52, 74, 96",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of April 26 · 10 servings",
+    "title": "Century Egg & Shrimp Congee + Ginger Scallion Tofu over Rice",
+    "subtitle": "Congee + Ginger Scallion Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain (shared)",
+      "emoji": "🍚",
+      "items": [
+        {
+          "id": "tofu-21",
+          "name": "Extra-firm tofu",
+          "qty": "2.5 blocks (for ginger scallion dish)"
+        },
+        {
+          "id": "rice-21",
+          "name": "Jasmine rice",
+          "qty": "4 cups dry total (1 congee + 3 tofu)"
+        }
+      ]
+    },
+    {
+      "category": "Congee Ingredients",
+      "emoji": "🥚",
+      "items": [
+        {
+          "id": "century-eggs-21",
+          "name": "Century eggs (皮蛋) — leftover",
+          "qty": "2",
+          "note": "Check condition first"
+        },
+        {
+          "id": "shrimp-21",
+          "name": "Frozen shrimp — leftover",
+          "qty": "small amount"
+        },
+        {
+          "id": "broth-21",
+          "name": "Vegetable or chicken broth",
+          "qty": "6 cups"
+        }
+      ]
+    },
+    {
+      "category": "Ginger Scallion Aromatics",
+      "emoji": "🧅",
+      "items": [
+        {
+          "id": "green-onion-21",
+          "name": "Green onions (go very heavy)",
+          "qty": "3 bunches",
+          "note": "The scallion oil IS the sauce"
+        },
+        {
+          "id": "ginger-21",
+          "name": "Fresh ginger",
+          "qty": "3-inch knob"
+        },
+        {
+          "id": "garlic-21",
+          "name": "Garlic",
+          "qty": "1 bulb (need 8 cloves)"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-21",
+          "name": "Soy sauce",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "sesame-oil-21",
+          "name": "Sesame oil (toasted)",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "neutral-oil-21",
+          "name": "Neutral oil",
+          "qty": "½ cup (for scallion oil — go generous)"
+        },
+        {
+          "id": "white-pepper-21",
+          "name": "White pepper",
+          "qty": "pinch (for congee)"
+        }
+      ]
+    }
+  ]
+}

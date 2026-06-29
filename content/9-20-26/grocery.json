@@ -1,0 +1,112 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #0a2a1a 0%, #1a3a2a 50%, #0a2a18 100%)",
+    "primaryRgb": "76, 175, 80",
+    "accentRgb": "255, 183, 77",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of September 20 \u00b7 10 servings",
+    "title": "Vietnamese B\u00fan Noodles",
+    "subtitle": "Cold vermicelli \u00b7 lemongrass tofu \u00b7 fresh herbs"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83c\udf3f",
+      "items": [
+        {
+          "id": "lemongrass",
+          "name": "Lemongrass",
+          "qty": "4 stalks"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "8 cloves"
+        },
+        {
+          "id": "daikon",
+          "name": "Daikon radish",
+          "qty": "1 medium"
+        },
+        {
+          "id": "mint",
+          "name": "Fresh mint",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "cilantro",
+          "name": "Fresh cilantro",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "thai-basil",
+          "name": "Thai basil",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "butter-lettuce",
+          "name": "Butter lettuce",
+          "qty": "1 head"
+        },
+        {
+          "id": "thai-chilies",
+          "name": "Thai chilies",
+          "qty": "2"
+        }
+      ]
+    },
+    {
+      "category": "Noodles & Pantry",
+      "emoji": "\ud83c\udf5c",
+      "items": [
+        {
+          "id": "vermicelli",
+          "name": "Rice vermicelli",
+          "qty": "1.5 lbs"
+        },
+        {
+          "id": "fish-sauce",
+          "name": "Fish sauce",
+          "qty": "7 tbsp total",
+          "note": "Carries to next week"
+        },
+        {
+          "id": "peanuts",
+          "name": "Roasted peanuts",
+          "qty": "2 cups",
+          "note": "1 cup now + 1 cup carry to next week"
+        },
+        {
+          "id": "rice-vinegar",
+          "name": "Rice vinegar",
+          "qty": "1/3 cup"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "lime-carry",
+          "name": "Limes",
+          "qty": "4",
+          "note": "From last week's 8-lime buy"
+        }
+      ]
+    }
+  ]
+}

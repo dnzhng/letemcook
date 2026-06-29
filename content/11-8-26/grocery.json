@@ -1,0 +1,117 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a2a0a 0%, #3a3420 50%, #2a2808 100%)",
+    "primaryRgb": "255, 183, 77",
+    "accentRgb": "121, 85, 72",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of November 8 \u00b7 10 servings",
+    "title": "Thai Massaman Curry Tofu",
+    "subtitle": "Mellow warm-spice curry \u00b7 peanuts + potatoes + coconut"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\udd54",
+      "items": [
+        {
+          "id": "potatoes",
+          "name": "Baby potatoes or Yukon gold",
+          "qty": "2 lbs"
+        },
+        {
+          "id": "onions",
+          "name": "Yellow onions",
+          "qty": "5",
+          "note": "2 now + 3 carry to next week (mujaddara needs lots)"
+        }
+      ]
+    },
+    {
+      "category": "Curry",
+      "emoji": "\ud83c\udf5b",
+      "items": [
+        {
+          "id": "massaman-paste",
+          "name": "Massaman curry paste",
+          "qty": "5 tbsp",
+          "note": "Mae Ploy or Maesri"
+        },
+        {
+          "id": "coconut-milk",
+          "name": "Coconut milk",
+          "qty": "3 cans (13.5 oz)"
+        },
+        {
+          "id": "tamarind",
+          "name": "Tamarind paste",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "palm-sugar",
+          "name": "Palm sugar or brown sugar",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "peanuts",
+          "name": "Roasted peanuts",
+          "qty": "1 cup"
+        },
+        {
+          "id": "fish-sauce",
+          "name": "Fish sauce",
+          "qty": "3 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "Whole Spices",
+      "emoji": "\ud83c\udf3f",
+      "items": [
+        {
+          "id": "bay-leaves",
+          "name": "Bay leaves",
+          "qty": "3"
+        },
+        {
+          "id": "cinnamon",
+          "name": "Cinnamon stick",
+          "qty": "1"
+        },
+        {
+          "id": "cardamom",
+          "name": "Cardamom pods",
+          "qty": "3"
+        },
+        {
+          "id": "star-anise",
+          "name": "Star anise",
+          "qty": "1"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

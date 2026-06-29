@@ -1,0 +1,96 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(34,11,9) 0%, rgb(27,9,7) 50%, rgb(23,7,6) 100%)",
+    "primaryRgb": "231, 76, 60",
+    "accentRgb": "255, 91, 72",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of February 22 · 10 servings",
+    "title": "Indonesian Nasi Goreng with Crispy Tofu",
+    "subtitle": "Indonesian Nasi Goreng"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🍚",
+      "items": [
+        {
+          "id": "tofu-12",
+          "name": "Extra-firm tofu",
+          "qty": "2 blocks (16 oz each)"
+        },
+        {
+          "id": "rice-12",
+          "name": "Jasmine rice",
+          "qty": "4 cups dry",
+          "note": "Cook 1–2 days ahead, refrigerate uncovered"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧅",
+      "items": [
+        {
+          "id": "shallots-12",
+          "name": "Shallots (or yellow onion)",
+          "qty": "7 shallots or 2 onions"
+        },
+        {
+          "id": "garlic-12",
+          "name": "Garlic",
+          "qty": "1 large bulb (need 13 cloves)"
+        },
+        {
+          "id": "bell-peppers-12",
+          "name": "Red bell peppers",
+          "qty": "3 medium"
+        },
+        {
+          "id": "mushrooms-12",
+          "name": "Mushrooms (any variety)",
+          "qty": "1.5–2 lbs"
+        },
+        {
+          "id": "peas-12",
+          "name": "Frozen peas",
+          "qty": "20 oz"
+        },
+        {
+          "id": "green-onion-12",
+          "name": "Green onions",
+          "qty": "2–3 bunches"
+        }
+      ]
+    },
+    {
+      "category": "Key Sauces",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "kecap-12",
+          "name": "Kecap manis (sweet soy sauce)",
+          "qty": "⅓ cup",
+          "note": "ABC or Bango brand; or DIY: soy + brown sugar + molasses"
+        },
+        {
+          "id": "sambal-12",
+          "name": "Sambal oelek",
+          "qty": "2–3 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-12",
+          "name": "Soy sauce",
+          "qty": "½ cup + 2 tbsp"
+        }
+      ]
+    }
+  ]
+}

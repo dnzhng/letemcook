@@ -1,0 +1,107 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "primaryRgb": "100, 181, 246",
+    "accentRgb": "255, 183, 77",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of December 6 \u00b7 10 servings",
+    "title": "Japanese Yaki Udon",
+    "subtitle": "Stir-fried thick noodles \u00b7 cabbage + mushrooms"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        }
+      ]
+    },
+    {
+      "category": "Noodles",
+      "emoji": "\ud83c\udf5c",
+      "items": [
+        {
+          "id": "udon",
+          "name": "Frozen udon noodles",
+          "qty": "2 lbs",
+          "note": "Or 1.5 lbs dried"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\udd6c",
+      "items": [
+        {
+          "id": "cabbage",
+          "name": "Green cabbage",
+          "qty": "1/2 head (6 cups)"
+        },
+        {
+          "id": "mushrooms",
+          "name": "Shiitake mushrooms",
+          "qty": "1 lb"
+        },
+        {
+          "id": "scallions",
+          "name": "Scallions",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "6 cloves"
+        }
+      ]
+    },
+    {
+      "category": "Sauce",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "worcestershire",
+          "name": "Worcestershire sauce",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "mirin",
+          "name": "Mirin",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "sesame-oil",
+          "name": "Toasted sesame oil",
+          "qty": "1 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "Garnish",
+      "emoji": "\u2728",
+      "items": [
+        {
+          "id": "bonito",
+          "name": "Bonito flakes",
+          "qty": "Small bag",
+          "note": "Optional"
+        },
+        {
+          "id": "sesame-seeds",
+          "name": "Sesame seeds",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "pickled-ginger",
+          "name": "Pickled ginger",
+          "qty": "For serving"
+        }
+      ]
+    }
+  ]
+}

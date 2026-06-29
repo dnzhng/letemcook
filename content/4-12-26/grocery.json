@@ -1,0 +1,96 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(36,23,2) 0%, rgb(29,18,2) 50%, rgb(24,15,1) 100%)",
+    "primaryRgb": "243, 156, 18",
+    "accentRgb": "255, 187, 21",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of April 12 · 10 servings",
+    "title": "Filipino Adobo Tofu (Adobong Tokwa) with Wok-Wilted Bok Choy",
+    "subtitle": "Filipino Adobo Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🫘",
+      "items": [
+        {
+          "id": "tofu-19",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-19",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧄",
+      "items": [
+        {
+          "id": "garlic-19",
+          "name": "Garlic",
+          "qty": "2 bulbs (~20 cloves)",
+          "note": "Go heavy — this is traditional"
+        },
+        {
+          "id": "onion-19",
+          "name": "Yellow onions (or shallots)",
+          "qty": "3 medium"
+        },
+        {
+          "id": "green-onion-19",
+          "name": "Green onions/scallions",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "bok-choy-19",
+          "name": "Baby bok choy",
+          "qty": "1.5 lbs (~6–8 heads)"
+        }
+      ]
+    },
+    {
+      "category": "Adobo Sauce",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "vinegar-19",
+          "name": "White vinegar or cane vinegar",
+          "qty": "¾ cup",
+          "note": "NOT rice vinegar — plain white or Filipino cane"
+        },
+        {
+          "id": "bay-leaves-19",
+          "name": "Bay leaves",
+          "qty": "6–8"
+        },
+        {
+          "id": "peppercorns-19",
+          "name": "Whole black peppercorns",
+          "qty": "1.5 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-19",
+          "name": "Soy sauce",
+          "qty": "1 cup"
+        },
+        {
+          "id": "brown-sugar-19",
+          "name": "Brown sugar",
+          "qty": "2 tbsp"
+        }
+      ]
+    }
+  ]
+}

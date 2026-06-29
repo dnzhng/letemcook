@@ -1,0 +1,97 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a1a1a 0%, #3a2020 50%, #2a0f0f 100%)",
+    "primaryRgb": "244, 67, 54",
+    "accentRgb": "255, 183, 77",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of October 25 \u00b7 10 servings",
+    "title": "Dan Dan Noodles (\u62c5\u62c5\u9762)",
+    "subtitle": "Spicy sesame noodles \u00b7 Sichuan street food"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "2 blocks",
+          "note": "Crumbled"
+        }
+      ]
+    },
+    {
+      "category": "Noodles",
+      "emoji": "\ud83c\udf5c",
+      "items": [
+        {
+          "id": "wheat-noodles",
+          "name": "Chinese wheat noodles",
+          "qty": "1.5 lbs",
+          "note": "Or lo mein, or spaghetti"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uddc4",
+      "items": [
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "4 cloves"
+        },
+        {
+          "id": "scallions",
+          "name": "Scallions",
+          "qty": "2 bunches",
+          "note": "1 now + 1 carry to next week"
+        }
+      ]
+    },
+    {
+      "category": "Sichuan Pantry",
+      "emoji": "\ud83c\udf36\ufe0f",
+      "items": [
+        {
+          "id": "sesame-paste",
+          "name": "Chinese sesame paste or tahini",
+          "qty": "6 tbsp"
+        },
+        {
+          "id": "chili-oil",
+          "name": "Chili oil (with sediment)",
+          "qty": "3 tbsp + extra"
+        },
+        {
+          "id": "black-vinegar",
+          "name": "Chinkiang black vinegar",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sichuan-pepper",
+          "name": "Ground Sichuan peppercorn",
+          "qty": "1 tsp"
+        },
+        {
+          "id": "zha-cai",
+          "name": "Preserved mustard greens (zha cai)",
+          "qty": "1/2 cup"
+        },
+        {
+          "id": "shaoxing",
+          "name": "Shaoxing wine",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "peanuts",
+          "name": "Crushed roasted peanuts",
+          "qty": "For garnish"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a1a2e 0%, #2d1b4e 50%, #1a1040 100%)",
+    "primaryRgb": "255, 183, 77",
+    "accentRgb": "244, 67, 54",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of August 23 \u00b7 10 servings",
+    "title": "Peruvian Lomo Saltado Tofu",
+    "subtitle": "Chinese-Peruvian wok stir-fry \u00b7 first Peruvian dish"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83c\udf45",
+      "items": [
+        {
+          "id": "red-onions",
+          "name": "Red onions",
+          "qty": "3 large"
+        },
+        {
+          "id": "roma-tomatoes",
+          "name": "Roma tomatoes",
+          "qty": "6"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "6 cloves"
+        },
+        {
+          "id": "cilantro",
+          "name": "Fresh cilantro",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "aji-amarillo",
+          "name": "Aj\u00ed amarillo peppers or paste",
+          "qty": "2 peppers or 2 tbsp paste",
+          "note": "Or sub 1 yellow bell pepper + cayenne"
+        }
+      ]
+    },
+    {
+      "category": "Pantry",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "red-wine-vinegar",
+          "name": "Red wine vinegar",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "potatoes",
+          "name": "Russet potatoes",
+          "qty": "4 lbs",
+          "note": "2 lbs now + 2 lbs carry to next week"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "onion-carry",
+          "name": "Yellow onions",
+          "qty": "2",
+          "note": "Buy 5 total \u2014 2 yellow carry to next week"
+        },
+        {
+          "id": "soy-carry",
+          "name": "Soy sauce",
+          "qty": "4 tbsp",
+          "note": "Same bottle"
+        },
+        {
+          "id": "cumin-carry",
+          "name": "Ground cumin",
+          "qty": "1 tbsp",
+          "note": "Same jar"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "jasmine-rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

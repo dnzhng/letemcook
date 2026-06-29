@@ -1,0 +1,79 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(5,26,14) 0%, rgb(4,20,11) 50%, rgb(3,17,9) 100%)",
+    "primaryRgb": "39, 174, 96",
+    "accentRgb": "46, 208, 115",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of February 8 · 10 servings",
+    "title": "Sichuan Dry-Fried Broccoli with Crispy Tofu",
+    "subtitle": "Sichuan Dry-Fried Broccoli"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🥦",
+      "items": [
+        {
+          "id": "tofu-10",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-10",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        },
+        {
+          "id": "broccoli-10",
+          "name": "Broccoli",
+          "qty": "2 large heads (~6 cups florets)"
+        }
+      ]
+    },
+    {
+      "category": "Aromatics",
+      "emoji": "🧄",
+      "items": [
+        {
+          "id": "garlic-10",
+          "name": "Garlic",
+          "qty": "1 bulb (need 10 cloves)"
+        },
+        {
+          "id": "ginger-10",
+          "name": "Fresh ginger",
+          "qty": "2-inch knob"
+        },
+        {
+          "id": "dried-chilies-10",
+          "name": "Dried red chilies",
+          "qty": "6–8",
+          "note": "Árbol or Chinese dried chilies"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-10",
+          "name": "Soy sauce",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "sesame-10",
+          "name": "Sesame oil (toasted)",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "sugar-10",
+          "name": "Sugar",
+          "qty": "1 tsp"
+        }
+      ]
+    }
+  ]
+}

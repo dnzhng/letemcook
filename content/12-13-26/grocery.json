@@ -1,0 +1,102 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #0a2a1a 0%, #1a3a2a 50%, #0a2818 100%)",
+    "primaryRgb": "76, 175, 80",
+    "accentRgb": "255, 152, 0",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of December 13 \u00b7 10 servings",
+    "title": "Malaysian Nasi Lemak + Sambal Tofu",
+    "subtitle": "Coconut rice \u00b7 spicy sambal \u00b7 peanuts + fried shallots"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        },
+        {
+          "id": "eggs",
+          "name": "Eggs",
+          "qty": "5",
+          "note": "Hard-boiled, optional"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uddc5",
+      "items": [
+        {
+          "id": "shallots",
+          "name": "Shallots",
+          "qty": "4",
+          "note": "For frying"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "4 cloves"
+        },
+        {
+          "id": "cucumbers",
+          "name": "Cucumbers",
+          "qty": "2"
+        }
+      ]
+    },
+    {
+      "category": "Sambal & Pantry",
+      "emoji": "\ud83c\udf36\ufe0f",
+      "items": [
+        {
+          "id": "dried-chilies",
+          "name": "Dried red chilies",
+          "qty": "15"
+        },
+        {
+          "id": "shrimp-paste",
+          "name": "Shrimp paste (belacan)",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "tamarind",
+          "name": "Tamarind paste",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "coconut-milk",
+          "name": "Coconut milk",
+          "qty": "2 cans (13.5 oz)"
+        },
+        {
+          "id": "pandan",
+          "name": "Pandan leaves or extract",
+          "qty": "2 leaves or 1 tsp",
+          "note": "Optional but traditional"
+        },
+        {
+          "id": "peanuts",
+          "name": "Roasted peanuts",
+          "qty": "1 cup"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

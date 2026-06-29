@@ -1,0 +1,87 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(28,8,6) 0%, rgb(23,6,5) 50%, rgb(19,5,4) 100%)",
+    "primaryRgb": "192, 57, 43",
+    "accentRgb": "230, 68, 51",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of February 15 · 10 servings",
+    "title": "Vietnamese Caramelized Tofu (Đậu Hũ Kho Tiêu)",
+    "subtitle": "Vietnamese Caramelized Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🫘",
+      "items": [
+        {
+          "id": "tofu-11",
+          "name": "Firm tofu (NOT extra-firm)",
+          "qty": "3 blocks (14 oz each)",
+          "note": "Firm absorbs sauce better than extra-firm"
+        },
+        {
+          "id": "rice-11",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧅",
+      "items": [
+        {
+          "id": "shallots-11",
+          "name": "Shallots",
+          "qty": "3 medium"
+        },
+        {
+          "id": "garlic-11",
+          "name": "Garlic",
+          "qty": "1 bulb (need 6 cloves)"
+        },
+        {
+          "id": "mushrooms-11",
+          "name": "Cremini mushrooms",
+          "qty": "10 oz"
+        },
+        {
+          "id": "green-onion-11",
+          "name": "Green onions",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Sauce",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "fish-sauce-11",
+          "name": "Vegan fish sauce or soy sauce",
+          "qty": "4 tbsp"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "sugar-11",
+          "name": "Granulated white sugar",
+          "qty": "5 tbsp",
+          "note": "For caramel — do NOT stir while melting"
+        },
+        {
+          "id": "pepper-11",
+          "name": "Ground black pepper",
+          "qty": "2 tsp",
+          "note": "More than feels right"
+        }
+      ]
+    }
+  ]
+}

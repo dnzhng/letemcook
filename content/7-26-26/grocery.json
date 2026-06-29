@@ -1,0 +1,111 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a1a0a 0%, #4a2a0a 50%, #3a1a00 100%)",
+    "primaryRgb": "255, 183, 77",
+    "accentRgb": "244, 67, 54",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of July 26 \u00b7 10 servings",
+    "title": "Kung Pao Tofu (\u5bab\u4fdd\u8c46\u8150)",
+    "subtitle": "Crispy tofu + peanuts + dried chilies \u00b7 Sichuan pantry carries"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uded1",
+      "items": [
+        {
+          "id": "bell-peppers",
+          "name": "Bell peppers",
+          "qty": "3"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "8 cloves"
+        },
+        {
+          "id": "ginger",
+          "name": "Ginger",
+          "qty": "2-inch piece",
+          "note": "From last week's large piece \u2014 carries to next week"
+        }
+      ]
+    },
+    {
+      "category": "New This Week",
+      "emoji": "\ud83d\uded2",
+      "items": [
+        {
+          "id": "peanuts",
+          "name": "Roasted unsalted peanuts",
+          "qty": "2 cups",
+          "note": "1 cup now + buy peanut butter for next week"
+        },
+        {
+          "id": "dried-chilies",
+          "name": "Dried red chilies",
+          "qty": "15\u201320"
+        },
+        {
+          "id": "black-vinegar",
+          "name": "Chinkiang black vinegar",
+          "qty": "1 bottle"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "doubanjiang-carry",
+          "name": "Doubanjiang",
+          "qty": "1 tbsp",
+          "note": "Same jar"
+        },
+        {
+          "id": "sichuan-carry",
+          "name": "Sichuan peppercorns",
+          "qty": "1 tsp",
+          "note": "Same bag"
+        },
+        {
+          "id": "scallions-carry",
+          "name": "Scallions",
+          "qty": "1 bunch",
+          "note": "Second bunch from last week"
+        },
+        {
+          "id": "shaoxing-carry",
+          "name": "Shaoxing wine",
+          "qty": "2 tbsp",
+          "note": "Same bottle"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "jasmine-rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

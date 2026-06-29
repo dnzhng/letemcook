@@ -1,0 +1,83 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(28,8,6) 0%, rgb(23,6,5) 50%, rgb(19,5,4) 100%)",
+    "primaryRgb": "192, 57, 43",
+    "accentRgb": "230, 68, 51",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of December 14 · 10 servings",
+    "title": "Sesame Ginger Tofu with Noodles",
+    "subtitle": "Sesame Ginger Noodles"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🍜",
+      "items": [
+        {
+          "id": "tofu-2",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "noodles-2",
+          "name": "Lo mein noodles (or udon/soba)",
+          "qty": "1 lb"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🧄",
+      "items": [
+        {
+          "id": "ginger-2",
+          "name": "Fresh ginger",
+          "qty": "1 knob (2-inch piece)"
+        },
+        {
+          "id": "garlic-2",
+          "name": "Garlic",
+          "qty": "1 bulb (need 6 cloves)"
+        },
+        {
+          "id": "green-onion-2",
+          "name": "Green onions",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-2",
+          "name": "Soy sauce",
+          "qty": "6 tbsp"
+        },
+        {
+          "id": "sesame-2",
+          "name": "Sesame oil (toasted)",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "vinegar-2",
+          "name": "Rice vinegar",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "sugar-2",
+          "name": "Sugar",
+          "qty": "2 tsp"
+        },
+        {
+          "id": "sesame-seeds-2",
+          "name": "Sesame seeds",
+          "qty": "2 tbsp"
+        }
+      ]
+    }
+  ]
+}

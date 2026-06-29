@@ -1,0 +1,122 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+    "primaryRgb": "255, 183, 77",
+    "accentRgb": "0, 188, 212",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of July 5 \u00b7 10 servings",
+    "title": "Malaysian Tofu Laksa",
+    "subtitle": "Coconut curry noodle soup \u00b7 first Malaysian dish"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83c\udf3f",
+      "items": [
+        {
+          "id": "shallots",
+          "name": "Shallots",
+          "qty": "8",
+          "note": "For laksa paste"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "1 bulb (6 cloves)"
+        },
+        {
+          "id": "galangal",
+          "name": "Galangal (or ginger)",
+          "qty": "3-inch piece"
+        },
+        {
+          "id": "lemongrass",
+          "name": "Lemongrass",
+          "qty": "3 stalks"
+        },
+        {
+          "id": "bean-sprouts",
+          "name": "Bean sprouts",
+          "qty": "4 cups"
+        },
+        {
+          "id": "limes",
+          "name": "Limes",
+          "qty": "8",
+          "note": "5 now + 3 carry to next week"
+        },
+        {
+          "id": "cilantro",
+          "name": "Fresh cilantro",
+          "qty": "1 bunch"
+        },
+        {
+          "id": "mint",
+          "name": "Fresh mint",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Noodles",
+      "emoji": "\ud83c\udf5c",
+      "items": [
+        {
+          "id": "vermicelli",
+          "name": "Rice vermicelli",
+          "qty": "1.5 lbs"
+        }
+      ]
+    },
+    {
+      "category": "Pantry & Sauces",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "coconut-milk",
+          "name": "Coconut milk",
+          "qty": "6 cans (13.5 oz)",
+          "note": "4 now + 2 carry to next week"
+        },
+        {
+          "id": "fish-sauce",
+          "name": "Fish sauce",
+          "qty": "1 bottle"
+        },
+        {
+          "id": "shrimp-paste",
+          "name": "Shrimp paste (belacan)",
+          "qty": "1 small jar"
+        },
+        {
+          "id": "dried-chilies",
+          "name": "Dried red chilies",
+          "qty": "6"
+        },
+        {
+          "id": "sambal",
+          "name": "Sambal oelek",
+          "qty": "1 jar"
+        },
+        {
+          "id": "turmeric",
+          "name": "Ground turmeric",
+          "qty": "1 tsp"
+        }
+      ]
+    }
+  ]
+}

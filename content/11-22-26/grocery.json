@@ -1,0 +1,90 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2a0a0a 0%, #3a1515 50%, #2a0808 100%)",
+    "primaryRgb": "229, 57, 53",
+    "accentRgb": "255, 183, 77",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of November 22 \u00b7 10 servings",
+    "title": "Char Siu\u2013Glazed Tofu (\u53c9\u70e7)",
+    "subtitle": "Chinese BBQ tofu \u00b7 sticky hoisin-honey glaze"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\udd6c",
+      "items": [
+        {
+          "id": "bok-choy",
+          "name": "Baby bok choy",
+          "qty": "2 lbs"
+        },
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "3 cloves"
+        }
+      ]
+    },
+    {
+      "category": "Char Siu Glaze",
+      "emoji": "\ud83e\uded9",
+      "items": [
+        {
+          "id": "hoisin",
+          "name": "Hoisin sauce",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "honey",
+          "name": "Honey",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "five-spice",
+          "name": "Chinese five-spice powder",
+          "qty": "1 tsp",
+          "note": "Carries to Dec 28 braised tofu"
+        },
+        {
+          "id": "shaoxing",
+          "name": "Shaoxing wine",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sesame-oil",
+          "name": "Toasted sesame oil",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "white-pepper",
+          "name": "White pepper",
+          "qty": "1/2 tsp"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Jasmine rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

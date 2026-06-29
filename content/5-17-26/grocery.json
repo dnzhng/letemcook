@@ -1,0 +1,96 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(36,23,2) 0%, rgb(29,18,2) 50%, rgb(24,15,1) 100%)",
+    "primaryRgb": "243, 156, 18",
+    "accentRgb": "255, 187, 21",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of May 17 · 10 servings",
+    "title": "Vietnamese Caramelized Lemongrass Tofu (Đậu Hũ Xào Sả Ớt)",
+    "subtitle": "Vietnamese Lemongrass Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🫘",
+      "items": [
+        {
+          "id": "tofu-24",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (~2.75 lbs)",
+          "note": "Press 30+ min — overnight if possible"
+        },
+        {
+          "id": "rice-24",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Key Aromatics",
+      "emoji": "🌿",
+      "items": [
+        {
+          "id": "lemongrass-24",
+          "name": "Fresh lemongrass",
+          "qty": "5 stalks",
+          "note": "Use inner white/pale part only — mince VERY fine"
+        },
+        {
+          "id": "shallots-24",
+          "name": "Shallots",
+          "qty": "5, finely minced"
+        },
+        {
+          "id": "thai-chilies-24",
+          "name": "Thai bird's eye chilies",
+          "qty": "4–6"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🍋",
+      "items": [
+        {
+          "id": "garlic-24",
+          "name": "Garlic",
+          "qty": "1 bulb (need 10 cloves)"
+        },
+        {
+          "id": "green-onion-24",
+          "name": "Green onions",
+          "qty": "1 bunch (garnish)"
+        },
+        {
+          "id": "limes-24",
+          "name": "Limes",
+          "qty": "2 (for serving)"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "sugar-24",
+          "name": "Granulated sugar",
+          "qty": "3 tbsp (for caramelizing)"
+        },
+        {
+          "id": "soy-24",
+          "name": "Soy sauce",
+          "qty": "3 tbsp"
+        },
+        {
+          "id": "fish-sauce-24",
+          "name": "Fish sauce or soy substitute",
+          "qty": "2 tbsp"
+        }
+      ]
+    }
+  ]
+}

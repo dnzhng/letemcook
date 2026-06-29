@@ -1,0 +1,136 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a2a1a 0%, #2a3a1a 50%, #1a2a0a 100%)",
+    "primaryRgb": "255, 202, 40",
+    "accentRgb": "198, 40, 40",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of August 9 \u00b7 10 servings",
+    "title": "Ethiopian Misir Wot + Crispy Tofu",
+    "subtitle": "Berbere-spiced red lentil stew \u00b7 first Ethiopian dish"
+  },
+  "categories": [
+    {
+      "category": "Protein",
+      "emoji": "\ud83e\uded8",
+      "items": [
+        {
+          "id": "tofu",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14\u201316 oz each)"
+        },
+        {
+          "id": "red-lentils",
+          "name": "Red lentils",
+          "qty": "2.5 cups"
+        }
+      ]
+    },
+    {
+      "category": "Berbere Spices",
+      "emoji": "\ud83c\udf36\ufe0f",
+      "items": [
+        {
+          "id": "paprika",
+          "name": "Paprika",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "cayenne-berbere",
+          "name": "Cayenne",
+          "qty": "1 tbsp"
+        },
+        {
+          "id": "fenugreek",
+          "name": "Ground fenugreek",
+          "qty": "1/2 tsp"
+        },
+        {
+          "id": "cardamom",
+          "name": "Ground cardamom",
+          "qty": "1/2 tsp"
+        },
+        {
+          "id": "cinnamon",
+          "name": "Ground cinnamon",
+          "qty": "1/2 tsp"
+        },
+        {
+          "id": "cloves-ground",
+          "name": "Ground cloves",
+          "qty": "1/4 tsp"
+        },
+        {
+          "id": "allspice",
+          "name": "Ground allspice",
+          "qty": "1/4 tsp"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "\ud83e\uddc4",
+      "items": [
+        {
+          "id": "garlic",
+          "name": "Garlic",
+          "qty": "6 cloves"
+        }
+      ]
+    },
+    {
+      "category": "From Last Week",
+      "emoji": "\u267b\ufe0f",
+      "items": [
+        {
+          "id": "onion-carry",
+          "name": "Yellow onions",
+          "qty": "3",
+          "note": "From last week's 6-onion buy"
+        },
+        {
+          "id": "ginger-carry",
+          "name": "Ginger",
+          "qty": "2-inch piece",
+          "note": "From last week"
+        },
+        {
+          "id": "tomato-carry",
+          "name": "Canned diced tomatoes",
+          "qty": "2 cans",
+          "note": "From last week's 4-can buy"
+        },
+        {
+          "id": "paste-carry",
+          "name": "Tomato paste",
+          "qty": "2 tbsp",
+          "note": "Same can/tube"
+        },
+        {
+          "id": "cumin-carry",
+          "name": "Ground cumin",
+          "qty": "1 tsp",
+          "note": "Same jar"
+        },
+        {
+          "id": "coriander-carry",
+          "name": "Ground coriander",
+          "qty": "1 tsp",
+          "note": "Same jar"
+        }
+      ]
+    },
+    {
+      "category": "Grain",
+      "emoji": "\ud83c\udf5a",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Jasmine or basmati rice",
+          "qty": "5 cups dry"
+        }
+      ]
+    }
+  ]
+}

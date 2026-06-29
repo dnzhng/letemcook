@@ -1,0 +1,99 @@
+{
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, rgb(31,24,3) 0%, rgb(25,19,2) 50%, rgb(21,16,2) 100%)",
+    "primaryRgb": "212, 160, 23",
+    "accentRgb": "254, 192, 27",
+    "checkedRgb": "129, 199, 132"
+  },
+  "meta": {
+    "weekLabel": "Week of January 18 · 10 servings",
+    "title": "Thai Peanut Tofu with Rice",
+    "subtitle": "Thai Peanut Tofu"
+  },
+  "categories": [
+    {
+      "category": "Protein & Grain",
+      "emoji": "🥜",
+      "items": [
+        {
+          "id": "tofu-7",
+          "name": "Extra-firm tofu",
+          "qty": "3 blocks (14–16 oz each)"
+        },
+        {
+          "id": "rice-7",
+          "name": "Jasmine rice",
+          "qty": "3.5 cups dry"
+        }
+      ]
+    },
+    {
+      "category": "Produce",
+      "emoji": "🍋",
+      "items": [
+        {
+          "id": "limes-7",
+          "name": "Limes",
+          "qty": "2 (for juice)"
+        },
+        {
+          "id": "garlic-7",
+          "name": "Garlic",
+          "qty": "1 bulb (need 6 cloves)"
+        },
+        {
+          "id": "ginger-7",
+          "name": "Fresh ginger",
+          "qty": "1-inch knob"
+        },
+        {
+          "id": "cilantro-7",
+          "name": "Fresh cilantro (optional)",
+          "qty": "1 bunch"
+        }
+      ]
+    },
+    {
+      "category": "Peanut Sauce",
+      "emoji": "⭐",
+      "items": [
+        {
+          "id": "peanut-butter-7",
+          "name": "Natural peanut butter (no sugar)",
+          "qty": "½ cup"
+        },
+        {
+          "id": "sriracha-7",
+          "name": "Sriracha or sambal oelek",
+          "qty": "1–2 tbsp"
+        },
+        {
+          "id": "peanuts-7",
+          "name": "Crushed peanuts (optional garnish)",
+          "qty": "¼ cup"
+        }
+      ]
+    },
+    {
+      "category": "Pantry (check first)",
+      "emoji": "🫙",
+      "items": [
+        {
+          "id": "soy-7",
+          "name": "Soy sauce",
+          "qty": "4 tbsp"
+        },
+        {
+          "id": "vinegar-7",
+          "name": "Rice vinegar",
+          "qty": "2 tbsp"
+        },
+        {
+          "id": "sesame-7",
+          "name": "Sesame oil",
+          "qty": "1 tbsp"
+        }
+      ]
+    }
+  ]
+}
