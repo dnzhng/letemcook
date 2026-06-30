@@ -484,7 +484,8 @@
 
       // Within the real doc range (Dec 7 2025 – Dec 27 2026) — return directly
       if (sunday <= LAST_DOC) {
-        return `${sunday.getMonth() + 1}-${sunday.getDate()}-${String(sunday.getFullYear()).slice(2)}`;
+        const m = sunday.getMonth() + 1, d = sunday.getDate(), yy = String(sunday.getFullYear()).slice(2);
+        return { key: `${m}-${d}-${yy}`, displaySunday: null };
       }
 
       // Future: deterministically pick from the 56 real docs
@@ -499,7 +500,8 @@
 
       const docDate = new Date(ANCHOR);
       docDate.setDate(ANCHOR.getDate() + (docIndex - 1) * 7);
-      return `${docDate.getMonth() + 1}-${docDate.getDate()}-${String(docDate.getFullYear()).slice(2)}`;
+      const resolvedKey = `${docDate.getMonth() + 1}-${docDate.getDate()}-${String(docDate.getFullYear()).slice(2)}`;
+      return { key: resolvedKey, displaySunday: sunday };
     }
 
     function applyTheme(theme) {
@@ -511,7 +513,7 @@
       if (theme.checkedRgb) root.style.setProperty('--checked-rgb', theme.checkedRgb);
     }
 
-    async function loadContent(week) {
+    async function loadContent(week, displaySunday = null) {
       const storageKey = `checkedItems-${week}`;
 
       const lastWeek = localStorage.getItem('lastWeek');
@@ -536,7 +538,15 @@
       applyTheme(groceryData.theme);
 
       document.title = groceryData.meta.title;
-      document.getElementById('week-label').textContent = groceryData.meta.weekLabel;
+      let weekLabel = groceryData.meta.weekLabel;
+      if (displaySunday) {
+        const month = displaySunday.toLocaleString('en-US', { month: 'long' });
+        const day = displaySunday.getDate();
+        const year = displaySunday.getFullYear();
+        const suffix = weekLabel.match(/ · .*/)?.[0] ?? '';
+        weekLabel = `Week of ${month} ${day}, ${year}${suffix}`;
+      }
+      document.getElementById('week-label').textContent = weekLabel;
       document.getElementById('meal-subtitle').textContent = groceryData.meta.title;
 
       renderGroceryList();
@@ -672,8 +682,8 @@
 
     document.addEventListener('DOMContentLoaded', async () => {
       try {
-        const week = resolveWeek();
-        await loadContent(week);
+        const { key, displaySunday } = resolveWeek();
+        await loadContent(key, displaySunday);
       } catch (err) {
         document.getElementById('grocery-list').innerHTML =
           '<p style="color:rgba(245,225,180,0.4);text-align:center;padding:40px 0;">Unable to load week content.</p>';
