@@ -471,19 +471,23 @@
 
     function resolveWeek() {
       const params = new URLSearchParams(window.location.search);
-      if (params.has('week')) return params.get('week');
 
-      const now = new Date();
-      const sunday = new Date(now);
-      sunday.setDate(now.getDate() - now.getDay());
-      sunday.setHours(0, 0, 0, 0);
+      let sunday;
+      if (params.has('week')) {
+        const [m, d, yy] = params.get('week').split('-').map(Number);
+        sunday = new Date(2000 + yy, m - 1, d);
+      } else {
+        sunday = new Date();
+        sunday.setDate(sunday.getDate() - sunday.getDay());
+        sunday.setHours(0, 0, 0, 0);
+      }
 
       // Within the real doc range (Dec 7 2025 – Dec 27 2026) — return directly
       if (sunday <= LAST_DOC) {
         return `${sunday.getMonth() + 1}-${sunday.getDate()}-${String(sunday.getFullYear()).slice(2)}`;
       }
 
-      // Future year: deterministically pick from the 56 real docs
+      // Future: deterministically pick from the 56 real docs
       const year = sunday.getFullYear();
       const jan1 = new Date(year, 0, 1);
       const firstSunday = new Date(jan1);
