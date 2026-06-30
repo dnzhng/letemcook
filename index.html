@@ -476,6 +476,8 @@
       if (params.has('week')) {
         const [m, d, yy] = params.get('week').split('-').map(Number);
         sunday = new Date(2000 + yy, m - 1, d);
+        sunday.setDate(sunday.getDate() - sunday.getDay());
+        sunday.setHours(0, 0, 0, 0);
       } else {
         sunday = new Date();
         sunday.setDate(sunday.getDate() - sunday.getDay());

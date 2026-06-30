@@ -4,10 +4,11 @@ A weekly meal-planning app with grocery lists and recipes, updated each week.
 
 ## Viewing a specific week
 
-Append `?week=M-D-YY` to the URL to jump to any week by its Sunday date:
+Append `?week=M-D-YY` to the URL to jump to any week. Any date within the week works — it snaps to the Sunday automatically:
 
 ```
 ?week=6-7-26   → Week of June 7, 2026
+?week=6-10-26  → Week of June 7, 2026 (snaps to Sunday)
 ?week=4-4-27   → Week of April 4, 2027
 ```
 
