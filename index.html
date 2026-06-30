@@ -449,6 +449,26 @@
     let checkedItems = {};
     let groceryCategories = [];
 
+    const ANCHOR = new Date(2025, 11, 7);   // Dec 7, 2025 — first doc folder 12-7-25
+    const DOC_COUNT = 56;
+    const LAST_DOC = (() => {
+      const d = new Date(ANCHOR);
+      d.setDate(d.getDate() + (DOC_COUNT - 1) * 7); // Dec 27, 2026 — last doc folder 12-27-26
+      return d;
+    })();
+
+    function hashMix(n) {
+      n = Math.imul(n ^ (n >>> 16), 0x45d9f3b);
+      n = Math.imul(n ^ (n >>> 16), 0x45d9f3b);
+      return (n ^ (n >>> 16)) >>> 0;
+    }
+
+    function yearDocOrder(year) {
+      const order = Array.from({ length: DOC_COUNT }, (_, k) => k + 1); // [1..56]
+      order.sort((p, q) => hashMix(year * 100003 + p) - hashMix(year * 100003 + q));
+      return order;
+    }
+
     function resolveWeek() {
       const params = new URLSearchParams(window.location.search);
       if (params.has('week')) return params.get('week');
@@ -456,7 +476,26 @@
       const now = new Date();
       const sunday = new Date(now);
       sunday.setDate(now.getDate() - now.getDay());
-      return `${sunday.getMonth() + 1}-${sunday.getDate()}-${String(sunday.getFullYear()).slice(2)}`;
+      sunday.setHours(0, 0, 0, 0);
+
+      // Within the real doc range (Dec 7 2025 – Dec 27 2026) — return directly
+      if (sunday <= LAST_DOC) {
+        return `${sunday.getMonth() + 1}-${sunday.getDate()}-${String(sunday.getFullYear()).slice(2)}`;
+      }
+
+      // Future year: deterministically pick from the 56 real docs
+      const year = sunday.getFullYear();
+      const jan1 = new Date(year, 0, 1);
+      const firstSunday = new Date(jan1);
+      firstSunday.setDate(jan1.getDate() + (7 - jan1.getDay()) % 7); // first Sun on/after Jan 1
+      const j = Math.round((sunday - firstSunday) / (7 * 86400000)) + 1; // week-of-year, 1-based
+
+      const order = yearDocOrder(year);
+      const docIndex = order[j - 1];
+
+      const docDate = new Date(ANCHOR);
+      docDate.setDate(ANCHOR.getDate() + (docIndex - 1) * 7);
+      return `${docDate.getMonth() + 1}-${docDate.getDate()}-${String(docDate.getFullYear()).slice(2)}`;
     }
 
     function applyTheme(theme) {
