@@ -539,12 +539,14 @@
 
       document.title = groceryData.meta.title;
       let weekLabel = groceryData.meta.weekLabel;
+      let md = recipeMarkdown;
       if (displaySunday) {
         const month = displaySunday.toLocaleString('en-US', { month: 'long' });
         const day = displaySunday.getDate();
         const year = displaySunday.getFullYear();
         const suffix = weekLabel.match(/ · .*/)?.[0] ?? '';
         weekLabel = `Week of ${month} ${day}, ${year}${suffix}`;
+        md = md.replace(/^## Week of .+$/m, `## Week of ${month} ${day}, ${year}`);
       }
       document.getElementById('week-label').textContent = weekLabel;
       document.getElementById('meal-subtitle').textContent = groceryData.meta.title;
@@ -552,13 +554,6 @@
       renderGroceryList();
       updateProgress();
 
-      let md = recipeMarkdown;
-      if (displaySunday) {
-        const month = displaySunday.toLocaleString('en-US', { month: 'long' });
-        const day = displaySunday.getDate();
-        const year = displaySunday.getFullYear();
-        md = md.replace(/^## Week of .+$/m, `## Week of ${month} ${day}, ${year}`);
-      }
       document.getElementById('recipe-content').innerHTML = marked.parse(md);
     }
 
