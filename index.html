@@ -552,7 +552,14 @@
       renderGroceryList();
       updateProgress();
 
-      document.getElementById('recipe-content').innerHTML = marked.parse(recipeMarkdown);
+      let md = recipeMarkdown;
+      if (displaySunday) {
+        const month = displaySunday.toLocaleString('en-US', { month: 'long' });
+        const day = displaySunday.getDate();
+        const year = displaySunday.getFullYear();
+        md = md.replace(/^## Week of .+$/m, `## Week of ${month} ${day}, ${year}`);
+      }
+      document.getElementById('recipe-content').innerHTML = marked.parse(md);
     }
 
     function renderGroceryList() {
