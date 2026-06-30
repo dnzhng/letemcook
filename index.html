@@ -473,15 +473,12 @@
       const params = new URLSearchParams(window.location.search);
 
       let sunday;
+      const toSunday = d => { d.setDate(d.getDate() - d.getDay()); d.setHours(0, 0, 0, 0); return d; };
       if (params.has('week')) {
         const [m, d, yy] = params.get('week').split('-').map(Number);
-        sunday = new Date(2000 + yy, m - 1, d);
-        sunday.setDate(sunday.getDate() - sunday.getDay());
-        sunday.setHours(0, 0, 0, 0);
+        sunday = toSunday(new Date(2000 + yy, m - 1, d));
       } else {
-        sunday = new Date();
-        sunday.setDate(sunday.getDate() - sunday.getDay());
-        sunday.setHours(0, 0, 0, 0);
+        sunday = toSunday(new Date());
       }
 
       // Within the real doc range (Dec 7 2025 – Dec 27 2026) — return directly
